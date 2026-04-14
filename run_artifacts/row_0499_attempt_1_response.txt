@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Initializes the connection structure for the network connection handler.

@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the global IRC version constant used by the server.

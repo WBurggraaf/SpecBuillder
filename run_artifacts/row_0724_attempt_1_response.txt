@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Handles the server's startup sequence and initialization of core components.

@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the transmission of marked connection data over the network.

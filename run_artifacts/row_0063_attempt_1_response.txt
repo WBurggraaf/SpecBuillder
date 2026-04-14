@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the logic for disconnecting a client from a channel, including sending quit messages and managing channel state transitions.

@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for moving array elements leftward, likely used for internal data manipulation within the ngIRCd server.

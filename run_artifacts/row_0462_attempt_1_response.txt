@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Initializes the connection object and sets up the initial network state for the IRC daemon.

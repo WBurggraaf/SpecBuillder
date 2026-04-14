@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Declares the data structure and type for the ipa_text field within the _CLIENT class.

@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: A global function that returns a boolean indicating whether SSL is enabled for the server.

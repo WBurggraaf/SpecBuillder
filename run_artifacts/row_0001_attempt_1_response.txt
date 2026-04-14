@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Initializes the IP address structure and validates the input string and port parameters.

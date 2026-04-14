@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Function that checks if a client has sufficient privileges to perform an operation, enforcing access control rules.

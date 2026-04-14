@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines a data structure for non-usable IP address objects.

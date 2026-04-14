@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structures and types used to represent the server's internal state and message lists.

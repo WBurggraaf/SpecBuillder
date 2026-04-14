@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the logic for announcing a channel to the IRC network, likely involving packet construction and transmission.

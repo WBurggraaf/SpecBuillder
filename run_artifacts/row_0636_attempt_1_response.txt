@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for retrieving capability string values from the server configuration.

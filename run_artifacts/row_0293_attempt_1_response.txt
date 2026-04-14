@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for checking file read permissions.

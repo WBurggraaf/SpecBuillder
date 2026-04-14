@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: A static function that likely returns a boolean indicating whether the server should listen on any network ports.

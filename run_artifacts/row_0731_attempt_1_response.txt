@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the network protocol for joining a chat channel, managing client connections and request/response interactions.

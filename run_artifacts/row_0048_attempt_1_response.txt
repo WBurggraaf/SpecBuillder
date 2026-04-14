@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for the array type used to store allocated memory and usage statistics.

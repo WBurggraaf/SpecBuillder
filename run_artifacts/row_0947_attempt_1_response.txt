@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data type and structure for the unsigned char type used in the ngIRCd source code.

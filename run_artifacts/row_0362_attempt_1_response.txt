@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines server configuration flags and properties for the ngIRCd daemon.

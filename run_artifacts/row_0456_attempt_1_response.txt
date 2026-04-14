@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Defines SSL/TLS configuration options for secure client-server and server-server links.

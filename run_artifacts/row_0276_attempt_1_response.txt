@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for client connection information including timestamp, nickname, host, user, and server details.

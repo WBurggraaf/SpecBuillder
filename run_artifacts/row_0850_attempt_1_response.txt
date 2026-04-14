@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure and layout for a list element within the ngIRCd server.

@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for retrieving reason codes from list elements.

@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the logic for joining a new channel within the IRC server's network communication stack.

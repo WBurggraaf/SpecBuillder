@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles SSL/TLS connection establishment and handshake for secure client-server communication.

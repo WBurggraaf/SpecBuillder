@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Represents the passwd structure, a core data structure used for user authentication and identity management.

@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Implements SSL/TLS key exchange parameters for secure server-to-client and server-to-server communication.

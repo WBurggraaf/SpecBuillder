@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A global function responsible for exiting the Class_Exit object, likely managing cleanup or resource release for the class instance.

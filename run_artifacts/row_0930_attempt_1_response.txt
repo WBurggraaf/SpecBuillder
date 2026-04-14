@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Initializes the signal handling mechanism for the ngIRCd server.

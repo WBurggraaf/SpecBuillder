@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the server's response to client connection attempts, managing the state of the connection and sending acknowledgment data.

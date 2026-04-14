@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Handles user authentication and post-authentication logic for client connections.

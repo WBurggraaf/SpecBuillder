@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: A static function used to handle configuration errors, likely part of the ngIRCd configuration loading or validation process.

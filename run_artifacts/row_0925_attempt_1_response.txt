@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Handles signal management and interrupt handling for the ngIRCd server.

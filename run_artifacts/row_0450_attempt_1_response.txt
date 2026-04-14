@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Initializes a connection object for the network protocol, handling the setup of connection parameters and state.

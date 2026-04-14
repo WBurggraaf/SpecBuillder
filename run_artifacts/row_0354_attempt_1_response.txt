@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the server's host configuration field within the ngIRCd daemon's header file.

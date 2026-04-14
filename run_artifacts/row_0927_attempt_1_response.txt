@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Handles signal reception and routing for the ngIRCd server process lifecycle.

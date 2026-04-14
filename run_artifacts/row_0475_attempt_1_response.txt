@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Function responsible for handling password authentication and establishing secure connections to the IRC server.

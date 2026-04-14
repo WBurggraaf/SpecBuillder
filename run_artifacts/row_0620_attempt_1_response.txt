@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Handles shutdown of the IO library, likely managing cleanup of network sockets and file descriptors.

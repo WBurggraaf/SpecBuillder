@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Implements the Address Family (AF) function for IPv4 and IPv6 address handling within the ngIRCd server.

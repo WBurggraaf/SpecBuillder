@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A helper function for setting up syslog facility IDs, likely used for logging or system identification within the ngIRCd project.

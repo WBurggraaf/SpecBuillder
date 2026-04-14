@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements the low-level reading logic for the IRC process state structure.

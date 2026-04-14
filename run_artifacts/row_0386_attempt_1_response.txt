@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the data structure and field type for the configuration channel mode count.

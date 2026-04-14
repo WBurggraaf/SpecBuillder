@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines a data structure representing a client-to-channel mapping with pointers to client, channel, and mode arrays.

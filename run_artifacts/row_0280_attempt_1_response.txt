@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure and shape for the host field within the ngIRCd client.

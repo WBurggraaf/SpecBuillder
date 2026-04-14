@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles character set conversion for legacy clients, implementing the IRC character encoding protocol.

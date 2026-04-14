@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for time difference calculation used by the SpecBuilder project.

@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for the channel list, including the linked list node type used to store the list.

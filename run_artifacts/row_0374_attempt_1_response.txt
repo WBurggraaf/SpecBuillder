@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines SSL/TLS security options for the ngIRCd server, including the key file password.

@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for a channel's first channel, representing the core entity within the IRC server's network topology.

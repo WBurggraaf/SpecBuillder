@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Defines the structure for SSL/TLS certificate and key handling options within the server configuration.

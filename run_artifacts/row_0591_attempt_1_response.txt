@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A static inline helper function used for managing the poll loop and closing network connections.

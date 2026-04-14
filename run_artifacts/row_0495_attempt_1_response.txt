@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Function responsible for checking and validating server connections and network endpoints.

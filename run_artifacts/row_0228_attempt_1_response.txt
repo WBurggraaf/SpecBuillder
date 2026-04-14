@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A global utility function used to retrieve the count of configured servers within the ngIRCd client.

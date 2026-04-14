@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A global function that likely manages signal notification services, handling system-level event delivery or inter-process communication.

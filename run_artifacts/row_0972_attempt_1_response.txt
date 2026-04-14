@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A helper function for rounding floating-point values to integer types.

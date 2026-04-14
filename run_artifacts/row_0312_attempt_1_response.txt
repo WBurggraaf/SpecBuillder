@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Function that enables or disables the passive server feature within the ngIRCd configuration.

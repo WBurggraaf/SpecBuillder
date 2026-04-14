@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Initializes the SSL/TLS library connection for secure communication with IRC servers.

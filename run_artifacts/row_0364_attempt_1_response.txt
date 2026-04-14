@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the server's network binding address and type.

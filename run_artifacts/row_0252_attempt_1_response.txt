@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure and fields for the CLIENT entity used in the ngIRCd server.

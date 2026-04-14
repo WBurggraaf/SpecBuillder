@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Initializes SSL/TLS configuration settings for the ngIRCd server.

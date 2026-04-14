@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles client connection state transitions and manages the lifecycle of an active IRC client session.

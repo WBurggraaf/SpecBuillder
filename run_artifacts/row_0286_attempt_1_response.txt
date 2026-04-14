@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure and type for the SSL connection state, representing the internal state of the connection.

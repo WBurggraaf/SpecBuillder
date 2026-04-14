@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines a data structure for a code object with a name and value.

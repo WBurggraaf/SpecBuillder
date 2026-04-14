@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the structure and fields for SSL/TLS configuration options used by the server.

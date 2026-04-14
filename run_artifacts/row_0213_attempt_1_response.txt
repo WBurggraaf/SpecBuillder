@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the initialization and connection setup for the client side of the IRC protocol.

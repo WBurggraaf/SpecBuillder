@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Declares a scalar variable named c_name of type char used within the SpecBuilder tool.

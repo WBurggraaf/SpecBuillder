@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the IRC WHOIS request/response protocol interaction between the server and clients.

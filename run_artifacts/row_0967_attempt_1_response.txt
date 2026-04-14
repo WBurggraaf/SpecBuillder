@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A utility function for converting character strings to fixed-width integer values using the standard C library's `vsnprintf` implementation.

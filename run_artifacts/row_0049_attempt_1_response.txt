@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Declares a scalar data structure for storing memory addresses within the ngIRCd codebase.

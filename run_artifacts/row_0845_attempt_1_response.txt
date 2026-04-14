@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the `group` data structure used to represent server groups within the ngIRCd application.

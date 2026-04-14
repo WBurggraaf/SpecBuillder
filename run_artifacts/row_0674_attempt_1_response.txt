@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure and behavior of the IRC MOTD (Message of the Day) data object.

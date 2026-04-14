@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines server configuration parameters such as hostname, client ID, password, and port for the ngIRCd daemon.

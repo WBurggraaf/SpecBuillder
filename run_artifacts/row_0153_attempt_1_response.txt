@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Represents a data structure or object definition, specifically a linked list node type used for internal data organization.

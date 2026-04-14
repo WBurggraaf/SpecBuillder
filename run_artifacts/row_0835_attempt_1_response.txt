@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A static helper function responsible for deleting a PID file, likely managing system-level process or resource cleanup.

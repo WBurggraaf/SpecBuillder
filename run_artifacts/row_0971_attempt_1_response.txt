@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A helper function for calculating the 10th power of a number.

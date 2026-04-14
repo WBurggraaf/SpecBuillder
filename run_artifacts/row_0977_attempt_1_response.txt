@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Implements the snprintf function, a standard C library utility for safe string formatting.

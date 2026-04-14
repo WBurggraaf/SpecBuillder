@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the union type representing network address structures (socket addresses) used for IP address handling.

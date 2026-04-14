@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the CL2CHAN structure, a data structure representing a channel in the ngIRCd server.

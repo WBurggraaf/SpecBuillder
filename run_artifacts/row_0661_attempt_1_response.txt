@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements the `who_flags_qualifier` function to handle IRC client connection flags and channel user mode validation.

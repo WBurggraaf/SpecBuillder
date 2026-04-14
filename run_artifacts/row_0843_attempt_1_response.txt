@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Initializes the NGIRCd daemon process and sets up the server's core runtime environment.

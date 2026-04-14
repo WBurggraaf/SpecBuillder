@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines a data structure for matching patterns against strings, likely used to store and manipulate case-insensitive search results.

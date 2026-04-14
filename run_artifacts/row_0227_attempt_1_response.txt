@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: A function representing a service count metric, likely part of a data structure or business entity used to track server statistics.

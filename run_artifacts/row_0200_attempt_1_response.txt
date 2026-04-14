@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Function responsible for retrieving and returning the client's hostname, a key component of the IRC client's network identity.

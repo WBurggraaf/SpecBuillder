@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure and behavior of the IRC client and request objects used in the server's core logic.

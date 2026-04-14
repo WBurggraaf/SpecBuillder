@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Handles the authentication logic for IRC clients by validating credentials and managing the login request.

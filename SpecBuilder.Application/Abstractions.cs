@@ -8,7 +8,8 @@ public sealed record PipelineContext(
     string RunId,
     string RunRoot,
     IReadOnlyDictionary<string, string> Inputs,
-    IReadOnlyList<string> SelectedSteps);
+    IReadOnlyList<string> SelectedSteps,
+    RunAnalysisDocument? Analysis = null);
 
 public interface IPipelineStep
 {

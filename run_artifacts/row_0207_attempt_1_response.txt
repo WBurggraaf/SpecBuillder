@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Implements the logic for calculating the number of hops required for a client to reach the server.

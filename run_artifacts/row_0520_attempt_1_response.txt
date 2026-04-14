@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Function responsible for retrieving the certificate fingerprint for connection security.

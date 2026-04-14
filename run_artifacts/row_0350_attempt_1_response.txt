@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the password field structure and type for the Conf_Oper class.

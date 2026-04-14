@@ -17,7 +17,7 @@ public static class ConsoleUi
 
     public static IReadOnlyList<string> GetPipelineSteps() => PipelineSteps;
 
-    public static void ShowBanner(WorkspaceDefinition workspace)
+    public static void ShowBanner(WorkspaceDefinition workspace, string defaultModel = "emma4:e2b")
     {
         if (!Console.IsOutputRedirected)
         {
@@ -35,6 +35,7 @@ public static class ConsoleUi
         Console.ResetColor();
         Console.WriteLine("Step-based console rebuild for symbol analysis and architecture grouping.");
         Console.WriteLine($"Workspace: {workspace.WorkspaceId}");
+        Console.WriteLine($"Model: {workspace.OllamaModel ?? defaultModel}{(string.IsNullOrWhiteSpace(workspace.OllamaModel) ? " (default)" : " (workspace override)")}");
         Console.WriteLine($"Source: {workspace.SourceRoot}");
         Console.WriteLine($"Intro: {workspace.IntroductionFile}");
         Console.WriteLine();
@@ -87,6 +88,57 @@ public static class ConsoleUi
         foreach (var step in manifest.Steps)
         {
             WriteStepLine(step.StepId, step.DisplayName, step.Status, step.OutputPath);
+            if (step.Duration is not null)
+            {
+                Console.WriteLine($"          duration: {step.Duration.Value.TotalSeconds:F1}s");
+            }
+        }
+    }
+
+    public static void ShowModelStatus(WorkspaceDefinition workspace, string defaultModel = "emma4:e2b")
+    {
+        WriteHeader("Model");
+        var effective = workspace.OllamaModel ?? defaultModel;
+        Console.WriteLine($"Effective model: {effective}");
+        Console.WriteLine(string.IsNullOrWhiteSpace(workspace.OllamaModel)
+            ? $"Source: default ({defaultModel})"
+            : "Source: workspace override");
+        Console.WriteLine();
+    }
+
+    public static void ShowAnalysisSummary(string workspaceRoot, string runId)
+    {
+        var analysisPath = Path.Combine(workspaceRoot, ".specbuilder", "runs", runId, "analysis.json");
+        if (!File.Exists(analysisPath))
+        {
+            WriteWarning("analysis.json not found.");
+            return;
+        }
+
+        var json = File.ReadAllText(analysisPath);
+        var analysis = JsonSerializer.Deserialize<RunAnalysisDocument>(json, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        if (analysis is null)
+        {
+            WriteWarning("Could not read analysis.json.");
+            return;
+        }
+
+        WriteHeader("Analysis Summary");
+        Console.WriteLine($"Symbols: {analysis.Symbols.Items.Count}");
+        Console.WriteLine($"Classified: {analysis.Classification.Items.Count}");
+        Console.WriteLine($"Components: {analysis.Hierarchy.Components.Count}");
+        Console.WriteLine($"Subcomponents: {analysis.Hierarchy.Components.Sum(c => c.Subcomponents.Count)}");
+        Console.WriteLine($"Caller payload: {(string.IsNullOrWhiteSpace(analysis.Callers.Json) ? 0 : 1)}");
+        Console.WriteLine($"Export ready: {analysis.Export.Status}");
+        Console.WriteLine();
+        Console.WriteLine("Hierarchy index:");
+        foreach (var component in analysis.Hierarchy.Index)
+        {
+            Console.WriteLine($"- {component.ComponentName} ({component.Category})");
+            foreach (var sub in component.Subcomponents)
+            {
+                Console.WriteLine($"  - {sub.SubcomponentName}: {sub.SymbolCount} symbols");
+            }
         }
     }
 
@@ -146,6 +198,7 @@ public static class ConsoleUi
         }
 
         ShowRunSummary(manifest);
+        ShowAnalysisSummary(workspaceRoot, runId);
     }
 
     public static void PromptToContinue()

@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Reads configuration options and settings from the specified file.

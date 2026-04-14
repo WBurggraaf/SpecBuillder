@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Sets default configuration values for the ngIRCd server based on the initialization flag.

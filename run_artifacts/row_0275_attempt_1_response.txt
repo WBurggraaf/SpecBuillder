@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the CLIENT data structure used to represent client connections within the ngIRCd server.

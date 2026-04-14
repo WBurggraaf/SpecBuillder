@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Initializes the configuration structure and loads settings from the specified file.

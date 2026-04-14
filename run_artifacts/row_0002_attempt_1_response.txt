@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for network address information, specifically the addrinfo struct used for resolving hostnames and IP addresses.

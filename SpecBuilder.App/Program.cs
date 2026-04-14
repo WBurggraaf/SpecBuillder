@@ -9,6 +9,8 @@ var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddSingleton<IPipelineEngine, PipelineEngine>();
 builder.Services.AddSingleton<IRunManifestStore, RunManifestStore>();
 builder.Services.AddSingleton<IArtifactStore, FileArtifactStore>();
+builder.Services.AddSingleton<ConsolePipelineReporter>();
+builder.Services.AddSingleton<IPipelineReporter>(sp => sp.GetRequiredService<ConsolePipelineReporter>());
 builder.Services.AddSingleton<ISourceSymbolExtractor, TreeSymbolExtractor>();
 builder.Services.AddSingleton<IComponentClassifier, OllamaComponentClassifier>();
 builder.Services.AddSingleton<IComponentHierarchyBuilder, OllamaHierarchyBuilder>();
@@ -31,28 +33,30 @@ var workspace = new WorkspaceDefinition(
     WorkspaceId: "default-workspace",
     SourceRoot: Path.Combine(workspaceRoot, "ngircd-master"),
     IntroductionFile: Path.Combine(workspaceRoot, "introduction.txt"),
-    OllamaModel: "qwen3.5:2b",
+    OllamaModel: "emma4:e2b",
     PromptVersion: "v1");
 
 var engine = app.Services.GetRequiredService<IPipelineEngine>();
+var reporter = app.Services.GetRequiredService<ConsolePipelineReporter>();
 Directory.CreateDirectory(Path.Combine(workspaceRoot, ".specbuilder", "runs"));
 
 if (args.Contains("--run-full", StringComparer.OrdinalIgnoreCase))
 {
-    await RunPipelineAsync(engine, workspace, workspaceRoot, Array.Empty<string>(), forceRerun: false);
-    return;
+        await RunPipelineAsync(engine, reporter, workspace, workspaceRoot, Array.Empty<string>(), forceRerun: false);
+        return;
 }
 
 while (true)
 {
     ConsoleUi.ShowBanner(workspace);
+    ConsoleUi.ShowModelStatus(workspace);
     ConsoleUi.ShowMenu();
     var choice = (Console.ReadLine() ?? string.Empty).Trim();
 
     switch (choice)
     {
         case "1":
-            await RunPipelineAsync(engine, workspace, workspaceRoot, Array.Empty<string>(), forceRerun: false);
+            await RunPipelineAsync(engine, reporter, workspace, workspaceRoot, Array.Empty<string>(), forceRerun: false);
             break;
         case "2":
         {
@@ -60,7 +64,7 @@ while (true)
             var selected = ConsoleUi.PromptForStepSelection(steps);
             if (!string.IsNullOrWhiteSpace(selected))
             {
-                await RunPipelineAsync(engine, workspace, workspaceRoot, [selected], forceRerun: true);
+                await RunPipelineAsync(engine, reporter, workspace, workspaceRoot, [selected], forceRerun: true);
             }
             break;
         }
@@ -78,7 +82,7 @@ while (true)
     ConsoleUi.PromptToContinue();
 }
 
-static async Task RunPipelineAsync(IPipelineEngine engine, WorkspaceDefinition workspace, string workspaceRoot, IReadOnlyList<string> selectedSteps, bool forceRerun)
+static async Task RunPipelineAsync(IPipelineEngine engine, ConsolePipelineReporter reporter, WorkspaceDefinition workspace, string workspaceRoot, IReadOnlyList<string> selectedSteps, bool forceRerun)
 {
     var runId = DateTimeOffset.UtcNow.ToString("yyyyMMdd-HHmmss");
     var runRoot = Path.Combine(workspaceRoot, ".specbuilder", "runs", runId);
@@ -95,4 +99,6 @@ static async Task RunPipelineAsync(IPipelineEngine engine, WorkspaceDefinition w
     ConsoleUi.ShowRunStart(runId, selectedSteps, forceRerun);
     var manifest = await engine.RunAsync(context, CancellationToken.None);
     ConsoleUi.ShowRunSummary(manifest);
+    ConsoleUi.ShowModelStatus(workspace);
+    reporter.WriteRunTelemetrySummary();
 }

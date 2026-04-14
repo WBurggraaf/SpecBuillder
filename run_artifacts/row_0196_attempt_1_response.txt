@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure and type of the Client_ID data object used within the ngIRCd client.

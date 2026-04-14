@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for a channel's invite list, including the pointer to the linked list head.

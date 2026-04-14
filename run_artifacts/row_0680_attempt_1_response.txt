@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure and type of the IRC_TIME data structure used within the server.

@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements low-level device polling and socket cleanup logic for the IRC daemon.

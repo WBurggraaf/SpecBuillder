@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Defines the sockaddr structure used for network address handling in the server.

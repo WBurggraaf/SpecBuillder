@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Handles parsing and validation of channel configuration parameters from the source file.

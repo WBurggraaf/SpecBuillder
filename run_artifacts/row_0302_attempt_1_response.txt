@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Handles configuration file parsing and initialization settings for the ngIRCd server.

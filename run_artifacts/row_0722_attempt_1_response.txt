@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Core server logic handling critical server shutdown events and client disconnections.

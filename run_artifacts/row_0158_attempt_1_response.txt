@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure and behavior of the Class_AddMask function, representing a specific domain entity or data structure within the ngIRCd server.

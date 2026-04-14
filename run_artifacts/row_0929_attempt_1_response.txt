@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Handles signal delivery and callback registration for the server's event loop.

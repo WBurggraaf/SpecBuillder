@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles network protocol data transfer for receiving compressed bytes over a connection.

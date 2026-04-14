@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the configuration key and data type for the channel name field within the ngIRCd server configuration.

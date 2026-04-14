@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the introduction of a client to the server, likely managing the connection handshake or initial peer identification.

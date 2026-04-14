@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the parsing and processing of client capability (LS) requests from the IRC client.

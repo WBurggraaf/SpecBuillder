@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Initializes the IO library and handles the selection of the appropriate IO library for the ngIRCd server.

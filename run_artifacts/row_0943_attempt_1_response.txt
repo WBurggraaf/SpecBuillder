@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Defines a standard type alias for pointers, serving as a reusable generic utility within the codebase.

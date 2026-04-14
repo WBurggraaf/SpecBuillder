@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structures and types used to represent IRC channel and client entities within the server.

@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Retrieves the certificate fingerprint for the given connection ID, a critical step in establishing secure SSL/TLS connections.

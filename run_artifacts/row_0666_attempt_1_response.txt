@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements a static function to retrieve SSL information regarding the MOTD (Message of the Day) for the client.

@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Defines the structure for authentication messages used by the Pluggable Authentication Modules (PAM) system.

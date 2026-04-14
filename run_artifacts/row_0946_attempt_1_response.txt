@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data type and structure for the UINT32 type used in the ngIRCd codebase.

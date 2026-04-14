@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure and type for the channel topic time field within the ngIRCd channel entity.

@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for an IRC message list element, including pointers, masks, reasons, validity times, and flags.

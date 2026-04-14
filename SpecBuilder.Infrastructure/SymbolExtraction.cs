@@ -81,7 +81,7 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
 
             var statement = CompactStatement(pending);
 
-            if (TryParseTypeIntro(statement, pendingStartLine, file, out var intro))
+            if (TryParseTypeIntro(statement, pendingStartLine, lines, i, file, out var intro))
             {
                 results.Add(intro.Symbol);
                 if (intro.OpensScope)
@@ -104,7 +104,7 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
                 continue;
             }
 
-            if (TryParseFunction(statement, pendingStartLine, file, out var function))
+            if (TryParseFunction(statement, pendingStartLine, lines, i, file, out var function))
             {
                 results.Add(function);
                 pending = string.Empty;
@@ -121,13 +121,18 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
             for (var n = 0; n < closes && scopeStack.Count > 0; n++)
             {
                 var frame = scopeStack.Pop();
+                if (frame.Kind is "struct" or "union" or "enum" or "class" && frame.StartLine != 0)
+                {
+                    continue;
+                }
+
                 results.Add(CreateSymbol(
                     file,
                     frame.Kind,
                     frame.Name,
                     frame.QualifiedName,
                     frame.StartLine,
-                    i + 1,
+                    FindScopeEndLine(lines, frame.StartLine - 1, i),
                     "",
                     "",
                     "",
@@ -217,7 +222,7 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
         return Deduplicate(results);
     }
 
-    private static bool TryParseTypeIntro(string line, int lineNo, string file, out TypeIntro intro)
+    private static bool TryParseTypeIntro(string line, int lineNo, string[] lines, int currentIndex, string file, out TypeIntro intro)
     {
         intro = default!;
         var match = Regex.Match(line, @"^\s*(typedef\s+)?(struct|union|enum|class)\s+([A-Za-z_][A-Za-z0-9_]*)?(\s*\{)?");
@@ -232,14 +237,21 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
         var opensScope = line.Contains('{');
         var qualified = !string.IsNullOrWhiteSpace(name) ? name : "<anonymous>";
 
+        if (!opensScope && !isTypedef)
+        {
+            return false;
+        }
+
         if (!string.IsNullOrWhiteSpace(name) || (isTypedef && opensScope))
         {
+            var endLine = opensScope ? FindScopeEndLine(lines, currentIndex, currentIndex) : lineNo;
             intro = new TypeIntro(
                 File: file,
                 Kind: kind,
                 Name: string.IsNullOrWhiteSpace(name) ? "<anonymous>" : name,
                 QualifiedName: qualified,
                 LineNo: lineNo,
+                EndLine: endLine,
                 OpensScope: opensScope,
                 Signature: line);
             return true;
@@ -275,10 +287,10 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
         return false;
     }
 
-    private static bool TryParseFunction(string line, int lineNo, string file, out SourceSymbol symbol)
+    private static bool TryParseFunction(string line, int lineNo, string[] lines, int currentIndex, string file, out SourceSymbol symbol)
     {
         symbol = default!;
-        if (!line.Contains('(') || !line.Contains(')'))
+        if (!line.Contains('(') || !line.Contains(')') || !line.Contains('{'))
         {
             return false;
         }
@@ -288,23 +300,36 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
             return false;
         }
 
-        if (!line.Contains('{') && !line.EndsWith(';'))
+        var openParen = line.IndexOf('(');
+        var prefix = line[..openParen].Trim();
+        var nameMatch = Regex.Match(prefix, @"(?<prefix>.+\s+)(?<name>[A-Za-z_][A-Za-z0-9_]*)\s*$");
+        if (!nameMatch.Success)
         {
             return false;
         }
 
-        var match = Regex.Match(line, @"(?:[\w:\<\>\~\*\&\s]+?\s+)?([A-Za-z_][A-Za-z0-9_]*)\s*\(");
-        if (!match.Success)
+        var name = nameMatch.Groups["name"].Value;
+        var beforeName = nameMatch.Groups["prefix"].Value.Trim();
+        if (string.IsNullOrWhiteSpace(beforeName))
         {
             return false;
         }
 
-        var name = match.Groups[1].Value;
+        if (!LooksLikeFunctionDeclarationPrefix(beforeName))
+        {
+            return false;
+        }
+
         if (name is "if" or "for" or "while" or "switch" or "return" or "catch" or "sizeof" or "static_cast" or "reinterpret_cast" or "const_cast" or "dynamic_cast")
         {
             return false;
         }
-        symbol = CreateSymbol(file, "function", name, name, lineNo, lineNo, "", "", "", line, lineNo);
+        var endLine = line.Contains('{') ? FindScopeEndLine(lines, currentIndex, currentIndex) : lineNo;
+        var returnType = ExtractFunctionReturnType(line, name);
+        var dataShape = string.IsNullOrWhiteSpace(returnType)
+            ? ""
+            : (returnType.Contains('*') || returnType.Contains('&') ? "pointer_or_reference" : "scalar_or_unknown");
+        symbol = CreateSymbol(file, "function", name, name, lineNo, endLine, "", returnType, dataShape, line, lineNo);
         return true;
     }
 
@@ -334,6 +359,11 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
     {
         symbol = default!;
         if (!line.EndsWith(";") || line.Contains("(") || line.StartsWith("typedef ", StringComparison.Ordinal))
+        {
+            return false;
+        }
+
+        if (line.StartsWith("return ", StringComparison.Ordinal) || line.StartsWith("case ", StringComparison.Ordinal) || line.StartsWith("break;", StringComparison.Ordinal))
         {
             return false;
         }
@@ -429,7 +459,7 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
         public string QualifiedName => Name;
     }
 
-    private sealed record TypeIntro(string File, string Kind, string Name, string QualifiedName, int LineNo, bool OpensScope, string Signature)
+    private sealed record TypeIntro(string File, string Kind, string Name, string QualifiedName, int LineNo, int EndLine, bool OpensScope, string Signature)
     {
         public SourceSymbol Symbol => new(
             LineNo,
@@ -439,7 +469,7 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
             Name,
             QualifiedName,
             LineNo,
-            LineNo,
+            EndLine,
             "",
             "",
             "",
@@ -511,4 +541,77 @@ public sealed class TreeSymbolExtractor : ISourceSymbolExtractor
 
     private static string CompactStatement(string text)
         => string.Join(" ", text.Split(new[] { '\r', '\n', '\t' }, StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries));
+
+    private static string ExtractFunctionReturnType(string line, string functionName)
+    {
+        var openParen = line.IndexOf('(');
+        if (openParen < 0)
+        {
+            return string.Empty;
+        }
+
+        var prefix = line[..openParen].Trim();
+        var nameIndex = prefix.LastIndexOf(functionName, StringComparison.Ordinal);
+        if (nameIndex < 0)
+        {
+            return string.Empty;
+        }
+
+        var beforeName = prefix[..nameIndex].Trim();
+        if (string.IsNullOrWhiteSpace(beforeName))
+        {
+            return string.Empty;
+        }
+
+        var tokens = beforeName.Split(' ', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+            .Where(token => token is not "static" and not "inline" and not "extern" and not "GLOBAL" and not "__inline" and not "const" and not "volatile")
+            .ToArray();
+        return string.Join(" ", tokens).Trim();
+    }
+
+    private static bool LooksLikeFunctionDeclarationPrefix(string prefix)
+    {
+        if (string.IsNullOrWhiteSpace(prefix))
+        {
+            return false;
+        }
+
+        var keywords = new[]
+        {
+            "void", "char", "short", "int", "long", "float", "double", "bool", "size_t", "ssize_t",
+            "static", "extern", "inline", "GLOBAL", "const", "volatile", "unsigned", "signed", "struct",
+            "union", "enum", "*", "&", "::"
+        };
+
+        return keywords.Any(prefix.Contains);
+    }
+
+    private static int FindScopeEndLine(string[] lines, int startIndex, int currentIndex)
+    {
+        var depth = 0;
+        var seenOpen = false;
+        var blockCommentDepth = 0;
+        for (var i = startIndex; i < lines.Length; i++)
+        {
+            var line = StripComments(lines[i], ref blockCommentDepth);
+            foreach (var ch in line)
+            {
+                if (ch == '{')
+                {
+                    depth++;
+                    seenOpen = true;
+                }
+                else if (ch == '}' && seenOpen)
+                {
+                    depth--;
+                    if (depth <= 0)
+                    {
+                        return i + 1;
+                    }
+                }
+            }
+        }
+
+        return currentIndex + 1;
+    }
 }

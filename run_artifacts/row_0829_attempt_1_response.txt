@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles pattern matching logic for IRC channel and user identifiers within the server's core networking stack.

@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A helper function for generating random strings, likely used for generating unique identifiers or test data.

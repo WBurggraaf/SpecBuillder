@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines SSL/TLS connection parameters and file paths for secure communication.

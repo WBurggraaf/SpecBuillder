@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Frees a SSL connection object, managing the lifecycle of secure network connections.

@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A function that displays the hostname of the client connection, likely used for logging or debugging purposes.

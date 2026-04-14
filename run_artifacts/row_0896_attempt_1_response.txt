@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements the system-level process management and fork operation for the IRC daemon.

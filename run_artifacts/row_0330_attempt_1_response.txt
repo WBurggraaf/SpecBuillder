@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Handles parsing and validation of configuration file variables and arguments.

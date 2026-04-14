@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: SSL/TLS connection listener callback handler for secure socket communication.

@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Defines the data structure used to store authentication response information for the PAM module.

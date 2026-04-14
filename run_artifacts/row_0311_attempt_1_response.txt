@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Function that enables a specific server configuration option by name and port.

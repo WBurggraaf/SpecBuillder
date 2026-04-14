@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: A function that retrieves a single list element from a global list structure.

@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the sockaddr structure, a data type used to represent network address information.

@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements the sigaction system call handler for signal management within the ngIRCd daemon.

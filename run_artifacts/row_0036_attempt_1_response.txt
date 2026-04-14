@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for categorizing and managing array data structures within the ngIRCd codebase.

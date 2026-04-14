@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the sending of WHOIS replies to clients via the IRC protocol.

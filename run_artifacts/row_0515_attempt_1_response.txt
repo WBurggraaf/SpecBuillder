@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Retrieves cipher information for a connection, supporting SSL/TLS encryption for secure communication.

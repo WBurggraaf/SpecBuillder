@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles client-to-server communication by providing a helper function to send IRC help messages.

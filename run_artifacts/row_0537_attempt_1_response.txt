@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Declares the `pwd` field as a scalar character pointer within the `_Connection` data structure.

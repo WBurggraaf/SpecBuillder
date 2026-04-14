@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Implements the PAM (Pluggable Authentication Modules) conversion structure for user authentication.

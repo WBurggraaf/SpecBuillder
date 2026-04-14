@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure and logic for the END_OF_MOTD flag within the IRC client protocol.

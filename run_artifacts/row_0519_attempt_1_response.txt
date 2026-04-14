@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Function that determines whether SSL/TLS encryption is enabled for the connection.

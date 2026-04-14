@@ -84,7 +84,7 @@ public sealed class OllamaComponentClassifier(IOllamaClient ollamaClient) : ICom
         {
             try
             {
-                var response = await ollamaClient.ChatAsync(model, "You classify architecture components.", userPrompt, cancellationToken).ConfigureAwait(false);
+                var response = await ollamaClient.ChatAsync(model, "You classify architecture components.", userPrompt, new OllamaCallContext("classification", rowNumber, attempt, IsRepair: attempt > 1), cancellationToken).ConfigureAwait(false);
                 lastResponse = response.Content ?? string.Empty;
                 SaveArtifacts(context, rowNumber, attempt, userPrompt, response);
                 var (component, description) = ParseTextResult(response.Content ?? string.Empty);
@@ -246,7 +246,7 @@ public sealed class OllamaHierarchyBuilder(IOllamaClient ollamaClient) : ICompon
         {
             var items = DeduplicateSymbols(group.ToList());
             var prompt = BuildHierarchyPrompt(group.Key, items, introduction, maxSubcomponents: 5);
-            var response = await ollamaClient.ChatAsync(model, "You summarize software architecture components.", prompt, cancellationToken).ConfigureAwait(false);
+            var response = await ollamaClient.ChatAsync(model, "You summarize software architecture components.", prompt, new OllamaCallContext("hierarchy"), cancellationToken).ConfigureAwait(false);
             var (overview, subcomponents) = ParseGroupingResponse(response.Content ?? string.Empty, items);
             if (string.IsNullOrWhiteSpace(overview) || subcomponents.Count == 0)
             {

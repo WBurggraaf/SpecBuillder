@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Checks if the client is a user type to validate identity before allowing login.

@@ -1,6 +1,0 @@
-{
-  "model": "qwen3.5:2b",
-  "row_count": 990,
-  "output_markdown": "C:\\develop\\SpecBuilder\\component_list.md",
-  "output_json": "C:\\develop\\SpecBuilder\\component_assignments.json"
-}

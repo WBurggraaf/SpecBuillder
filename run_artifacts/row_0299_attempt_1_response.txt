@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Converts boolean values to string representations for configuration settings.

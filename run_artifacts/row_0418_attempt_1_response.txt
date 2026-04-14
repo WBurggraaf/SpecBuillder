@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Declares a scalar integer variable used for reference counting within the SSL connection module.

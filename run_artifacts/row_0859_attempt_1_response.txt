@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Implements PAM (Pluggable Authentication Modules) password conversation logic for user authentication.

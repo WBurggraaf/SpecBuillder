@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Handles error conditions related to configuration file parsing and validation.

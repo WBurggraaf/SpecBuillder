@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles connection establishment, teardown, and state management for IRC client and server connections.

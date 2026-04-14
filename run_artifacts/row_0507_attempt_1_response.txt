@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Implements connection throttling logic to manage client connection rates and prevent abuse.

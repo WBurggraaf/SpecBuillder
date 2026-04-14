@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements the IRC server's display of the Message of the Day (MOTD) to clients.

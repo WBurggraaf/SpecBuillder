@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for an IRC connection, including socket handle, IP address, hostname, and buffer pointers.

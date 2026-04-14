@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Provides a utility function to retrieve member reasons for a class, likely used for debugging or internal class definition management.

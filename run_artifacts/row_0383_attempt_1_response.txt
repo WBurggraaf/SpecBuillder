@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the configuration structure for the Conf_Channel component, specifying the keyfile field type and size.

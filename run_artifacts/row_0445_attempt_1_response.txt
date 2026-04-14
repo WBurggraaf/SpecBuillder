@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: SSL/TLS connection handling and data reading for secure client-server communication.

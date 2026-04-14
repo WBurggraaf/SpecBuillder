@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Function responsible for freeing allocated client resources and managing memory cleanup.

@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles socket I/O and connection event callbacks for resolving DNS records.

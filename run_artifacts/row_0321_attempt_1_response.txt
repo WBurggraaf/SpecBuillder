@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure of the configuration file, representing the directory entry used to store server settings.

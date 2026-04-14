@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines a boolean configuration option for SSL verification on the server.

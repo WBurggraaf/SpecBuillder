@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the cleanup and exit of an IRC connection, managing socket teardown and resource release.

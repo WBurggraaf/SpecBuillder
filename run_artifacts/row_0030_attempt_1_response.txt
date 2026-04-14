@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Implements low-level memory allocation functions for dynamic arrays.

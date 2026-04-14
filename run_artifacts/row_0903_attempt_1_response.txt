@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Declares a data structure representing a process state, specifically defining the pipe file descriptor as a scalar field within the _Proc_Stat struct.

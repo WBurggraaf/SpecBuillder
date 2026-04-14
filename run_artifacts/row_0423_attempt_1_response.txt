@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Handles SSL certificate logging and verification within the server's security infrastructure.

@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Entry point function for the ngIRCd portability test suite, responsible for initializing and running the portability test infrastructure.

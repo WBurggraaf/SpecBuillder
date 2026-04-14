@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Retrieves the server configuration value associated with the provided connection ID.

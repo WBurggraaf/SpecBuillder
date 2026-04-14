@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Defines a standard type alias for a socket length value used in network programming.

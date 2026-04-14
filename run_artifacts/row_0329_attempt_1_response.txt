@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Handles SSL/TLS connection initialization and secure communication setup.

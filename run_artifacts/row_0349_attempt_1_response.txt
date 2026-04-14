@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Defines the configuration structure and field layout for the ngIRCd server.

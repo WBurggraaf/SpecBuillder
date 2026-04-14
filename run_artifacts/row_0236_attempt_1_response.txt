@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Global utility function for retrieving the client's start time, likely used for session initialization or logging.

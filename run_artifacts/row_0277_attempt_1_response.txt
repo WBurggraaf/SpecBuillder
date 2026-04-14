@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for a WHOWAS entry, representing client identity and connection details.

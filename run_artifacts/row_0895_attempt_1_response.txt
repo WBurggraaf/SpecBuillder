@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Defines the structure for processing server process information, likely used for internal state tracking or initialization.

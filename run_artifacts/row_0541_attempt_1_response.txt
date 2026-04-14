@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Declares a scalar field representing the last data timestamp within the _Connection structure.

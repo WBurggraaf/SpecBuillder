@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the IRC PING request-response protocol to maintain client connectivity.

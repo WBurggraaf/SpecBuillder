@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines a typedef for the boolean type, representing a core data structure used within the application.

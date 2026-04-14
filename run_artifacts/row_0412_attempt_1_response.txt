@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles IP address lookup and connection initialization for the IRC daemon.

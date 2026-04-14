@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Represents the data structure used to manage network socket connections and I/O events.

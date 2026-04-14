@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A static helper function for converting double values to a null-terminated string using the standard C library's vsnprintf function.

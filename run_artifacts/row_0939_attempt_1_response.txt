@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Entry point function responsible for initializing the application and setting up the command-line interface.

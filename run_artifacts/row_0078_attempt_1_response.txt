@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles channel state transitions and client-to-channel mapping for IRC protocol messages.

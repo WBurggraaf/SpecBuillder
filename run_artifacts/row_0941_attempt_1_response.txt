@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A helper function for converting ANSI escape sequences to KNR (Kermit Network Remote) format.

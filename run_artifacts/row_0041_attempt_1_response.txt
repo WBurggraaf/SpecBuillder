@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Implements the free function to deallocate memory allocated for an array, handling the cleanup of the array pointer.

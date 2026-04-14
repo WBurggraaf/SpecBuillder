@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A global utility function used to manage the count of unknown client connections within the ngIRCd server.

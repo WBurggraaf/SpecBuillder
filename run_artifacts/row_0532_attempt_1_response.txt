@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data structure for the connection object, including socket handle, IP address, process status, hostname, password, and buffer arrays.

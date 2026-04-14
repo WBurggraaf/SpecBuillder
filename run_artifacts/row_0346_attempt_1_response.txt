@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Debug dump function for logging internal configuration details.

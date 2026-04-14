@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the data type UINT16 used for representing numeric values within the ngIRCd codebase.

@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the structure and capabilities of the Client entity within the ngIRCd application.

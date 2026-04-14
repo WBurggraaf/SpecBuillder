@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Function responsible for adding a new server configuration entry to the ngIRCd server settings.

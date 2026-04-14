@@ -31,6 +31,14 @@ public sealed class FileArtifactStore : IArtifactStore
         await JsonSerializer.SerializeAsync(stream, value, JsonOptions, cancellationToken).ConfigureAwait(false);
     }
 
+    public async Task WriteRunJsonAsync<T>(PipelineContext context, string fileName, T value, CancellationToken cancellationToken)
+    {
+        Directory.CreateDirectory(context.RunRoot);
+        var path = Path.Combine(context.RunRoot, fileName);
+        await using var stream = File.Create(path);
+        await JsonSerializer.SerializeAsync(stream, value, JsonOptions, cancellationToken).ConfigureAwait(false);
+    }
+
     public async Task<T?> ReadJsonAsync<T>(string path, CancellationToken cancellationToken)
     {
         if (!File.Exists(path))
@@ -50,5 +58,11 @@ public sealed class FileArtifactStore : IArtifactStore
         }
 
         return await File.ReadAllTextAsync(path, cancellationToken).ConfigureAwait(false);
+    }
+
+    public async Task<T?> ReadRunJsonAsync<T>(PipelineContext context, string fileName, CancellationToken cancellationToken)
+    {
+        var path = Path.Combine(context.RunRoot, fileName);
+        return await ReadJsonAsync<T>(path, cancellationToken).ConfigureAwait(false);
     }
 }

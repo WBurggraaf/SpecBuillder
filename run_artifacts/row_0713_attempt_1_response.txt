@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements the core logic for removing entries from a list within the IRC mode handler.

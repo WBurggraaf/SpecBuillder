@@ -1,2 +1,0 @@
-COMPONENT: Serialization / Deserialization
-DESCRIPTION: Handles the output of a z_stream object, which is a data structure used for compression and decompression in the ngIRCd codebase.

@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for formatting integer values using the standard C library's snprintf implementation.

@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A global function responsible for initializing or managing the connection synchronization state within the ngIRCd server.

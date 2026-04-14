@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: Helper function for writing blank characters to a buffer, likely used for formatting or encoding text output.

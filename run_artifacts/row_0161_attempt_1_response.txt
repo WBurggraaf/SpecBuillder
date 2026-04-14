@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: A function that likely manages the lifecycle or expiration state of a specific class entity within the ngIRCd server.

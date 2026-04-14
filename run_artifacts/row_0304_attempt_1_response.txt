@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: A function used to test or validate configuration settings within the ngIRCd server.

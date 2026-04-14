@@ -1,2 +1,0 @@
-COMPONENT: Security / Authentication / Authorization
-DESCRIPTION: Defines the SSL certificate file path and options used for secure client-server communication.

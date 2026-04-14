@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Defines the data structure used to represent network connection events managed by the epoll subsystem.

@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A static function implementing a protocol operation handler for the IRC client connection.

@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Handles error reporting and configuration section validation for the ngIRCd server.

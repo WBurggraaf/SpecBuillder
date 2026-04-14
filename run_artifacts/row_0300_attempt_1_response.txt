@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Function responsible for freeing allocated memory resources for operator data structures.

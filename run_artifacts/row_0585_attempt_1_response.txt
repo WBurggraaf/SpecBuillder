@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Represents the structure of the pollfd data type, defining its fields and layout.

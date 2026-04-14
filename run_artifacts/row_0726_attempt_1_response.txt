@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the disconnection of an IRC client and manages the associated request/response lifecycle.

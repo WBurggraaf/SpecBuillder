@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles low-level I/O event handling and socket communication for the IRC daemon.

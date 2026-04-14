@@ -1,2 +1,0 @@
-COMPONENT: Domain Models
-DESCRIPTION: Defines the kevent structure, a data structure used to manage event notifications within the ngIRCd server.

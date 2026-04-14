@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: A static function used for panic handling, likely responsible for terminating the server process or triggering a crash during portability testing.

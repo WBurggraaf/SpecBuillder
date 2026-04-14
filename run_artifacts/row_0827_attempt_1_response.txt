@@ -1,2 +1,0 @@
-COMPONENT: Utilities / Shared
-DESCRIPTION: A helper function for case-insensitive pattern matching, likely used for normalizing or validating input strings within the server's logic.

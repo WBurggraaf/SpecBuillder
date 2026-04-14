@@ -1,2 +1,0 @@
-COMPONENT: Infrastructure / Platform
-DESCRIPTION: Implements a utility function to calculate the uptime duration in days for the current time.

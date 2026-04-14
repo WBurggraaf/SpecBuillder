@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles the deletion of client capabilities, likely managing protocol state or connection attributes.

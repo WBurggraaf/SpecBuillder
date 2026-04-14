@@ -1,2 +1,0 @@
-COMPONENT: Network / Communication / Protocol
-DESCRIPTION: Handles connection initialization and retrieval from a process, managing the connection ID and file descriptor for network communication.

@@ -1,2 +1,0 @@
-COMPONENT: Configuration
-DESCRIPTION: Reads configuration file content into a destination array for the ngIRCd server.

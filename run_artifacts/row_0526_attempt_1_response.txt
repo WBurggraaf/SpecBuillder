@@ -1,2 +1,0 @@
-COMPONENT: Serialization / Deserialization
-DESCRIPTION: Handles the in-field data type, which is a z_stream, used for serializing network packet data.

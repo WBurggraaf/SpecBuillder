@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Initializes the listening socket address for incoming connections.

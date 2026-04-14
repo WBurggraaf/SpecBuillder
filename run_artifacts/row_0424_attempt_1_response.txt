@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Handles SSL/TLS error logging for secure network connections.

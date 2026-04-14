@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles address resolution and IP address validation for network connections.

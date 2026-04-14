@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for network address information, specifically a sockaddr_in variant used by the ngIRCd server.

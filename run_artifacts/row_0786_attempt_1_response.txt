@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structures and types used to represent client connections and list state within the ngIRCd server.

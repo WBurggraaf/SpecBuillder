@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Defines a global constant for the maximum connection count limit used by the server.

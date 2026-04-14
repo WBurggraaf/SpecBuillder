@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:10:37.61938Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure for retrieving banned channels from the channel list."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1130573900,
+  "load_duration": 329972500,
+  "prompt_eval_count": 1298,
+  "prompt_eval_duration": 227350700,
+  "eval_count": 22,
+  "eval_duration": 544752200
+}

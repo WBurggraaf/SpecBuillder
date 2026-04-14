@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:11:28.724462Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and interface for channel state and mode configuration within the server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1250360700,
+  "load_duration": 375361100,
+  "prompt_eval_count": 1298,
+  "prompt_eval_duration": 222759100,
+  "eval_count": 25,
+  "eval_duration": 619905100
+}

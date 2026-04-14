@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for a global channel entity used in the IRC server.

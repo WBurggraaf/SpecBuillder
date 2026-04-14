@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles IRC wall messages and client requests within the IRC protocol stack.

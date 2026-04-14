@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Implements internal logging functionality for channel messages within the ngIRCd server.

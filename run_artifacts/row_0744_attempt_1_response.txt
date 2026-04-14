@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A utility function used for tracing IRC client requests, likely involved in performance monitoring or debugging.

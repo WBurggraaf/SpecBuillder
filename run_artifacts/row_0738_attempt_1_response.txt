@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and validation logic for the IRC client list data structure.

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines a typedef for a pointer to a channel structure, representing a core data entity within the IRC server.

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for the client's account name, representing a core business entity within the application.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:25:29.9113245Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and type for the `valid_until` field within the `list_elem` domain entity."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1356043000,
+  "load_duration": 257893200,
+  "prompt_eval_count": 1292,
+  "prompt_eval_duration": 240936900,
+  "eval_count": 31,
+  "eval_duration": 813830600
+}

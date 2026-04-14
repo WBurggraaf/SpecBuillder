@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Generates a cryptographic token for client authentication.

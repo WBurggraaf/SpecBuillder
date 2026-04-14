@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the data structure for the CLIENT channel state, defining its type and ownership.

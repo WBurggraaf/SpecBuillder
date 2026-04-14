@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:22:40.3553782Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Handles low-level socket and event loop management for backend connections."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1101605700,
+  "load_duration": 261209200,
+  "prompt_eval_count": 1290,
+  "prompt_eval_duration": 214611700,
+  "eval_count": 24,
+  "eval_duration": 595289500
+}

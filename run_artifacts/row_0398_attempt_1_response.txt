@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles clearing of connection flags and related state within the network connection layer.

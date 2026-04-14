@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure and state for the IRC mode configuration and client request handling.

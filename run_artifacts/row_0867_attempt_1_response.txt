@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure and type for the _NUMERIC function field within the ngIRCd codebase.

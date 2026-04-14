@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | New_Client_Struct | New_Client_Struct | 1385 | 1406 |  |  |  | static CLIENT * New_Client_Struct( void )
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c
+- kind: function
+- name: New_Client_Struct
+- qualified_name: New_Client_Struct
+- start_line: 1385
+- end_line: 1406
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: static CLIENT * New_Client_Struct( void )
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

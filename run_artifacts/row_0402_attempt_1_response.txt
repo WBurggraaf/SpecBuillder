@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles network connection management and ID tracking for IRC server connections.

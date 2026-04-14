@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Initializes the random number generator used by the server for generating unique identifiers or session tokens.

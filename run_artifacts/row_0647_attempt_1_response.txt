@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles client connection logic and channel join forwarding for IRC communication.

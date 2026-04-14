@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the sockaddr_in6 structure, defining the layout and fields of the IPv6 address data structure.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:20:38.7944929Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and storage layout for the ZipData object within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1253461400,
+  "load_duration": 268733600,
+  "prompt_eval_count": 1291,
+  "prompt_eval_duration": 247678400,
+  "eval_count": 28,
+  "eval_duration": 692219700
+}

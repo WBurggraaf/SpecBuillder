@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Helper function for truncating array data structures.

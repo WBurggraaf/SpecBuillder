@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Represents a data structure or object definition used to model the server's internal state and configuration.

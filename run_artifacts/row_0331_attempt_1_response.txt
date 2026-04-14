@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Defines the structure and fields for configuration operations within the ngIRCd server.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:10:12.9901196Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Utilities / Shared\nDESCRIPTION: Helper function for copying array data between pointers."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1030238900,
+  "load_duration": 273076600,
+  "prompt_eval_count": 1302,
+  "prompt_eval_duration": 226114800,
+  "eval_count": 19,
+  "eval_duration": 489661000
+}

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for network address information, specifically the sockaddr_in struct used to represent socket address objects.

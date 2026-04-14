@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the CHANNEL data structure used to represent channel state and channel deletion logic.

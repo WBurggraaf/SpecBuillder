@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:37.0857459Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and shape of the dvpoll object used to manage virtual device polling state."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1431204600,
+  "load_duration": 348659900,
+  "prompt_eval_count": 1276,
+  "prompt_eval_duration": 267267700,
+  "eval_count": 29,
+  "eval_duration": 769885600
+}

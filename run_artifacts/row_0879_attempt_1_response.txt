@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for an IRC request message, including fields for prefix, command, and parameters.

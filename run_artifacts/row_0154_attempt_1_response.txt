@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Initializes the ngIRCd class instance and sets up its core runtime state.

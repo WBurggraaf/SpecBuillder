@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c | function | IRC_SetPenalty | IRC_SetPenalty | 541 | 557 |  |  |  | GLOBAL void IRC_SetPenalty(CLIENT *Client, time_t Seconds)
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c
+- kind: function
+- name: IRC_SetPenalty
+- qualified_name: IRC_SetPenalty
+- start_line: 541
+- end_line: 557
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: GLOBAL void IRC_SetPenalty(CLIENT *Client, time_t Seconds)
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

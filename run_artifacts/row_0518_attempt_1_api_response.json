@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:20:25.5283004Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Security / Authentication / Authorization\nDESCRIPTION: Handles certificate fingerprinting for SSL/TLS client and server connections."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1151020900,
+  "load_duration": 256265700,
+  "prompt_eval_count": 1318,
+  "prompt_eval_duration": 230971800,
+  "eval_count": 25,
+  "eval_duration": 625932700
+}

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Validates the name of an IRC channel against a defined set of valid characters and formats.

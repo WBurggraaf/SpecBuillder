@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Handles parsing of configuration file arguments and environment variables for the ngIRCd server.

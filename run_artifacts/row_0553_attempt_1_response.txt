@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the internal state structure for SSL connections within the ngIRCd server.

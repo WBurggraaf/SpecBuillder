@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:20:05.7106126Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Handles socket I/O and connection event callbacks for resolving DNS records."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1281956600,
+  "load_duration": 317646500,
+  "prompt_eval_count": 1312,
+  "prompt_eval_duration": 285384700,
+  "eval_count": 25,
+  "eval_duration": 645355000
+}

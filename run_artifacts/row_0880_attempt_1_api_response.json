@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:28:11.2081877Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and type of the _REQUEST data structure used for parsing command arguments."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1144405400,
+  "load_duration": 246164700,
+  "prompt_eval_count": 1283,
+  "prompt_eval_duration": 222307800,
+  "eval_count": 26,
+  "eval_duration": 642147700
+}

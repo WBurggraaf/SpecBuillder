@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:28:51.3357403Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and layout of the addrinfo data type used for network address resolution."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1152197400,
+  "load_duration": 258276200,
+  "prompt_eval_count": 1270,
+  "prompt_eval_duration": 212652100,
+  "eval_count": 26,
+  "eval_duration": 644851200
+}

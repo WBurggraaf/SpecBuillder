@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for a client-to-channel mapping, representing the state of an IRC channel connection.

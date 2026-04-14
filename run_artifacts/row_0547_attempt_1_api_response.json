@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:04.0643511Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and properties for the _Connection object used in the IRC server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1168107000,
+  "load_duration": 254721200,
+  "prompt_eval_count": 1281,
+  "prompt_eval_duration": 227682400,
+  "eval_count": 26,
+  "eval_duration": 651943400
+}

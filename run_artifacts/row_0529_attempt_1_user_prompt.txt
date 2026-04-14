@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | wbuf | _ZipData::wbuf | 69 | 69 | _ZipData | array | array_or_collection | array wbuf;
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h
+- kind: field
+- name: wbuf
+- qualified_name: _ZipData::wbuf
+- start_line: 69
+- end_line: 69
+- parent: _ZipData
+- data_type: array
+- data_shape: array_or_collection
+- data_type: array
+- data_shape: array_or_collection
+- signature: array wbuf;
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

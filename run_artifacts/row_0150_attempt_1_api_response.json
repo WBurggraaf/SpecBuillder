@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:12:38.123145Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure for channel modes within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1246815300,
+  "load_duration": 317143000,
+  "prompt_eval_count": 1297,
+  "prompt_eval_duration": 327187200,
+  "eval_count": 23,
+  "eval_duration": 565034500
+}

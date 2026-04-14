@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:25:24.550832Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and fields for the list element object used in the server's internal data representation."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1296191200,
+  "load_duration": 253079600,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 226351900,
+  "eval_count": 29,
+  "eval_duration": 778069600
+}

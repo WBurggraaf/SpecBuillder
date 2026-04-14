@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the client type enum and the MyCount function signature used to represent client state.

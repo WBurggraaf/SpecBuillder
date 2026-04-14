@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: A utility function responsible for freeing and wiping allocated memory arrays.

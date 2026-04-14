@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Initializes the polling event loop for the IO library, a core runtime component for handling I/O operations.

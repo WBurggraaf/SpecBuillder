@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Do_ResolveName | Do_ResolveName | 410 | 450 |  |  |  | static void Do_ResolveName( const char *Host, int w_fd )
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c
+- kind: function
+- name: Do_ResolveName
+- qualified_name: Do_ResolveName
+- start_line: 410
+- end_line: 450
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: static void Do_ResolveName( const char *Host, int w_fd )
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

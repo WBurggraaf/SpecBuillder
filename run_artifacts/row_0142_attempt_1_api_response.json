@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:12:27.554905Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure for an IRC channel entity within the server's internal model."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1294683200,
+  "load_duration": 394539100,
+  "prompt_eval_count": 1275,
+  "prompt_eval_duration": 237541000,
+  "eval_count": 25,
+  "eval_duration": 627058200
+}

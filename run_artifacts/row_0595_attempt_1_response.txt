@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Initializes the IO library and handles event selection for the server's input/output subsystem.

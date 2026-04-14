@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Parses configuration file entries for network ports and other settings.

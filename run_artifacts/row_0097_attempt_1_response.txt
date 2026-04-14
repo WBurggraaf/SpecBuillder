@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Validates channel permissions and determines if a client is allowed to send messages to a specific channel.

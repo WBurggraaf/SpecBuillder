@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | name | Conf_Channel::name | 88 | 88 | Conf_Channel | char | scalar_or_unknown | char name[CHANNEL_NAME_LEN];
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h
+- kind: field
+- name: name
+- qualified_name: Conf_Channel::name
+- start_line: 88
+- end_line: 88
+- parent: Conf_Channel
+- data_type: char
+- data_shape: scalar_or_unknown
+- data_type: char
+- data_shape: scalar_or_unknown
+- signature: char name[CHANNEL_NAME_LEN];
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

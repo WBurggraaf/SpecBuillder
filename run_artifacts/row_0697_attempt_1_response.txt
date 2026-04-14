@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Handles client login requests and validates user credentials.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:26:39.8929461Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and layout for the linked list node used in the server's internal data storage."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1283457800,
+  "load_duration": 266739400,
+  "prompt_eval_count": 1266,
+  "prompt_eval_duration": 262060100,
+  "eval_count": 29,
+  "eval_duration": 718537000
+}

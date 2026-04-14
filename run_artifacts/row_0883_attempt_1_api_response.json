@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:28:14.7896703Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and type of the request argument passed to the parser."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1119174500,
+  "load_duration": 262124800,
+  "prompt_eval_count": 1281,
+  "prompt_eval_duration": 239766000,
+  "eval_count": 23,
+  "eval_duration": 560406500
+}

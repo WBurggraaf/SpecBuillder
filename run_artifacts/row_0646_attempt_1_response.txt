@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and behavior of the IRC channel entity within the server's data model.

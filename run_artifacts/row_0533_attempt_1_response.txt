@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the `sock` field as a scalar integer property within the `_Connection` class structure.

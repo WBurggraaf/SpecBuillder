@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and layout of the pollfd data type used for managing network I/O events.

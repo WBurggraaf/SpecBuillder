@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:28:49.0578258Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and layout of network address data structures used for server configuration and connection handling."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1183801200,
+  "load_duration": 259606000,
+  "prompt_eval_count": 1270,
+  "prompt_eval_duration": 218316700,
+  "eval_count": 27,
+  "eval_duration": 672652700
+}

@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A global utility function used to track the number of client operations performed by the server.

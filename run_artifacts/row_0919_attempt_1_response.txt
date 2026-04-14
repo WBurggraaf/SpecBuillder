@@ -1,0 +1,2 @@
+COMPONENT: Logging / Monitoring
+DESCRIPTION: A function responsible for logging a specific error condition regarding a forged IP address.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:12:17.4579121Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure for channel topics, including the field name, type, and size constraints."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1330425000,
+  "load_duration": 369900600,
+  "prompt_eval_count": 1303,
+  "prompt_eval_duration": 212711500,
+  "eval_count": 28,
+  "eval_duration": 700568100
+}

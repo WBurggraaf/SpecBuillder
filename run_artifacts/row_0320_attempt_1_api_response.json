@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:16:16.5384625Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Reads configuration options and settings from the specified file."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1241922900,
+  "load_duration": 339235000,
+  "prompt_eval_count": 1290,
+  "prompt_eval_duration": 400238900,
+  "eval_count": 18,
+  "eval_duration": 469210900
+}

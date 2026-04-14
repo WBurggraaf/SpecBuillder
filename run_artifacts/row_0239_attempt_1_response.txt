@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and type of the CLIENT_TYPE enum used to represent client connection states.

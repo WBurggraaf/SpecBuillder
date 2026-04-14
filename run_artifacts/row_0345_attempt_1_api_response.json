@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:16:47.2448185Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: A static function used to handle configuration errors, likely part of the ngIRCd configuration loading or validation process."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1522136400,
+  "load_duration": 435911100,
+  "prompt_eval_count": 1322,
+  "prompt_eval_duration": 250060100,
+  "eval_count": 30,
+  "eval_duration": 795327900
+}

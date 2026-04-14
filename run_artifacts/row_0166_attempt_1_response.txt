@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Initializes the client connection and sets up the basic runtime environment for the ngIRCd server.

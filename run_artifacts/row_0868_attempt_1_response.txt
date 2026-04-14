@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and shape of the parsed data fields, including the PARAMS scalar type and its usage in the client request.

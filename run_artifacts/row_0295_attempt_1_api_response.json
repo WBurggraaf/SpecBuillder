@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:15:45.6768145Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Handles configuration data structures and initialization settings for the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1109862400,
+  "load_duration": 252674500,
+  "prompt_eval_count": 1280,
+  "prompt_eval_duration": 238518800,
+  "eval_count": 22,
+  "eval_duration": 585980700
+}

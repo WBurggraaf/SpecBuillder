@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Validates the configuration parameters and hash settings for the ngIRCd server.

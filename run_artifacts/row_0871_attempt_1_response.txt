@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Core server initialization logic responsible for parsing incoming request structures.

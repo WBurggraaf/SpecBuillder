@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the `signon` field as a scalar type within the `_Connection` data structure.

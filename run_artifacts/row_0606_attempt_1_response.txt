@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Implements the kqueue event loop mechanism for managing and committing cached network events in the ngIRCd server.

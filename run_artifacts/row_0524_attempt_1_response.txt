@@ -1,0 +1,2 @@
+COMPONENT: Serialization / Deserialization
+DESCRIPTION: Defines the data structure for compressed data buffers used during the transfer of compressed data streams.

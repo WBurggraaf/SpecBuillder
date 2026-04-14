@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Defines the cipher list used for SSL/TLS encryption and decryption of network connections.

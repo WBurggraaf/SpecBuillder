@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Manages the hop count for client connections, a key parameter in IRC protocol configuration.

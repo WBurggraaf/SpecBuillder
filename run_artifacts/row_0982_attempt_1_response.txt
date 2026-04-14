@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: A helper function for trimming the last character from a string argument.

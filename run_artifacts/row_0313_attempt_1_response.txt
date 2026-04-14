@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Function that disables a specific server configuration option.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:23:21.5507629Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Handles character set conversion for legacy clients, implementing the IRC character encoding protocol."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1235267400,
+  "load_duration": 260299500,
+  "prompt_eval_count": 1302,
+  "prompt_eval_duration": 229902500,
+  "eval_count": 27,
+  "eval_duration": 708504100
+}

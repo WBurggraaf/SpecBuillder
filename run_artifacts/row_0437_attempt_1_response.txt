@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A utility function for allocating memory with logging, likely used for internal data structures or temporary buffers.

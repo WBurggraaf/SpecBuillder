@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and layout of network address data structures used for server configuration and connection handling.

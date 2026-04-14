@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure and type for a list element with a boolean flag indicating uniqueness.

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines a data structure representing an IRC event with a callback and a field.

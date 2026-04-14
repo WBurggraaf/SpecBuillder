@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:17:19.7908017Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Security / Authentication / Authorization\nDESCRIPTION: Defines the SSL certificate file path and options used for secure client-server communication."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1277214600,
+  "load_duration": 266716900,
+  "prompt_eval_count": 1293,
+  "prompt_eval_duration": 246970700,
+  "eval_count": 27,
+  "eval_duration": 726407000
+}

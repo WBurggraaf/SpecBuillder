@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:28:42.7048803Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Utilities / Shared\nDESCRIPTION: Helper function for retrieving error codes from the ngIRCd error handling system."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1147738200,
+  "load_duration": 271011800,
+  "prompt_eval_count": 1284,
+  "prompt_eval_duration": 231277000,
+  "eval_count": 25,
+  "eval_duration": 612778200
+}

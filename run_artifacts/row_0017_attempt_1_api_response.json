@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:09:52.7892732Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Declares the sockaddr_in6 structure, defining the layout and fields of the IPv6 address data structure."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1304573600,
+  "load_duration": 254991100,
+  "prompt_eval_count": 1274,
+  "prompt_eval_duration": 266972300,
+  "eval_count": 30,
+  "eval_duration": 747363000
+}

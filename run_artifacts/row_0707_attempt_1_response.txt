@@ -1,0 +1,2 @@
+COMPONENT: Controller / API / Interface
+DESCRIPTION: Handles client connection state transitions and request/response processing for the IRC mode.

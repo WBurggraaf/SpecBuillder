@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Function responsible for clearing or resetting server configuration settings.

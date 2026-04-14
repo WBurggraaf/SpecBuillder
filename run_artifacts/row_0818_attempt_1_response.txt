@@ -1,0 +1,2 @@
+COMPONENT: Logging / Monitoring
+DESCRIPTION: Handles cleanup and exit procedures for the logging system.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:22:58.2924971Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Handles the parsing and processing of client capability (LS) requests from the IRC client."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1422211900,
+  "load_duration": 369667900,
+  "prompt_eval_count": 1300,
+  "prompt_eval_duration": 290950400,
+  "eval_count": 29,
+  "eval_duration": 714343800
+}

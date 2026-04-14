@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:23:49.5827409Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Represents a data structure or object definition used to model the server's internal state and configuration."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1222838700,
+  "load_duration": 302576900,
+  "prompt_eval_count": 1272,
+  "prompt_eval_duration": 210942700,
+  "eval_count": 27,
+  "eval_duration": 675726900
+}

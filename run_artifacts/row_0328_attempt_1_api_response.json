@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:16:26.8301892Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Handles parsing of configuration file arguments and environment variables for the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1290626200,
+  "load_duration": 361145000,
+  "prompt_eval_count": 1308,
+  "prompt_eval_duration": 246663000,
+  "eval_count": 24,
+  "eval_duration": 636879900
+}

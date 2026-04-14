@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles the resolution of address identifiers and socket connections for the IRC daemon.

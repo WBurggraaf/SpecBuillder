@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles network protocol logic for server prefix flags during client connection establishment.

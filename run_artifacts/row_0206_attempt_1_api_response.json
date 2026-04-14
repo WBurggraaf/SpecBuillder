@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:13:49.3921272Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and flags for the client connection state."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1101645200,
+  "load_duration": 300218100,
+  "prompt_eval_count": 1290,
+  "prompt_eval_duration": 267571100,
+  "eval_count": 20,
+  "eval_duration": 492851500
+}

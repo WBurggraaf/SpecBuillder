@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:17:18.4861951Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Defines the structure and type of SSL/TLS configuration options for the server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1160239300,
+  "load_duration": 289289400,
+  "prompt_eval_count": 1293,
+  "prompt_eval_duration": 234530300,
+  "eval_count": 23,
+  "eval_duration": 601611700
+}

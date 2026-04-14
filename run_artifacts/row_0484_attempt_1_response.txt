@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles writing data to a network connection, managing the socket or channel interface for IRC traffic.

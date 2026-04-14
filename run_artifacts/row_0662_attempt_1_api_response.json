@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:23:30.0501279Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structures and types for IRC channel information, including the channel object and client context."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1222937200,
+  "load_duration": 265262100,
+  "prompt_eval_count": 1312,
+  "prompt_eval_duration": 226349000,
+  "eval_count": 28,
+  "eval_duration": 695672500
+}

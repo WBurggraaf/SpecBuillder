@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the data structure for incoming network messages within the connection class.

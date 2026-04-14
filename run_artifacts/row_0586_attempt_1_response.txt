@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles socket I/O and connection lifecycle management for the IRC server.

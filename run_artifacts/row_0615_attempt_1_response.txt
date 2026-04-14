@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and layout of the timespec data type used for tracking time intervals in the server.

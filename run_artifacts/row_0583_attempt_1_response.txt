@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Represents the structure of a pollfd struct, defining its fields and layout.

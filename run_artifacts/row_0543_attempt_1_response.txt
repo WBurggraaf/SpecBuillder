@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares a data structure representing the last private message timestamp within the IRC connection state.

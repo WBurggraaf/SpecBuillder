@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:34.4127459Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Handles network I/O dispatching for device polling in the IRC daemon."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1281259900,
+  "load_duration": 325731700,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 250976200,
+  "eval_count": 26,
+  "eval_duration": 663489400
+}

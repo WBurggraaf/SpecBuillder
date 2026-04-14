@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Function responsible for setting the server configuration value.

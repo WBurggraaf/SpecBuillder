@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles network protocol operations for the connection, specifically managing the flushing of compressed data buffers.

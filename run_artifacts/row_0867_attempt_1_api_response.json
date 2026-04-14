@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:27:54.160414Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and type for the _NUMERIC function field within the ngIRCd codebase."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1273779700,
+  "load_duration": 270116300,
+  "prompt_eval_count": 1287,
+  "prompt_eval_duration": 229774100,
+  "eval_count": 30,
+  "eval_duration": 734926200
+}

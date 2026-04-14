@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles client requests for capability information, likely involving protocol negotiation or server-side capability declarations.

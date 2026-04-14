@@ -1,0 +1,2 @@
+COMPONENT: Logging / Monitoring
+DESCRIPTION: Implements the function responsible for logging messages with a specific log level.

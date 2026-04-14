@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Initializes the I/O library using the Kqueue event loop for asynchronous I/O operations.

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure and interface for IRC operation requests and clients within the server's core logic.

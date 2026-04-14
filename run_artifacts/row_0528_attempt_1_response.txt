@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure and storage layout for the ZipData object within the ngIRCd server.

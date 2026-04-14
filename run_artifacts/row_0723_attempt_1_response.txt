@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles the rehashing of IRC client connections and requests within the server's network stack.

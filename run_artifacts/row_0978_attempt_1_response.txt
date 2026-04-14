@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Implements the waitpid system call to manage process state and wait for child processes.

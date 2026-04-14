@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles network protocol requests for XLINE (X-Link) commands between the client and server.

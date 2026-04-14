@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Helper function for constructing a mask pattern used in list filtering operations.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:26:44.7052655Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and layout for the list element used to store chat messages."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1207406600,
+  "load_duration": 294198900,
+  "prompt_eval_count": 1266,
+  "prompt_eval_duration": 254201000,
+  "eval_count": 25,
+  "eval_duration": 618966300
+}

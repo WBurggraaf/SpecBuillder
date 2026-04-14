@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Represents a data structure or object definition used to model the internal state of the IRC server.

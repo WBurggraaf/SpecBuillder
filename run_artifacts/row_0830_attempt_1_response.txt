@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Function implementing pattern matching logic for IRC message parsing.

@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Helper function for concatenating arrays, likely used for internal data manipulation within the ngIRCd server.

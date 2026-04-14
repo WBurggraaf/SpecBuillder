@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Defines the structure and type of the password input field within the server's configuration.

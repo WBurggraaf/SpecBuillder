@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Implements low-level file descriptor management for socket and I/O operations.

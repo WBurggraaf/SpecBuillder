@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the internal state and limits for an IRC client session, including the maximum number of clients allowed before a limit is reached.

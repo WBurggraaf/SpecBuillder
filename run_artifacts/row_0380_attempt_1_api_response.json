@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:17:31.2930864Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and type for the Conf_Channel channel mode configuration."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1134046200,
+  "load_duration": 259945500,
+  "prompt_eval_count": 1291,
+  "prompt_eval_duration": 236640100,
+  "eval_count": 23,
+  "eval_duration": 606256100
+}

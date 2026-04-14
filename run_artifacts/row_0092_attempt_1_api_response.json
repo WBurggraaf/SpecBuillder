@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:11:26.2100748Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and lifecycle state for an IRC channel entity."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1179725200,
+  "load_duration": 274860300,
+  "prompt_eval_count": 1296,
+  "prompt_eval_duration": 295367100,
+  "eval_count": 22,
+  "eval_duration": 576908100
+}

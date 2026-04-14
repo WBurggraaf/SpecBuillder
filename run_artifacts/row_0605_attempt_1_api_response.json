@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:22:18.6318986Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Infrastructure / Platform\nDESCRIPTION: Initializes the epoll event loop for network I/O handling."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1054803700,
+  "load_duration": 253097000,
+  "prompt_eval_count": 1302,
+  "prompt_eval_duration": 236660100,
+  "eval_count": 21,
+  "eval_duration": 533371200
+}

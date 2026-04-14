@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Handles certificate fingerprinting for SSL/TLS client and server connections.

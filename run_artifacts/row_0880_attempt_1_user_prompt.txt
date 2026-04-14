@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | prefix | _REQUEST::prefix | 25 | 25 | _REQUEST | char | scalar_or_unknown | char *prefix;
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h
+- kind: field
+- name: prefix
+- qualified_name: _REQUEST::prefix
+- start_line: 25
+- end_line: 25
+- parent: _REQUEST
+- data_type: char
+- data_shape: scalar_or_unknown
+- data_type: char
+- data_shape: scalar_or_unknown
+- signature: char *prefix;
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

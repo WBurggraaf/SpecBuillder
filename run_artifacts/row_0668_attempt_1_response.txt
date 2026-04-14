@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Provides the core IRC administrative interface for handling client requests and internal state management.

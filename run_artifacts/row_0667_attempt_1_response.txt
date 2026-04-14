@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A static helper function used to retrieve SSL information from the MOTD (Message of the Day) string.

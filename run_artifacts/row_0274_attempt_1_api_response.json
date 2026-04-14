@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:15:18.8893779Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and type for the client's capabilities field within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1334876800,
+  "load_duration": 274625600,
+  "prompt_eval_count": 1281,
+  "prompt_eval_duration": 240525100,
+  "eval_count": 28,
+  "eval_duration": 781427300
+}

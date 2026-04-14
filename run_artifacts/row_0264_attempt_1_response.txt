@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares a scalar field representing a client's cloaked status within the ngIRCd client structure.

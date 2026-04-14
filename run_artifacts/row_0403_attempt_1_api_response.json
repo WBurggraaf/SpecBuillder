@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:18:00.6049334Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Defines the global connection options structure used for managing network connections."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1186241000,
+  "load_duration": 260877100,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 241394600,
+  "eval_count": 24,
+  "eval_duration": 647894200
+}

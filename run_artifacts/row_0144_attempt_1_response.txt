@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for a client-channel relationship, including pointers to the client, channel, and mode configuration.

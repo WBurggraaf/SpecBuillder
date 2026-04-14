@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:14:41.5906267Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and type of the client object used in the application."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1211991200,
+  "load_duration": 291759200,
+  "prompt_eval_count": 1296,
+  "prompt_eval_duration": 260697600,
+  "eval_count": 23,
+  "eval_duration": 623461100
+}

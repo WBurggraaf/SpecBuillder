@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Initializes the server structure using configuration data.

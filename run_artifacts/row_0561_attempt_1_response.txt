@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: A callback function declaration used for external event handling or asynchronous operations.

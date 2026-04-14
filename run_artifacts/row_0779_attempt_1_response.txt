@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Function responsible for freeing allocated memory resources within the ngIRCd server.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:12:42.0328277Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Represents a data structure or object definition, specifically a linked list node type used for internal data organization."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1397857400,
+  "load_duration": 365955800,
+  "prompt_eval_count": 1266,
+  "prompt_eval_duration": 259222500,
+  "eval_count": 29,
+  "eval_duration": 738148400
+}

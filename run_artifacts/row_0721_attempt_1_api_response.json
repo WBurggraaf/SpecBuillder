@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:24:46.4243753Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and fields of the configuration operation object used by the server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1277302400,
+  "load_duration": 290420100,
+  "prompt_eval_count": 1274,
+  "prompt_eval_duration": 230128100,
+  "eval_count": 24,
+  "eval_duration": 713844900
+}

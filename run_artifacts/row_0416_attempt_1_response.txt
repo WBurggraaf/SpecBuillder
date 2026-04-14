@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure of SSL certificate credentials and Diffie-Hellman parameters used for secure connections.

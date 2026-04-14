@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Implements the `vsnprintf` function, a standard utility for safe string formatting used by the server.

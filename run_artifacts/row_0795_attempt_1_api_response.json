@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:26:23.0688329Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Represents the data structure for a linked list node, defining its type and memory layout."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1184976600,
+  "load_duration": 287072000,
+  "prompt_eval_count": 1270,
+  "prompt_eval_duration": 224428900,
+  "eval_count": 26,
+  "eval_duration": 642540300
+}

@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: SSL/TLS certificate verification logic for secure client-server connections.

@@ -1,0 +1,992 @@
+file | kind | name | qualified_name | start_line | end_line | parent | data_type | data_shape | signature
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | function | ng_ipaddr_init | ng_ipaddr_init | 23 | 77 |  |  |  | GLOBAL bool ng_ipaddr_init(ng_ipaddr_t *addr, const char *ip_str, UINT16 port)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | struct | addrinfo | addrinfo | 29 | 29 |  |  |  | struct addrinfo
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | struct | addrinfo | addrinfo | 30 | 30 |  |  |  | struct addrinfo
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | function | ng_ipaddr_setport | ng_ipaddr_setport | 80 | 105 |  |  |  | GLOBAL void ng_ipaddr_setport(ng_ipaddr_t *a, UINT16 port)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | function | ng_ipaddr_ipequal | ng_ipaddr_ipequal | 109 | 130 |  |  |  | GLOBAL bool ng_ipaddr_ipequal(const ng_ipaddr_t *a, const ng_ipaddr_t *b)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | function | ng_ipaddr_tostr | ng_ipaddr_tostr | 134 | 143 |  |  |  | GLOBAL const char * ng_ipaddr_tostr(const ng_ipaddr_t *addr)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | function | ng_ipaddr_tostr_r | ng_ipaddr_tostr_r | 147 | 175 |  |  |  | GLOBAL bool ng_ipaddr_tostr_r(const ng_ipaddr_t *addr, char *str)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | struct | sockaddr | sockaddr | 151 | 151 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.c | struct | sockaddr | sockaddr | 151 | 151 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | typedef | ng_ipaddr_t | ng_ipaddr_t | 35 | 39 |  |  |  | typedef union { struct sockaddr sa; struct sockaddr_in sin4; struct sockaddr_in6 sin6; } ng_ipaddr_t;
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | union | <anonymous> | <anonymous> | 35 | 39 |  |  |  | union { struct sockaddr sa; struct sockaddr_in sin4; struct sockaddr_in6 sin6; }
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | field | sa | sa | 36 | 36 |  | struct sockaddr | structured_object | struct sockaddr sa;
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | struct | sockaddr | sockaddr | 36 | 36 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | field | sin4 | sin4 | 37 | 37 |  | struct sockaddr_in | structured_object | struct sockaddr_in sin4;
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | struct | sockaddr_in | sockaddr_in | 37 | 37 |  |  |  | struct sockaddr_in
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | field | sin6 | sin6 | 38 | 38 |  | struct sockaddr_in6 | structured_object | struct sockaddr_in6 sin6;
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | struct | sockaddr_in6 | sockaddr_in6 | 38 | 38 |  |  |  | struct sockaddr_in6
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | struct | NG_IP_ADDR_DONTUSE | NG_IP_ADDR_DONTUSE | 42 | 44 |  |  |  | struct NG_IP_ADDR_DONTUSE { struct sockaddr_in sin4; }
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | field | sin4 | NG_IP_ADDR_DONTUSE::sin4 | 43 | 43 | NG_IP_ADDR_DONTUSE | struct sockaddr_in | structured_object | struct sockaddr_in sin4;
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | struct | sockaddr_in | NG_IP_ADDR_DONTUSE::sockaddr_in | 43 | 43 | NG_IP_ADDR_DONTUSE |  |  | struct sockaddr_in
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | struct | NG_IP_ADDR_DONTUSE | NG_IP_ADDR_DONTUSE | 45 | 45 |  |  |  | struct NG_IP_ADDR_DONTUSE
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | typedef | ng_ipaddr_t | ng_ipaddr_t | 45 | 45 |  |  |  | typedef struct NG_IP_ADDR_DONTUSE ng_ipaddr_t;
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | function | ng_ipaddr_af | ng_ipaddr_af | 49 | 59 |  |  |  | static inline int ng_ipaddr_af(const ng_ipaddr_t *a)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | function | ng_ipaddr_salen | ng_ipaddr_salen | 62 | 73 |  |  |  | static inline socklen_t ng_ipaddr_salen(const ng_ipaddr_t *a)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | function | ng_ipaddr_getport | ng_ipaddr_getport | 76 | 92 |  |  |  | static inline UINT16 ng_ipaddr_getport(const ng_ipaddr_t *a)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | function | ng_ipaddr_tostr | ng_ipaddr_tostr | 116 | 121 |  |  |  | static inline const char* ng_ipaddr_tostr(const ng_ipaddr_t *addr)
+C:\develop\SpecBuilder\ngircd-master\src\ipaddr\ng_ipaddr.h | function | ng_ipaddr_tostr_r | ng_ipaddr_tostr_r | 123 | 130 |  |  |  | static inline bool ng_ipaddr_tostr_r(const ng_ipaddr_t *addr, char *d)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | safemult_sizet | safemult_sizet | 34 | 44 |  |  |  | static bool safemult_sizet(size_t a, size_t b, size_t *res)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_init | array_init | 47 | 54 |  |  |  | void array_init(array *a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_alloc | array_alloc | 58 | 87 |  |  |  | void * array_alloc(array * a, size_t size, size_t pos)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_length | array_length | 91 | 102 |  |  |  | size_t array_length(const array * const a, size_t membersize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_copy | array_copy | 106 | 114 |  |  |  | bool array_copy(array * dest, const array * const src)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_copyb | array_copyb | 118 | 129 |  |  |  | bool array_copyb(array * dest, const char *src, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_copys | array_copys | 133 | 137 |  |  |  | bool array_copys(array * dest, const char *src)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_catb | array_catb | 142 | 179 |  |  |  | bool array_catb(array * dest, const char *src, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_cats | array_cats | 183 | 187 |  |  |  | bool array_cats(array * dest, const char *src)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_cat0 | array_cat0 | 191 | 195 |  |  |  | bool array_cat0(array * a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_cat0_temporary | array_cat0_temporary | 199 | 208 |  |  |  | bool array_cat0_temporary(array * a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_cat | array_cat | 211 | 218 |  |  |  | bool array_cat(array * dest, const array * const src)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_get | array_get | 224 | 244 |  |  |  | void * array_get(array * a, size_t membersize, size_t pos)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_free | array_free | 247 | 260 |  |  |  | void array_free(array * a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_free_wipe | array_free_wipe | 262 | 269 |  |  |  | void array_free_wipe(array *a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_start | array_start | 271 | 276 |  |  |  | void * array_start(const array * const a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_trunc | array_trunc | 279 | 284 |  |  |  | void array_trunc(array * a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_truncate | array_truncate | 287 | 297 |  |  |  | void array_truncate(array * a, size_t membersize, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.c | function | array_moveleft | array_moveleft | 301 | 329 |  |  |  | void array_moveleft(array * a, size_t membersize, size_t pos)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.h | struct | <anonymous> | <anonymous> | 22 | 26 |  |  |  | struct { char * mem; size_t allocated; size_t used; }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.h | typedef | array | array | 22 | 26 |  |  |  | typedef struct { char * mem; size_t allocated; size_t used; } array;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.h | field | mem | mem | 23 | 23 |  | char | scalar_or_unknown | char * mem;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.h | field | allocated | allocated | 24 | 24 |  | size_t | scalar_or_unknown | size_t allocated;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\array.h | field | used | used | 25 | 25 |  | size_t | scalar_or_unknown | size_t used;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Init | Channel_Init | 59 | 64 |  |  |  | GLOBAL void Channel_Init( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_GetListBans | Channel_GetListBans | 67 | 72 |  |  |  | list_head * Channel_GetListBans(CHANNEL *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_GetListExcepts | Channel_GetListExcepts | 75 | 80 |  |  |  | list_head * Channel_GetListExcepts(CHANNEL *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_GetListInvites | Channel_GetListInvites | 83 | 88 |  |  |  | list_head * Channel_GetListInvites(CHANNEL *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_InitPredefined | Channel_InitPredefined | 94 | 202 |  |  |  | GLOBAL void Channel_InitPredefined( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | Conf_Channel | Conf_Channel | 99 | 99 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Free_Channel | Free_Channel | 205 | 215 |  |  |  | static void Free_Channel(CHANNEL *chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Exit | Channel_Exit | 218 | 239 |  |  |  | GLOBAL void Channel_Exit( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Join | Channel_Join | 250 | 283 |  |  |  | GLOBAL bool Channel_Join( CLIENT *Client, const char *Name )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Part | Channel_Part | 293 | 325 |  |  |  | GLOBAL bool Channel_Part(CLIENT * Client, CLIENT * Origin, const char *Name, const char *Reason)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Kick | Channel_Kick | 331 | 420 |  |  |  | GLOBAL void Channel_Kick(CLIENT *Peer, CLIENT *Target, CLIENT *Origin, const char *Name, const char *Reason )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Quit | Channel_Quit | 423 | 443 |  |  |  | GLOBAL void Channel_Quit( CLIENT *Client, const char *Reason )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_CountVisible | Channel_CountVisible | 453 | 470 |  |  |  | GLOBAL unsigned long Channel_CountVisible (CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_MemberCount | Channel_MemberCount | 473 | 488 |  |  |  | GLOBAL unsigned long Channel_MemberCount( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_CountForUser | Channel_CountForUser | 491 | 509 |  |  |  | GLOBAL int Channel_CountForUser( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Name | Channel_Name | 512 | 517 |  |  |  | GLOBAL const char * Channel_Name( const CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Modes | Channel_Modes | 520 | 525 |  |  |  | GLOBAL char * Channel_Modes( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_HasMode | Channel_HasMode | 528 | 533 |  |  |  | GLOBAL bool Channel_HasMode( CHANNEL *Chan, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Key | Channel_Key | 536 | 541 |  |  |  | GLOBAL char * Channel_Key( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_MaxUsers | Channel_MaxUsers | 544 | 549 |  |  |  | GLOBAL unsigned long Channel_MaxUsers( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_First | Channel_First | 552 | 556 |  |  |  | GLOBAL CHANNEL * Channel_First( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Next | Channel_Next | 559 | 564 |  |  |  | GLOBAL CHANNEL * Channel_Next( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Search | Channel_Search | 567 | 589 |  |  |  | GLOBAL CHANNEL * Channel_Search( const char *Name )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_FirstMember | Channel_FirstMember | 592 | 597 |  |  |  | GLOBAL CL2CHAN * Channel_FirstMember( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_NextMember | Channel_NextMember | 600 | 606 |  |  |  | GLOBAL CL2CHAN * Channel_NextMember( CHANNEL *Chan, CL2CHAN *Cl2Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_FirstChannelOf | Channel_FirstChannelOf | 609 | 614 |  |  |  | GLOBAL CL2CHAN * Channel_FirstChannelOf( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_NextChannelOf | Channel_NextChannelOf | 617 | 623 |  |  |  | GLOBAL CL2CHAN * Channel_NextChannelOf( CLIENT *Client, CL2CHAN *Cl2Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_GetClient | Channel_GetClient | 626 | 631 |  |  |  | GLOBAL CLIENT * Channel_GetClient( CL2CHAN *Cl2Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_GetChannel | Channel_GetChannel | 634 | 639 |  |  |  | GLOBAL CHANNEL * Channel_GetChannel( CL2CHAN *Cl2Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_IsValidName | Channel_IsValidName | 642 | 657 |  |  |  | GLOBAL bool Channel_IsValidName( const char *Name )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_ModeAdd | Channel_ModeAdd | 660 | 680 |  |  |  | GLOBAL bool Channel_ModeAdd( CHANNEL *Chan, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_ModeDel | Channel_ModeDel | 683 | 704 |  |  |  | GLOBAL bool Channel_ModeDel( CHANNEL *Chan, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_UserModeAdd | Channel_UserModeAdd | 707 | 732 |  |  |  | GLOBAL bool Channel_UserModeAdd( CHANNEL *Chan, CLIENT *Client, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_UserModeDel | Channel_UserModeDel | 735 | 762 |  |  |  | GLOBAL bool Channel_UserModeDel( CHANNEL *Chan, CLIENT *Client, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_UserModes | Channel_UserModes | 765 | 779 |  |  |  | GLOBAL char * Channel_UserModes( CHANNEL *Chan, CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_UserHasMode | Channel_UserHasMode | 790 | 804 |  |  |  | GLOBAL bool Channel_UserHasMode( CHANNEL *Chan, CLIENT *Client, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_IsMemberOf | Channel_IsMemberOf | 807 | 815 |  |  |  | GLOBAL bool Channel_IsMemberOf( CHANNEL *Chan, CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Topic | Channel_Topic | 818 | 825 |  |  |  | GLOBAL char * Channel_Topic( CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_TopicTime | Channel_TopicTime | 830 | 835 |  |  |  | GLOBAL unsigned int Channel_TopicTime(CHANNEL *Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_TopicWho | Channel_TopicWho | 838 | 843 |  |  |  | GLOBAL char * Channel_TopicWho(CHANNEL *Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_CreationTime | Channel_CreationTime | 846 | 851 |  |  |  | GLOBAL unsigned int Channel_CreationTime(CHANNEL *Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_SetTopic | Channel_SetTopic | 856 | 881 |  |  |  | GLOBAL void Channel_SetTopic(CHANNEL *Chan, CLIENT *Client, const char *Topic)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_SetModes | Channel_SetModes | 884 | 891 |  |  |  | GLOBAL void Channel_SetModes( CHANNEL *Chan, const char *Modes )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_SetKey | Channel_SetKey | 894 | 902 |  |  |  | GLOBAL void Channel_SetKey( CHANNEL *Chan, const char *Key )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_SetMaxUsers | Channel_SetMaxUsers | 905 | 912 |  |  |  | GLOBAL void Channel_SetMaxUsers(CHANNEL *Chan, unsigned long Count)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Can_Send_To_Channel | Can_Send_To_Channel | 922 | 970 |  |  |  | static bool Can_Send_To_Channel(CHANNEL *Chan, CLIENT *From)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Write | Channel_Write | 973 | 994 |  |  |  | GLOBAL bool Channel_Write(CHANNEL *Chan, CLIENT *From, CLIENT *Client, const char *Command, bool SendErrors, const char *Text)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_Create | Channel_Create | 997 | 1021 |  |  |  | GLOBAL CHANNEL * Channel_Create( const char *Name )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Get_Cl2Chan | Get_Cl2Chan | 1024 | 1039 |  |  |  | static CL2CHAN * Get_Cl2Chan( CHANNEL *Chan, CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Add_Client | Add_Client | 1042 | 1068 |  |  |  | static CL2CHAN * Add_Client( CHANNEL *Chan, CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Remove_Client | Remove_Client | 1071 | 1158 |  |  |  | static bool Remove_Client( int Type, CHANNEL *Chan, CLIENT *Client, CLIENT *Origin, const char *Reason, bool InformServer )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_AddBan | Channel_AddBan | 1161 | 1167 |  |  |  | GLOBAL bool Channel_AddBan(CHANNEL *c, const char *mask, const char *who )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1164 | 1164 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_AddExcept | Channel_AddExcept | 1170 | 1176 |  |  |  | GLOBAL bool Channel_AddExcept(CHANNEL *c, const char *mask, const char *who )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1173 | 1173 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_AddInvite | Channel_AddInvite | 1179 | 1185 |  |  |  | GLOBAL bool Channel_AddInvite(CHANNEL *c, const char *mask, bool onlyonce, const char *who )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1182 | 1182 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | ShowChannelList | ShowChannelList | 1188 | 1210 |  |  |  | static bool ShowChannelList(struct list_head *head, CLIENT *Client, CHANNEL *Channel, char *msg, char *msg_end)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1189 | 1189 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_elem | list_elem | 1192 | 1192 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_ShowBans | Channel_ShowBans | 1213 | 1223 |  |  |  | GLOBAL bool Channel_ShowBans( CLIENT *Client, CHANNEL *Channel )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1216 | 1216 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_ShowExcepts | Channel_ShowExcepts | 1226 | 1236 |  |  |  | GLOBAL bool Channel_ShowExcepts( CLIENT *Client, CHANNEL *Channel )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1229 | 1229 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_ShowInvites | Channel_ShowInvites | 1239 | 1249 |  |  |  | GLOBAL bool Channel_ShowInvites( CLIENT *Client, CHANNEL *Channel )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | struct | list_head | list_head | 1242 | 1242 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_LogServer | Channel_LogServer | 1255 | 1269 |  |  |  | GLOBAL void Channel_LogServer(const char *msg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Channel_CheckKey | Channel_CheckKey | 1272 | 1319 |  |  |  | GLOBAL bool Channel_CheckKey(CHANNEL *Chan, CLIENT *Client, const char *Key)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Get_First_Cl2Chan | Get_First_Cl2Chan | 1322 | 1326 |  |  |  | static CL2CHAN * Get_First_Cl2Chan( CLIENT *Client, CHANNEL *Chan )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Get_Next_Cl2Chan | Get_Next_Cl2Chan | 1329 | 1344 |  |  |  | static CL2CHAN * Get_Next_Cl2Chan( CL2CHAN *Start, CLIENT *Client, CHANNEL *Channel )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Delete_Channel | Delete_Channel | 1350 | 1376 |  |  |  | static void Delete_Channel(CHANNEL *Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.c | function | Set_KeyFile | Set_KeyFile | 1379 | 1404 |  |  |  | static void Set_KeyFile(CHANNEL *Chan, const char *KeyFile)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | _CHANNEL | _CHANNEL | 26 | 44 |  |  |  | struct _CHANNEL { struct _CHANNEL *next; char name[CHANNEL_NAME_LEN]; /* Name of the channel */ UINT32 hash; /* Hash of the (lowecase!) name */ char modes[CHANNEL_MODE_LEN]; /* Channel modes */ array topic; /* Topic of the channel */ #ifndef STRICT_RFC time_t creation_time; /* Channel creation time 
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | typedef | CHANNEL | CHANNEL | 26 | 44 |  |  |  | typedef struct _CHANNEL { struct _CHANNEL *next; char name[CHANNEL_NAME_LEN]; /* Name of the channel */ UINT32 hash; /* Hash of the (lowecase!) name */ char modes[CHANNEL_MODE_LEN]; /* Channel modes */ array topic; /* Topic of the channel */ #ifndef STRICT_RFC time_t creation_time; /* Channel creati
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | _CHANNEL | _CHANNEL::_CHANNEL | 28 | 28 | _CHANNEL | struct _CHANNEL | structured_object | struct _CHANNEL *next;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | _CHANNEL | _CHANNEL::_CHANNEL | 28 | 28 | _CHANNEL |  |  | struct _CHANNEL
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | name | _CHANNEL::name | 29 | 29 | _CHANNEL | char | scalar_or_unknown | char name[CHANNEL_NAME_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | hash | _CHANNEL::hash | 30 | 30 | _CHANNEL | UINT32 | scalar_or_unknown | UINT32 hash;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | modes | _CHANNEL::modes | 31 | 31 | _CHANNEL | char | scalar_or_unknown | char modes[CHANNEL_MODE_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | topic | _CHANNEL::topic | 32 | 32 | _CHANNEL | array | array_or_collection | array topic;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | creation_time | _CHANNEL::creation_time | 34 | 34 | _CHANNEL | time_t | scalar_or_unknown | time_t creation_time;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | topic_time | _CHANNEL::topic_time | 35 | 35 | _CHANNEL | time_t | scalar_or_unknown | time_t topic_time;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | topic_who | _CHANNEL::topic_who | 36 | 36 | _CHANNEL | char | scalar_or_unknown | char topic_who[CLIENT_NICK_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | key | _CHANNEL::key | 38 | 38 | _CHANNEL | char | scalar_or_unknown | char key[CLIENT_PASS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | maxusers | _CHANNEL::maxusers | 39 | 39 | _CHANNEL | unsigned long | scalar_or_unknown | unsigned long maxusers;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | list_bans | _CHANNEL::list_bans | 40 | 40 | _CHANNEL | struct list_head | structured_object | struct list_head list_bans;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | list_head | _CHANNEL::list_head | 40 | 40 | _CHANNEL |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | list_excepts | _CHANNEL::list_excepts | 41 | 41 | _CHANNEL | struct list_head | structured_object | struct list_head list_excepts;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | list_head | _CHANNEL::list_head | 41 | 41 | _CHANNEL |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | list_invites | _CHANNEL::list_invites | 42 | 42 | _CHANNEL | struct list_head | structured_object | struct list_head list_invites;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | list_head | _CHANNEL::list_head | 42 | 42 | _CHANNEL |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | keyfile | _CHANNEL::keyfile | 43 | 43 | _CHANNEL | array | array_or_collection | array keyfile;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | _CLIENT2CHAN | _CLIENT2CHAN | 46 | 52 |  |  |  | struct _CLIENT2CHAN { struct _CLIENT2CHAN *next; CLIENT *client; CHANNEL *channel; char modes[CHANNEL_MODE_LEN]; /* User-Modes in Channel */ }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | typedef | CL2CHAN | CL2CHAN | 46 | 52 |  |  |  | typedef struct _CLIENT2CHAN { struct _CLIENT2CHAN *next; CLIENT *client; CHANNEL *channel; char modes[CHANNEL_MODE_LEN]; /* User-Modes in Channel */ } CL2CHAN;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | _CLIENT2CHAN | _CLIENT2CHAN::_CLIENT2CHAN | 48 | 48 | _CLIENT2CHAN | struct _CLIENT2CHAN | structured_object | struct _CLIENT2CHAN *next;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | struct | _CLIENT2CHAN | _CLIENT2CHAN::_CLIENT2CHAN | 48 | 48 | _CLIENT2CHAN |  |  | struct _CLIENT2CHAN
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | CLIENT | _CLIENT2CHAN::CLIENT | 49 | 49 | _CLIENT2CHAN | CLIENT | scalar_or_unknown | CLIENT *client;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | CHANNEL | _CLIENT2CHAN::CHANNEL | 50 | 50 | _CLIENT2CHAN | CHANNEL | scalar_or_unknown | CHANNEL *channel;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | field | modes | _CLIENT2CHAN::modes | 51 | 51 | _CLIENT2CHAN | char | scalar_or_unknown | char modes[CHANNEL_MODE_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | typedef | CHANNEL | CHANNEL | 56 | 56 |  |  |  | typedef POINTER CHANNEL;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | typedef | CL2CHAN | CL2CHAN | 57 | 57 |  |  |  | typedef POINTER CL2CHAN;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | struct | list_head | list_head | 28 | 28 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_Init | Class_Init | 30 | 34 |  |  |  | GLOBAL void Class_Init(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_Exit | Class_Exit | 36 | 42 |  |  |  | GLOBAL void Class_Exit(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_GetMemberReason | Class_GetMemberReason | 44 | 69 |  |  |  | GLOBAL bool Class_GetMemberReason(const int Class, CLIENT *Client, char *reason, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_HandleServerBans | Class_HandleServerBans | 79 | 93 |  |  |  | GLOBAL bool Class_HandleServerBans(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_AddMask | Class_AddMask | 96 | 109 |  |  |  | GLOBAL bool Class_AddMask(const int Class, const char *Pattern, time_t ValidUntil, const char *Reason)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_DeleteMask | Class_DeleteMask | 111 | 121 |  |  |  | GLOBAL void Class_DeleteMask(const int Class, const char *Pattern)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_GetList | Class_GetList | 123 | 129 |  |  |  | list_head * Class_GetList(const int Class)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\class.c | function | Class_Expire | Class_Expire | 131 | 136 |  |  |  | GLOBAL void Class_Expire(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client-cap.c | function | Client_Cap | Client_Cap | 28 | 34 |  |  |  | GLOBAL int Client_Cap(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client-cap.c | function | Client_CapSet | Client_CapSet | 36 | 45 |  |  |  | GLOBAL void Client_CapSet(CLIENT *Client, int Cap)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client-cap.c | function | Client_CapAdd | Client_CapAdd | 47 | 56 |  |  |  | GLOBAL void Client_CapAdd(CLIENT *Client, int Cap)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client-cap.c | function | Client_CapDel | Client_CapDel | 58 | 67 |  |  |  | GLOBAL void Client_CapDel(CLIENT *Client, int Cap)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Init | Client_Init | 71 | 103 |  |  |  | GLOBAL void Client_Init( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | struct | hostent | hostent | 74 | 74 |  |  |  | struct hostent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Exit | Client_Exit | 106 | 126 |  |  |  | GLOBAL void Client_Exit( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_ThisServer | Client_ThisServer | 129 | 133 |  |  |  | GLOBAL CLIENT * Client_ThisServer( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_NewLocal | Client_NewLocal | 140 | 145 |  |  |  | GLOBAL CLIENT * Client_NewLocal(CONN_ID Idx, const char *Hostname, int Type, bool Idented)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_NewRemoteServer | Client_NewRemoteServer | 152 | 158 |  |  |  | GLOBAL CLIENT * Client_NewRemoteServer(CLIENT *Introducer, const char *Hostname, CLIENT *TopServer, int Hops, int Token, const char *Info, bool Idented)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_NewRemoteUser | Client_NewRemoteUser | 165 | 171 |  |  |  | GLOBAL CLIENT * Client_NewRemoteUser(CLIENT *Introducer, const char *Nick, int Hops, const char *User, const char *Hostname, int Token, const char *Modes, const char *Info, bool Idented)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Init_New_Client | Init_New_Client | 179 | 224 |  |  |  | static CLIENT * Init_New_Client(CONN_ID Idx, CLIENT *Introducer, CLIENT *TopServer, int Type, const char *ID, const char *User, const char *Hostname, const char *Info, int Hops, int Token, const char *Modes, bool Idented)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Destroy | Client_Destroy | 227 | 322 |  |  |  | GLOBAL void Client_Destroy( CLIENT *Client, const char *LogMsg, const char *FwdMsg, bool SendQuit )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetHostname | Client_SetHostname | 334 | 359 |  |  |  | GLOBAL void Client_SetHostname( CLIENT *Client, const char *Hostname )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetIPAText | Client_SetIPAText | 368 | 380 |  |  |  | GLOBAL void Client_SetIPAText(CLIENT *Client, const char *IPAText)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetID | Client_SetID | 383 | 398 |  |  |  | GLOBAL void Client_SetID( CLIENT *Client, const char *ID )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetUser | Client_SetUser | 401 | 417 |  |  |  | GLOBAL void Client_SetUser( CLIENT *Client, const char *User, bool Idented )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetOrigUser | Client_SetOrigUser | 428 | 437 |  |  |  | GLOBAL void Client_SetOrigUser(CLIENT UNUSED *Client, const char UNUSED *User)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetInfo | Client_SetInfo | 440 | 452 |  |  |  | GLOBAL void Client_SetInfo( CLIENT *Client, const char *Info )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetModes | Client_SetModes | 455 | 462 |  |  |  | GLOBAL void Client_SetModes( CLIENT *Client, const char *Modes )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetFlags | Client_SetFlags | 465 | 472 |  |  |  | GLOBAL void Client_SetFlags( CLIENT *Client, const char *Flags )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetAccountName | Client_SetAccountName | 475 | 488 |  |  |  | GLOBAL void Client_SetAccountName(CLIENT *Client, const char *AccountName)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetAway | Client_SetAway | 491 | 506 |  |  |  | GLOBAL void Client_SetAway( CLIENT *Client, const char *Txt )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetType | Client_SetType | 509 | 516 |  |  |  | GLOBAL void Client_SetType( CLIENT *Client, int Type )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetHops | Client_SetHops | 519 | 524 |  |  |  | GLOBAL void Client_SetHops( CLIENT *Client, int Hops )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetToken | Client_SetToken | 527 | 532 |  |  |  | GLOBAL void Client_SetToken( CLIENT *Client, int Token )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SetIntroducer | Client_SetIntroducer | 535 | 541 |  |  |  | GLOBAL void Client_SetIntroducer( CLIENT *Client, CLIENT *Introducer )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_ModeAdd | Client_ModeAdd | 544 | 562 |  |  |  | GLOBAL bool Client_ModeAdd( CLIENT *Client, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_ModeDel | Client_ModeDel | 565 | 589 |  |  |  | GLOBAL bool Client_ModeDel( CLIENT *Client, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Search | Client_Search | 597 | 620 |  |  |  | GLOBAL CLIENT * Client_Search( const char *Nick )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_SearchServer | Client_SearchServer | 631 | 652 |  |  |  | GLOBAL CLIENT * Client_SearchServer(const char *Mask)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_GetFromToken | Client_GetFromToken | 659 | 677 |  |  |  | GLOBAL CLIENT * Client_GetFromToken( CLIENT *Client, int Token )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Type | Client_Type | 680 | 685 |  |  |  | GLOBAL int Client_Type( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Conn | Client_Conn | 688 | 693 |  |  |  | GLOBAL CONN_ID Client_Conn( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_ID | Client_ID | 696 | 706 |  |  |  | GLOBAL char * Client_ID( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Info | Client_Info | 709 | 714 |  |  |  | GLOBAL char * Client_Info( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_User | Client_User | 717 | 722 |  |  |  | GLOBAL char * Client_User( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_OrigUser | Client_OrigUser | 734 | 737 |  |  |  | GLOBAL char * Client_OrigUser(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Hostname | Client_Hostname | 746 | 751 |  |  |  | GLOBAL char * Client_Hostname(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_HostnameCloaked | Client_HostnameCloaked | 758 | 763 |  |  |  | GLOBAL char * Client_HostnameCloaked(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_HostnameDisplayed | Client_HostnameDisplayed | 773 | 788 |  |  |  | GLOBAL char * Client_HostnameDisplayed(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_IPAText | Client_IPAText | 790 | 803 |  |  |  | GLOBAL const char * Client_IPAText(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_UpdateCloakedHostname | Client_UpdateCloakedHostname | 815 | 852 |  |  |  | GLOBAL void Client_UpdateCloakedHostname(CLIENT *Client, CLIENT *Origin, const char *Hostname)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Modes | Client_Modes | 854 | 859 |  |  |  | GLOBAL char * Client_Modes( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Flags | Client_Flags | 862 | 867 |  |  |  | GLOBAL char * Client_Flags( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Hops | Client_Hops | 870 | 875 |  |  |  | GLOBAL int Client_Hops( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Token | Client_Token | 878 | 883 |  |  |  | GLOBAL int Client_Token( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MyToken | Client_MyToken | 886 | 891 |  |  |  | GLOBAL int Client_MyToken( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_NextHop | Client_NextHop | 894 | 906 |  |  |  | GLOBAL CLIENT * Client_NextHop( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Mask | Client_Mask | 917 | 931 |  |  |  | GLOBAL char * Client_Mask( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MaskCloaked | Client_MaskCloaked | 945 | 960 |  |  |  | GLOBAL char * Client_MaskCloaked(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Introducer | Client_Introducer | 963 | 968 |  |  |  | GLOBAL CLIENT * Client_Introducer( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_TopServer | Client_TopServer | 971 | 976 |  |  |  | GLOBAL CLIENT * Client_TopServer( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_HasMode | Client_HasMode | 979 | 984 |  |  |  | GLOBAL bool Client_HasMode( CLIENT *Client, char Mode )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_HasFlag | Client_HasFlag | 987 | 992 |  |  |  | GLOBAL bool Client_HasFlag( CLIENT *Client, char Flag )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Away | Client_Away | 995 | 1000 |  |  |  | GLOBAL char * Client_Away( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_AccountName | Client_AccountName | 1003 | 1008 |  |  |  | GLOBAL char * Client_AccountName(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_CheckNick | Client_CheckNick | 1021 | 1056 |  |  |  | GLOBAL bool Client_CheckNick(CLIENT *Client, char *Nick)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_CheckID | Client_CheckID | 1059 | 1092 |  |  |  | GLOBAL bool Client_CheckID( CLIENT *Client, char *ID )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_First | Client_First | 1095 | 1099 |  |  |  | GLOBAL CLIENT * Client_First( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Next | Client_Next | 1102 | 1107 |  |  |  | GLOBAL CLIENT * Client_Next( CLIENT *c )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_UserCount | Client_UserCount | 1110 | 1114 |  |  |  | GLOBAL long Client_UserCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_ServiceCount | Client_ServiceCount | 1117 | 1121 |  |  |  | GLOBAL long Client_ServiceCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_ServerCount | Client_ServerCount | 1124 | 1128 |  |  |  | GLOBAL long Client_ServerCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MyUserCount | Client_MyUserCount | 1131 | 1135 |  |  |  | GLOBAL long Client_MyUserCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MyServiceCount | Client_MyServiceCount | 1138 | 1142 |  |  |  | GLOBAL long Client_MyServiceCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MyServerCount | Client_MyServerCount | 1145 | 1158 |  |  |  | GLOBAL unsigned long Client_MyServerCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_OperCount | Client_OperCount | 1161 | 1175 |  |  |  | GLOBAL unsigned long Client_OperCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_UnknownCount | Client_UnknownCount | 1178 | 1192 |  |  |  | GLOBAL unsigned long Client_UnknownCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MaxUserCount | Client_MaxUserCount | 1195 | 1199 |  |  |  | GLOBAL long Client_MaxUserCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_MyMaxUserCount | Client_MyMaxUserCount | 1202 | 1206 |  |  |  | GLOBAL long Client_MyMaxUserCount( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_IsValidNick | Client_IsValidNick | 1215 | 1238 |  |  |  | GLOBAL bool Client_IsValidNick(const char *Nick)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_GetWhowas | Client_GetWhowas | 1244 | 1248 |  |  |  | GLOBAL WHOWAS * Client_GetWhowas( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_GetLastWhowasIndex | Client_GetLastWhowasIndex | 1253 | 1257 |  |  |  | GLOBAL int Client_GetLastWhowasIndex( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_StartTime | Client_StartTime | 1265 | 1270 |  |  |  | GLOBAL time_t Client_StartTime(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Reject | Client_Reject | 1286 | 1303 |  |  |  | GLOBAL void Client_Reject(CLIENT *Client, const char *Reason, bool InformClient)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Introduce | Client_Introduce | 1313 | 1345 |  |  |  | GLOBAL void Client_Introduce(CLIENT *From, CLIENT *Client, int Type)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Count | Count | 1348 | 1361 |  |  |  | static unsigned long Count( CLIENT_TYPE Type )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | MyCount | MyCount | 1364 | 1377 |  |  |  | static unsigned long MyCount( CLIENT_TYPE Type )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | New_Client_Struct | New_Client_Struct | 1385 | 1406 |  |  |  | static CLIENT * New_Client_Struct( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Free_Client | Free_Client | 1411 | 1428 |  |  |  | static void Free_Client(CLIENT **Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Generate_MyToken | Generate_MyToken | 1430 | 1451 |  |  |  | static void Generate_MyToken( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Adjust_Counters | Adjust_Counters | 1454 | 1471 |  |  |  | static void Adjust_Counters( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_RegisterWhowas | Client_RegisterWhowas | 1480 | 1515 |  |  |  | GLOBAL void Client_RegisterWhowas( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_TypeText | Client_TypeText | 1518 | 1535 |  |  |  | GLOBAL const char * Client_TypeText(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Destroy_UserOrService | Destroy_UserOrService | 1541 | 1585 |  |  |  | static void Destroy_UserOrService(CLIENT *Client, const char *Txt, const char *FwdMsg, bool SendQuit)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | cb_introduceClient | cb_introduceClient | 1595 | 1602 |  |  |  | static void cb_introduceClient(CLIENT *To, CLIENT *Prefix, void *data)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_Announce | Client_Announce | 1615 | 1692 |  |  |  | GLOBAL bool Client_Announce(CLIENT * Client, CLIENT * Prefix, CLIENT * User)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.c | function | Client_DebugDump | Client_DebugDump | 1696 | 1711 |  |  |  | GLOBAL void Client_DebugDump(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | struct | _CLIENT | _CLIENT | 41 | 66 |  |  |  | struct _CLIENT { time_t starttime; /* Start time of link */ char id[CLIENT_ID_LEN]; /* nick (user) / ID (server) */ UINT32 hash; /* hash of lower-case ID */ POINTER *next; /* pointer to next client structure */ CLIENT_TYPE type; /* type of client, see CLIENT_xxx */ CONN_ID conn_id; /* ID of the conn
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | typedef | CLIENT | CLIENT | 41 | 66 |  |  |  | typedef struct _CLIENT { time_t starttime; /* Start time of link */ char id[CLIENT_ID_LEN]; /* nick (user) / ID (server) */ UINT32 hash; /* hash of lower-case ID */ POINTER *next; /* pointer to next client structure */ CLIENT_TYPE type; /* type of client, see CLIENT_xxx */ CONN_ID conn_id; /* ID of 
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | starttime | _CLIENT::starttime | 43 | 43 | _CLIENT | time_t | scalar_or_unknown | time_t starttime;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | id | _CLIENT::id | 44 | 44 | _CLIENT | char | scalar_or_unknown | char id[CLIENT_ID_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | hash | _CLIENT::hash | 45 | 45 | _CLIENT | UINT32 | scalar_or_unknown | UINT32 hash;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | POINTER | _CLIENT::POINTER | 46 | 46 | _CLIENT | POINTER | pointer_or_reference | POINTER *next;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | type | _CLIENT::type | 47 | 47 | _CLIENT | CLIENT_TYPE | scalar_or_unknown | CLIENT_TYPE type;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | conn_id | _CLIENT::conn_id | 48 | 48 | _CLIENT | CONN_ID | scalar_or_unknown | CONN_ID conn_id;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | _CLIENT | _CLIENT::_CLIENT | 49 | 49 | _CLIENT | struct _CLIENT | structured_object | struct _CLIENT *introducer;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | struct | _CLIENT | _CLIENT::_CLIENT | 49 | 49 | _CLIENT |  |  | struct _CLIENT
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | _CLIENT | _CLIENT::_CLIENT | 50 | 50 | _CLIENT | struct _CLIENT | structured_object | struct _CLIENT *topserver;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | struct | _CLIENT | _CLIENT::_CLIENT | 50 | 50 | _CLIENT |  |  | struct _CLIENT
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | host | _CLIENT::host | 51 | 51 | _CLIENT | char | scalar_or_unknown | char host[CLIENT_HOST_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | cloaked | _CLIENT::cloaked | 52 | 52 | _CLIENT | char | scalar_or_unknown | char *cloaked;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | ipa_text | _CLIENT::ipa_text | 53 | 53 | _CLIENT | char | scalar_or_unknown | char *ipa_text;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | user | _CLIENT::user | 54 | 54 | _CLIENT | char | scalar_or_unknown | char user[CLIENT_USER_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | orig_user | _CLIENT::orig_user | 56 | 56 | _CLIENT | char | scalar_or_unknown | char orig_user[CLIENT_AUTHUSER_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | info | _CLIENT::info | 59 | 59 | _CLIENT | char | scalar_or_unknown | char info[CLIENT_INFO_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | modes | _CLIENT::modes | 60 | 60 | _CLIENT | char | scalar_or_unknown | char modes[CLIENT_MODE_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | hops | _CLIENT::hops | 61 | 61 | _CLIENT | int | scalar_or_unknown | int hops, token, mytoken;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | away | _CLIENT::away | 62 | 62 | _CLIENT | char | scalar_or_unknown | char *away;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | flags | _CLIENT::flags | 63 | 63 | _CLIENT | char | scalar_or_unknown | char flags[CLIENT_FLAGS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | account_name | _CLIENT::account_name | 64 | 64 | _CLIENT | char | scalar_or_unknown | char *account_name;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | capabilities | _CLIENT::capabilities | 65 | 65 | _CLIENT | int | scalar_or_unknown | int capabilities;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | typedef | CLIENT | CLIENT | 70 | 70 |  |  |  | typedef POINTER CLIENT;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | struct | _WHOWAS | _WHOWAS | 75 | 83 |  |  |  | struct _WHOWAS { time_t time; /* time stamp of entry or 0 if unused */ char id[CLIENT_NICK_LEN]; /* client nickname */ char host[CLIENT_HOST_LEN]; /* hostname of the client */ char user[CLIENT_USER_LEN]; /* user name ("login") */ char info[CLIENT_INFO_LEN]; /* long user name */ char server[CLIENT_HO
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | typedef | WHOWAS | WHOWAS | 75 | 83 |  |  |  | typedef struct _WHOWAS { time_t time; /* time stamp of entry or 0 if unused */ char id[CLIENT_NICK_LEN]; /* client nickname */ char host[CLIENT_HOST_LEN]; /* hostname of the client */ char user[CLIENT_USER_LEN]; /* user name ("login") */ char info[CLIENT_INFO_LEN]; /* long user name */ char server[C
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | time | _WHOWAS::time | 77 | 77 | _WHOWAS | time_t | scalar_or_unknown | time_t time;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | id | _WHOWAS::id | 78 | 78 | _WHOWAS | char | scalar_or_unknown | char id[CLIENT_NICK_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | host | _WHOWAS::host | 79 | 79 | _WHOWAS | char | scalar_or_unknown | char host[CLIENT_HOST_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | user | _WHOWAS::user | 80 | 80 | _WHOWAS | char | scalar_or_unknown | char user[CLIENT_USER_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | info | _WHOWAS::info | 81 | 81 | _WHOWAS | char | scalar_or_unknown | char info[CLIENT_INFO_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | field | server | _WHOWAS::server | 82 | 82 | _WHOWAS | char | scalar_or_unknown | char server[CLIENT_HOST_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf-ssl.h | struct | ConnSSL_State | ConnSSL_State | 35 | 46 |  |  |  | struct ConnSSL_State { #ifdef HAVE_LIBSSL SSL *ssl; #endif #ifdef HAVE_LIBGNUTLS gnutls_session_t gnutls_session; void *cookie; /* pointer to server configuration structure (for outgoing connections), or NULL. */ size_t x509_cred_idx; /* index of active x509 credential record */ #endif char *fingerp
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf-ssl.h | field | SSL | ConnSSL_State::SSL | 37 | 37 | ConnSSL_State | SSL | scalar_or_unknown | SSL *ssl;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf-ssl.h | field | gnutls_session | ConnSSL_State::gnutls_session | 40 | 40 | ConnSSL_State | gnutls_session_t | scalar_or_unknown | gnutls_session_t gnutls_session;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf-ssl.h | field | cookie | ConnSSL_State::cookie | 41 | 41 | ConnSSL_State | void | scalar_or_unknown | void *cookie;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf-ssl.h | field | x509_cred_idx | ConnSSL_State::x509_cred_idx | 43 | 43 | ConnSSL_State | size_t | scalar_or_unknown | size_t x509_cred_idx;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf-ssl.h | field | fingerprint | ConnSSL_State::fingerprint | 45 | 45 | ConnSSL_State | char | scalar_or_unknown | char *fingerprint;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | SSLOptions | SSLOptions | 106 | 106 |  |  |  | struct SSLOptions
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | ConfSSL_Init | ConfSSL_Init | 111 | 134 |  |  |  | static void ConfSSL_Init(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_SSLInUse | Conf_SSLInUse | 141 | 156 |  |  |  | GLOBAL bool Conf_SSLInUse(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | CheckFileReadable | CheckFileReadable | 166 | 180 |  |  |  | static void CheckFileReadable(const char *Var, const char *Filename)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | strdup_warn | strdup_warn | 190 | 198 |  |  |  | static char * strdup_warn(const char *str)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | ports_puts | ports_puts | 203 | 218 |  |  |  | static void ports_puts(array *a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | ports_parse | ports_parse | 223 | 248 |  |  |  | static void ports_parse(array *a, const char *File, int Line, char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_Init | Conf_Init | 253 | 258 |  |  |  | GLOBAL void Conf_Init( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_Rehash | Conf_Rehash | 265 | 275 |  |  |  | GLOBAL bool Conf_Rehash( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | yesno_to_str | yesno_to_str | 280 | 286 |  |  |  | static const char* yesno_to_str(int boolean_value)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | opers_free | opers_free | 291 | 304 |  |  |  | static void opers_free(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Oper | Conf_Oper | 294 | 294 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | opers_puts | opers_puts | 309 | 326 |  |  |  | static void opers_puts(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Oper | Conf_Oper | 312 | 312 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_Test | Conf_Test | 337 | 515 |  |  |  | GLOBAL int Conf_Test( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | passwd | passwd | 340 | 340 |  |  |  | struct passwd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | group | group | 341 | 341 |  |  |  | struct group
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Channel | Conf_Channel | 345 | 345 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_UnsetServer | Conf_UnsetServer | 525 | 561 |  |  |  | GLOBAL void Conf_UnsetServer( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_SetServer | Conf_SetServer | 566 | 583 |  |  |  | GLOBAL bool Conf_SetServer( int ConfServer, CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_GetServer | Conf_GetServer | 588 | 599 |  |  |  | GLOBAL int Conf_GetServer( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_EnableServer | Conf_EnableServer | 607 | 622 |  |  |  | GLOBAL bool Conf_EnableServer( const char *Name, UINT16 Port )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_EnablePassiveServer | Conf_EnablePassiveServer | 633 | 649 |  |  |  | GLOBAL bool Conf_EnablePassiveServer(const char *Name)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_DisableServer | Conf_DisableServer | 657 | 675 |  |  |  | GLOBAL bool Conf_DisableServer( const char *Name )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_AddServer | Conf_AddServer | 687 | 714 |  |  |  | GLOBAL bool Conf_AddServer(const char *Name, UINT16 Port, const char *Host, const char *MyPwd, const char *PeerPwd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_NickIsService | Conf_NickIsService | 723 | 731 |  |  |  | GLOBAL bool Conf_NickIsService(int ConfServer, const char *Nick)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_NickIsBlocked | Conf_NickIsBlocked | 739 | 751 |  |  |  | GLOBAL bool Conf_NickIsBlocked(const char *Nick)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Set_Defaults | Set_Defaults | 756 | 849 |  |  |  | static void Set_Defaults(bool InitServers)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | no_listenports | no_listenports | 856 | 864 |  |  |  | static bool no_listenports(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Read_TextFile | Read_TextFile | 874 | 905 |  |  |  | static bool Read_TextFile(const char *Filename, const char *Name, array *Destination)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Read_Config | Read_Config | 917 | 1096 |  |  |  | static bool Read_Config(bool TestOnly, bool IsStarting)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | dirent | dirent | 922 | 922 |  |  |  | struct dirent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Channel | Conf_Channel | 1171 | 1172 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Channel | Conf_Channel | 1175 | 1175 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Oper | Conf_Oper | 1185 | 1185 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Oper | Conf_Oper | 1187 | 1187 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | passwd | passwd | 1346 | 1346 |  |  |  | struct passwd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | group | group | 1347 | 1347 |  |  |  | struct group
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Handle_OPTIONS | Handle_OPTIONS | 1583 | 1788 |  |  |  | static void Handle_OPTIONS(const char *File, int Line, char *Var, char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Handle_SSL | Handle_SSL | 1799 | 1857 |  |  |  | static void Handle_SSL(const char *File, int Line, char *Var, char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Handle_OPERATOR | Handle_OPERATOR | 1868 | 1906 |  |  |  | static void Handle_OPERATOR(const char *File, int Line, char *Var, char *Arg )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Oper | Conf_Oper | 1872 | 1872 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Handle_SERVER | Handle_SERVER | 1915 | 2012 |  |  |  | static void Handle_SERVER(const char *File, int Line, char *Var, char *Arg )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Handle_Channelname | Handle_Channelname | 2024 | 2040 |  |  |  | static bool Handle_Channelname(struct Conf_Channel *new_chan, const char *name)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Channel | Conf_Channel | 2025 | 2025 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Handle_CHANNEL | Handle_CHANNEL | 2049 | 2122 |  |  |  | static void Handle_CHANNEL(const char *File, int Line, char *Var, char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Channel | Conf_Channel | 2053 | 2053 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Validate_Config | Validate_Config | 2134 | 2292 |  |  |  | static bool Validate_Config(bool Configtest, bool Rehash)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | hostent | hostent | 2140 | 2140 |  |  |  | struct hostent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | rlimit | rlimit | 2144 | 2144 |  |  |  | struct rlimit
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Oper | Conf_Oper | 2287 | 2287 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | struct | Conf_Channel | Conf_Channel | 2289 | 2289 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Config_Error_TooLong | Config_Error_TooLong | 2300 | 2305 |  |  |  | static void Config_Error_TooLong(const char *File, const int Line, const char *Item)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Config_Error_Section | Config_Error_Section | 2314 | 2320 |  |  |  | static void Config_Error_Section(const char *File, const int Line, const char *Item, const char *Section)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Config_Error_NaN | Config_Error_NaN | 2328 | 2333 |  |  |  | static void Config_Error_NaN(const char *File, const int Line, const char *Item )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Config_Error | Config_Error | 2348 | 2374 |  |  |  | static void Config_Error( Level, Format, va_alist ) const int Level; const char *Format; va_dcl #endif
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Conf_DebugDump | Conf_DebugDump | 2380 | 2396 |  |  |  | GLOBAL void Conf_DebugDump(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.c | function | Init_Server_Struct | Init_Server_Struct | 2404 | 2424 |  |  |  | static void Init_Server_Struct( CONF_SERVER *Server )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | struct | Conf_Oper | Conf_Oper | 36 | 40 |  |  |  | struct Conf_Oper { char name[CLIENT_PASS_LEN]; /**< Name (ID) */ char pwd[CLIENT_PASS_LEN]; /**< Password */ char *mask; /**< Allowed host mask */ }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | name | Conf_Oper::name | 37 | 37 | Conf_Oper | char | scalar_or_unknown | char name[CLIENT_PASS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | pwd | Conf_Oper::pwd | 38 | 38 | Conf_Oper | char | scalar_or_unknown | char pwd[CLIENT_PASS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | mask | Conf_Oper::mask | 39 | 39 | Conf_Oper | char | scalar_or_unknown | char *mask;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | struct | _Conf_Server | _Conf_Server | 47 | 68 |  |  |  | struct _Conf_Server { char host[HOST_LEN]; /**< Hostname */ char name[CLIENT_ID_LEN]; /**< IRC client ID */ char pwd_in[CLIENT_PASS_LEN]; /**< Password which must be received */ char pwd_out[CLIENT_PASS_LEN]; /**< Password to send to the peer */ UINT16 port; /**< Server port to connect to */ int gro
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | typedef | CONF_SERVER | CONF_SERVER | 47 | 68 |  |  |  | typedef struct _Conf_Server { char host[HOST_LEN]; /**< Hostname */ char name[CLIENT_ID_LEN]; /**< IRC client ID */ char pwd_in[CLIENT_PASS_LEN]; /**< Password which must be received */ char pwd_out[CLIENT_PASS_LEN]; /**< Password to send to the peer */ UINT16 port; /**< Server port to connect to */
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | host | _Conf_Server::host | 49 | 49 | _Conf_Server | char | scalar_or_unknown | char host[HOST_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | name | _Conf_Server::name | 50 | 50 | _Conf_Server | char | scalar_or_unknown | char name[CLIENT_ID_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | pwd_in | _Conf_Server::pwd_in | 51 | 51 | _Conf_Server | char | scalar_or_unknown | char pwd_in[CLIENT_PASS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | pwd_out | _Conf_Server::pwd_out | 52 | 52 | _Conf_Server | char | scalar_or_unknown | char pwd_out[CLIENT_PASS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | port | _Conf_Server::port | 53 | 53 | _Conf_Server | UINT16 | scalar_or_unknown | UINT16 port;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | group | _Conf_Server::group | 54 | 54 | _Conf_Server | int | scalar_or_unknown | int group;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | lasttry | _Conf_Server::lasttry | 55 | 55 | _Conf_Server | time_t | scalar_or_unknown | time_t lasttry;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | res_stat | _Conf_Server::res_stat | 56 | 56 | _Conf_Server | PROC_STAT | scalar_or_unknown | PROC_STAT res_stat;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | flags | _Conf_Server::flags | 57 | 57 | _Conf_Server | int | scalar_or_unknown | int flags;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | conn_id | _Conf_Server::conn_id | 58 | 58 | _Conf_Server | CONN_ID | scalar_or_unknown | CONN_ID conn_id;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | bind_addr | _Conf_Server::bind_addr | 59 | 59 | _Conf_Server | ng_ipaddr_t | scalar_or_unknown | ng_ipaddr_t bind_addr;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | ng_ipaddr_t | _Conf_Server::ng_ipaddr_t | 61 | 61 | _Conf_Server | ng_ipaddr_t | scalar_or_unknown | ng_ipaddr_t dst_addr[2];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | SSLConnect | _Conf_Server::SSLConnect | 63 | 63 | _Conf_Server | bool | scalar_or_unknown | bool SSLConnect;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | SSLVerify | _Conf_Server::SSLVerify | 64 | 64 | _Conf_Server | bool | scalar_or_unknown | bool SSLVerify;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | svs_mask | _Conf_Server::svs_mask | 66 | 66 | _Conf_Server | char | scalar_or_unknown | char svs_mask[CLIENT_ID_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | struct | SSLOptions | SSLOptions | 73 | 82 |  |  |  | struct SSLOptions { char *KeyFile; /**< SSL key file */ char *CertFile; /**< SSL certificate file */ char *DHFile; /**< File containing DH parameters */ array ListenPorts; /**< Array of listening SSL ports */ array KeyFilePassword; /**< Key file password */ char *CipherList; /**< Set SSL cipher list
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | KeyFile | SSLOptions::KeyFile | 74 | 74 | SSLOptions | char | scalar_or_unknown | char *KeyFile;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | CertFile | SSLOptions::CertFile | 75 | 75 | SSLOptions | char | scalar_or_unknown | char *CertFile;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | DHFile | SSLOptions::DHFile | 76 | 76 | SSLOptions | char | scalar_or_unknown | char *DHFile;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | ListenPorts | SSLOptions::ListenPorts | 77 | 77 | SSLOptions | array | array_or_collection | array ListenPorts;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | KeyFilePassword | SSLOptions::KeyFilePassword | 78 | 78 | SSLOptions | array | array_or_collection | array KeyFilePassword;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | CipherList | SSLOptions::CipherList | 79 | 79 | SSLOptions | char | scalar_or_unknown | char *CipherList;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | CAFile | SSLOptions::CAFile | 80 | 80 | SSLOptions | char | scalar_or_unknown | char *CAFile;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | CRLFile | SSLOptions::CRLFile | 81 | 81 | SSLOptions | char | scalar_or_unknown | char *CRLFile;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | struct | Conf_Channel | Conf_Channel | 87 | 96 |  |  |  | struct Conf_Channel { char name[CHANNEL_NAME_LEN]; /**< Name of the channel */ char *modes[512]; /**< Initial channel modes to evaluate */ char key[CLIENT_PASS_LEN]; /**< Channel key ("password", mode "k" ) */ char topic[COMMAND_LEN]; /**< Initial topic */ char keyfile[512]; /**< Path and name of ch
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | name | Conf_Channel::name | 88 | 88 | Conf_Channel | char | scalar_or_unknown | char name[CHANNEL_NAME_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | modes | Conf_Channel::modes | 89 | 89 | Conf_Channel | char | scalar_or_unknown | char *modes[512];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | key | Conf_Channel::key | 90 | 90 | Conf_Channel | char | scalar_or_unknown | char key[CLIENT_PASS_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | topic | Conf_Channel::topic | 91 | 91 | Conf_Channel | char | scalar_or_unknown | char topic[COMMAND_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | keyfile | Conf_Channel::keyfile | 92 | 92 | Conf_Channel | char | scalar_or_unknown | char keyfile[512];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | autojoin | Conf_Channel::autojoin | 93 | 93 | Conf_Channel | bool | scalar_or_unknown | bool autojoin;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | maxusers | Conf_Channel::maxusers | 94 | 94 | Conf_Channel | unsigned long | scalar_or_unknown | unsigned long maxusers;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conf.h | field | modes_num | Conf_Channel::modes_num | 95 | 95 | Conf_Channel | unsigned int | scalar_or_unknown | unsigned int modes_num;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-encoding.c | function | Conn_SetEncoding | Conn_SetEncoding | 45 | 76 |  |  |  | GLOBAL bool Conn_SetEncoding(CONN_ID Conn, const char *ClientEnc)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-encoding.c | function | Conn_UnsetEncoding | Conn_UnsetEncoding | 83 | 97 |  |  |  | GLOBAL void Conn_UnsetEncoding(CONN_ID Conn)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-encoding.c | function | Convert_Message | Convert_Message | 109 | 130 |  |  |  | char * Convert_Message(iconv_t Handle, char *Message)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-encoding.c | function | Conn_EncodingFrom | Conn_EncodingFrom | 148 | 159 |  |  |  | GLOBAL char * Conn_EncodingFrom(UNUSED CONN_ID Conn, char *Message)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-encoding.c | function | Conn_EncodingTo | Conn_EncodingTo | 175 | 186 |  |  |  | GLOBAL char * Conn_EncodingTo(UNUSED CONN_ID Conn, char *Message)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_UpdateIdle | Conn_UpdateIdle | 35 | 40 |  |  |  | GLOBAL void Conn_UpdateIdle(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_UpdatePing | Conn_UpdatePing | 51 | 56 |  |  |  | GLOBAL void Conn_UpdatePing(CONN_ID Idx, time_t TimeStamp)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_GetSignon | Conn_GetSignon | 61 | 66 |  |  |  | GLOBAL time_t Conn_GetSignon(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_GetIdle | Conn_GetIdle | 68 | 74 |  |  |  | GLOBAL time_t Conn_GetIdle( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_LastPing | Conn_LastPing | 76 | 81 |  |  |  | GLOBAL time_t Conn_LastPing( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_SetPenalty | Conn_SetPenalty | 94 | 120 |  |  |  | GLOBAL void Conn_SetPenalty(CONN_ID Idx, time_t Seconds)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_ClearFlags | Conn_ClearFlags | 122 | 128 |  |  |  | GLOBAL void Conn_ClearFlags( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_Flag | Conn_Flag | 130 | 135 |  |  |  | GLOBAL int Conn_Flag( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_SetFlag | Conn_SetFlag | 137 | 142 |  |  |  | GLOBAL void Conn_SetFlag( CONN_ID Idx, int Flag )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_First | Conn_First | 144 | 154 |  |  |  | GLOBAL CONN_ID Conn_First( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_Next | Conn_Next | 156 | 168 |  |  |  | GLOBAL CONN_ID Conn_Next( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_Options | Conn_Options | 170 | 175 |  |  |  | GLOBAL UINT16 Conn_Options( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_SetOption | Conn_SetOption | 180 | 185 |  |  |  | GLOBAL void Conn_SetOption(CONN_ID Idx, int Option)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_StartTime | Conn_StartTime | 192 | 205 |  |  |  | GLOBAL time_t Conn_StartTime( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_SendQ | Conn_SendQ | 210 | 220 |  |  |  | GLOBAL size_t Conn_SendQ( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_SendMsg | Conn_SendMsg | 225 | 231 |  |  |  | GLOBAL long Conn_SendMsg( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_SendBytes | Conn_SendBytes | 237 | 242 |  |  |  | GLOBAL long Conn_SendBytes( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_RecvQ | Conn_RecvQ | 247 | 257 |  |  |  | GLOBAL size_t Conn_RecvQ( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_RecvMsg | Conn_RecvMsg | 262 | 267 |  |  |  | GLOBAL long Conn_RecvMsg( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_RecvBytes | Conn_RecvBytes | 273 | 278 |  |  |  | GLOBAL long Conn_RecvBytes( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_IPA | Conn_IPA | 283 | 288 |  |  |  | GLOBAL const char * Conn_IPA(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_ResetWCounter | Conn_ResetWCounter | 290 | 294 |  |  |  | GLOBAL void Conn_ResetWCounter( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-func.c | function | Conn_WCounter | Conn_WCounter | 296 | 300 |  |  |  | GLOBAL long Conn_WCounter( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | struct | SSLOptions | SSLOptions | 40 | 40 |  |  |  | struct SSLOptions
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | struct | <anonymous> | <anonymous> | 69 | 73 |  |  |  | struct { int refcnt; gnutls_certificate_credentials_t x509_cred; gnutls_dh_params_t dh_params; }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | typedef | x509_cred_slot | x509_cred_slot | 69 | 73 |  |  |  | typedef struct { int refcnt; gnutls_certificate_credentials_t x509_cred; gnutls_dh_params_t dh_params; } x509_cred_slot;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | field | refcnt | refcnt | 70 | 70 |  | int | scalar_or_unknown | int refcnt;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | field | x509_cred | x509_cred | 71 | 71 |  | gnutls_certificate_credentials_t | scalar_or_unknown | gnutls_certificate_credentials_t x509_cred;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | field | dh_params | dh_params | 72 | 72 |  | gnutls_dh_params_t | scalar_or_unknown | gnutls_dh_params_t dh_params;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | openreadclose | openreadclose | 91 | 131 |  |  |  | static char * openreadclose(const char *name, size_t *len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | struct | stat | stat | 94 | 94 |  |  |  | struct stat
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | LogOpenSSL_CertInfo | LogOpenSSL_CertInfo | 143 | 168 |  |  |  | static void LogOpenSSL_CertInfo(int level, X509 * cert, const char *msg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | LogOpenSSLError | LogOpenSSLError | 170 | 184 |  |  |  | static void LogOpenSSLError(const char *error, const char *info)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | pem_passwd_cb | pem_passwd_cb | 187 | 208 |  |  |  | static int pem_passwd_cb(char *buf, int size, int rwflag, void *password)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | Verify_openssl | Verify_openssl | 211 | 231 |  |  |  | static int Verify_openssl(int preverify_ok, X509_STORE_CTX * ctx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | Load_DH_params | Load_DH_params | 235 | 303 |  |  |  | static bool Load_DH_params(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_Free | ConnSSL_Free | 306 | 345 |  |  |  | void ConnSSL_Free(CONNECTION *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_InitLibrary | ConnSSL_InitLibrary | 348 | 459 |  |  |  | bool ConnSSL_InitLibrary( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_SetVerifyProperties_gnutls | ConnSSL_SetVerifyProperties_gnutls | 463 | 494 |  |  |  | static bool ConnSSL_SetVerifyProperties_gnutls(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_LoadServerKey_gnutls | ConnSSL_LoadServerKey_gnutls | 497 | 577 |  |  |  | static bool ConnSSL_LoadServerKey_gnutls(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_LoadServerKey_openssl | ConnSSL_LoadServerKey_openssl | 582 | 621 |  |  |  | static bool ConnSSL_LoadServerKey_openssl(SSL_CTX *ctx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_SetVerifyProperties_openssl | ConnSSL_SetVerifyProperties_openssl | 624 | 671 |  |  |  | static bool ConnSSL_SetVerifyProperties_openssl(SSL_CTX * ctx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_Init_SSL | ConnSSL_Init_SSL | 675 | 741 |  |  |  | static bool ConnSSL_Init_SSL(CONNECTION *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_PrepareConnect | ConnSSL_PrepareConnect | 744 | 785 |  |  |  | bool ConnSSL_PrepareConnect(CONNECTION * c, CONF_SERVER * s)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_HandleError | ConnSSL_HandleError | 803 | 883 |  |  |  | static int ConnSSL_HandleError(CONNECTION * c, const int code, const char *fname)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | LogMalloc | LogMalloc | 887 | 895 |  |  |  | static void * LogMalloc(size_t s)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | LogGnuTLS_CertInfo | LogGnuTLS_CertInfo | 898 | 934 |  |  |  | static void LogGnuTLS_CertInfo(int level, gnutls_x509_crt_t cert, const char *msg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_LogCertInfo | ConnSSL_LogCertInfo | 938 | 1082 |  |  |  | static void ConnSSL_LogCertInfo( CONNECTION * c, bool connect)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_Accept | ConnSSL_Accept | 1092 | 1109 |  |  |  | int ConnSSL_Accept( CONNECTION *c )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_Connect | ConnSSL_Connect | 1112 | 1121 |  |  |  | int ConnSSL_Connect( CONNECTION *c )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_InitCertFp | ConnSSL_InitCertFp | 1123 | 1196 |  |  |  | static int ConnSSL_InitCertFp( CONNECTION *c )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnectAccept | ConnectAccept | 1199 | 1224 |  |  |  | static int ConnectAccept( CONNECTION *c, bool connect)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_Write | ConnSSL_Write | 1227 | 1246 |  |  |  | ssize_t ConnSSL_Write(CONNECTION *c, const void *buf, size_t count)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_Read | ConnSSL_Read | 1249 | 1271 |  |  |  | ssize_t ConnSSL_Read(CONNECTION *c, void * buf, size_t count)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_GetCipherInfo | ConnSSL_GetCipherInfo | 1274 | 1308 |  |  |  | bool ConnSSL_GetCipherInfo(CONNECTION *c, char *buf, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_GetCertFp | ConnSSL_GetCertFp | 1310 | 1314 |  |  |  | char * ConnSSL_GetCertFp(CONNECTION *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_SetCertFp | ConnSSL_SetCertFp | 1316 | 1322 |  |  |  | bool ConnSSL_SetCertFp(CONNECTION *c, const char *fingerprint)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | function | ConnSSL_InitLibrary | ConnSSL_InitLibrary | 1325 | 1329 |  |  |  | bool ConnSSL_InitLibrary(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-zip.c | function | Zip_InitConn | Zip_InitConn | 38 | 75 |  |  |  | GLOBAL bool Zip_InitConn( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-zip.c | function | Zip_Buffer | Zip_Buffer | 90 | 114 |  |  |  | GLOBAL bool Zip_Buffer( CONN_ID Idx, const char *Data, size_t Len )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-zip.c | function | Zip_Flush | Zip_Flush | 124 | 182 |  |  |  | GLOBAL bool Zip_Flush( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-zip.c | function | Unzip_Buffer | Unzip_Buffer | 193 | 253 |  |  |  | GLOBAL bool Unzip_Buffer( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-zip.c | function | Zip_SendBytes | Zip_SendBytes | 260 | 265 |  |  |  | GLOBAL long Zip_SendBytes( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-zip.c | function | Zip_RecvBytes | Zip_RecvBytes | 272 | 277 |  |  |  | GLOBAL long Zip_RecvBytes( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | SSLOptions | SSLOptions | 111 | 111 |  |  |  | struct SSLOptions
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | my_sd_listen_fds | my_sd_listen_fds | 135 | 157 |  |  |  | static int my_sd_listen_fds(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_listen | cb_listen | 166 | 171 |  |  |  | static void cb_listen(int sock, short irrelevant)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_connserver | cb_connserver | 179 | 248 |  |  |  | static void cb_connserver(int sock, UNUSED short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | server_login | server_login | 255 | 271 |  |  |  | static void server_login(CONN_ID idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_clientserver | cb_clientserver | 279 | 302 |  |  |  | static void cb_clientserver(int sock, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Init | Conn_Init | 307 | 324 |  |  |  | GLOBAL void Conn_Init( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Exit | Conn_Exit | 329 | 348 |  |  |  | GLOBAL void Conn_Exit( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_CloseAllSockets | Conn_CloseAllSockets | 355 | 365 |  |  |  | GLOBAL void Conn_CloseAllSockets(int ExceptOf)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Init_Listeners | Init_Listeners | 375 | 403 |  |  |  | static unsigned int Init_Listeners(array *a, const char *listen_addr, void (*func)(int,short))
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_InitListeners | Conn_InitListeners | 410 | 522 |  |  |  | GLOBAL unsigned int Conn_InitListeners( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | sockaddr | sockaddr | 434 | 434 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_ExitListeners | Conn_ExitListeners | 527 | 551 |  |  |  | GLOBAL void Conn_ExitListeners( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | InitSinaddrListenAddr | InitSinaddrListenAddr | 561 | 574 |  |  |  | static bool InitSinaddrListenAddr(ng_ipaddr_t *addr, const char *listen_addrstr, UINT16 Port)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | set_v6_only | set_v6_only | 584 | 599 |  |  |  | static void set_v6_only(int af, int sock)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | NewListener | NewListener | 608 | 655 |  |  |  | static int NewListener(const char *listen_addr, UINT16 Port)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | sockaddr | sockaddr | 631 | 631 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Handler | Conn_Handler | 666 | 815 |  |  |  | GLOBAL void Conn_Handler(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | timeval | timeval | 671 | 671 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Password | Conn_Password | 915 | 923 |  |  |  | GLOBAL char* Conn_Password( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_SetPassword | Conn_SetPassword | 925 | 938 |  |  |  | GLOBAL void Conn_SetPassword( CONN_ID Idx, const char *Pwd )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Write | Conn_Write | 948 | 1021 |  |  |  | static bool Conn_Write( CONN_ID Idx, char *Data, size_t Len )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Close | Conn_Close | 1034 | 1181 |  |  |  | GLOBAL void Conn_Close(CONN_ID Idx, const char *LogMsg, const char *FwdMsg, bool InformClient)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_Count | Conn_Count | 1188 | 1192 |  |  |  | GLOBAL long Conn_Count(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_CountMax | Conn_CountMax | 1199 | 1203 |  |  |  | GLOBAL long Conn_CountMax(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_CountAccepted | Conn_CountAccepted | 1210 | 1214 |  |  |  | GLOBAL long Conn_CountAccepted(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_SyncServerStruct | Conn_SyncServerStruct | 1220 | 1245 |  |  |  | GLOBAL void Conn_SyncServerStruct(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetIPAInfo | Conn_GetIPAInfo | 1253 | 1258 |  |  |  | GLOBAL const char * Conn_GetIPAInfo(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Handle_Write | Handle_Write | 1266 | 1336 |  |  |  | static bool Handle_Write( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Count_Connections | Count_Connections | 1343 | 1356 |  |  |  | static int Count_Connections(ng_ipaddr_t *a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | New_Connection | New_Connection | 1365 | 1491 |  |  |  | static int New_Connection(int Sock, UNUSED bool IsSSL)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | request_info | request_info | 1369 | 1369 |  |  |  | struct request_info
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | sockaddr | sockaddr | 1382 | 1382 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_StartLogin | Conn_StartLogin | 1498 | 1539 |  |  |  | GLOBAL void Conn_StartLogin(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Account_Connection | Account_Connection | 1544 | 1553 |  |  |  | static void Account_Connection(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Socket2Index | Socket2Index | 1562 | 1587 |  |  |  | static CONN_ID Socket2Index( int Sock )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Read_Request | Read_Request | 1595 | 1710 |  |  |  | static void Read_Request(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Handle_Buffer | Handle_Buffer | 1722 | 1889 |  |  |  | static unsigned int Handle_Buffer(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Check_Connections | Check_Connections | 1896 | 1950 |  |  |  | static void Check_Connections(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Check_Servers | Check_Servers | 1955 | 2000 |  |  |  | static void Check_Servers(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | New_Server | New_Server | 2008 | 2129 |  |  |  | static void New_Server( int Server , ng_ipaddr_t *dest)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | sockaddr | sockaddr | 2057 | 2057 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | sockaddr | sockaddr | 2065 | 2065 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Init_Conn_Struct | Init_Conn_Struct | 2136 | 2152 |  |  |  | static void Init_Conn_Struct(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Init_Socket | Init_Socket | 2163 | 2198 |  |  |  | static bool Init_Socket( int Sock )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_Connect_to_Server | cb_Connect_to_Server | 2207 | 2261 |  |  |  | static void cb_Connect_to_Server(int fd, UNUSED short events)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_Read_Resolver_Result | cb_Read_Resolver_Result | 2270 | 2382 |  |  |  | static void cb_Read_Resolver_Result( int r_fd, UNUSED short events )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Simple_Message | Simple_Message | 2394 | 2415 |  |  |  | static void Simple_Message(int Sock, const char *Msg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetClient | Conn_GetClient | 2425 | 2434 |  |  |  | GLOBAL CLIENT * Conn_GetClient( CONN_ID Idx )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetProcStat | Conn_GetProcStat | 2442 | 2451 |  |  |  | GLOBAL PROC_STAT * Conn_GetProcStat(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetFromProc | Conn_GetFromProc | 2459 | 2471 |  |  |  | GLOBAL CONN_ID Conn_GetFromProc(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Throttle_Connection | Throttle_Connection | 2481 | 2501 |  |  |  | static void Throttle_Connection(const CONN_ID Idx, CLIENT *Client, const int Reason, unsigned int Value)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetAuthPing | Conn_GetAuthPing | 2505 | 2510 |  |  |  | GLOBAL long Conn_GetAuthPing(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_SetAuthPing | Conn_SetAuthPing | 2512 | 2517 |  |  |  | GLOBAL void Conn_SetAuthPing(CONN_ID Idx, long ID)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_clientserver_ssl | cb_clientserver_ssl | 2529 | 2552 |  |  |  | static void cb_clientserver_ssl(int sock, UNUSED short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_listen_ssl | cb_listen_ssl | 2561 | 2571 |  |  |  | static void cb_listen_ssl(int sock, short irrelevant)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | cb_connserver_login_ssl | cb_connserver_login_ssl | 2586 | 2630 |  |  |  | static void cb_connserver_login_ssl(int sock, short unused)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | SSL_WantRead | SSL_WantRead | 2650 | 2658 |  |  |  | static bool SSL_WantRead(const CONNECTION *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | SSL_WantWrite | SSL_WantWrite | 2668 | 2676 |  |  |  | static bool SSL_WantWrite(const CONNECTION *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetCipherInfo | Conn_GetCipherInfo | 2686 | 2693 |  |  |  | GLOBAL bool Conn_GetCipherInfo(CONN_ID Idx, char *buf, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_UsesSSL | Conn_UsesSSL | 2701 | 2708 |  |  |  | GLOBAL bool Conn_UsesSSL(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetCertFp | Conn_GetCertFp | 2710 | 2717 |  |  |  | GLOBAL char * Conn_GetCertFp(CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_SetCertFp | Conn_SetCertFp | 2719 | 2726 |  |  |  | GLOBAL bool Conn_SetCertFp(CONN_ID Idx, const char *fingerprint)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_UsesSSL | Conn_UsesSSL | 2730 | 2734 |  |  |  | GLOBAL bool Conn_UsesSSL(UNUSED CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetCertFp | Conn_GetCertFp | 2736 | 2740 |  |  |  | GLOBAL char * Conn_GetCertFp(UNUSED CONN_ID Idx)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_SetCertFp | Conn_SetCertFp | 2742 | 2746 |  |  |  | GLOBAL bool Conn_SetCertFp(UNUSED CONN_ID Idx, UNUSED const char *fingerprint)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_DebugDump | Conn_DebugDump | 2754 | 2771 |  |  |  | GLOBAL void Conn_DebugDump(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | typedef | CONN_ID | CONN_ID | 46 | 46 |  |  |  | typedef int CONN_ID;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | struct | _ZipData | _ZipData | 64 | 71 |  |  |  | struct _ZipData { z_stream in; /* "Handle" for input stream */ z_stream out; /* "Handle" for output stream */ array rbuf; /* Read buffer (compressed) */ array wbuf; /* Write buffer (uncompressed) */ long bytes_in, bytes_out; /* Counter for statistics (uncompressed!) */ }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | typedef | ZIPDATA | ZIPDATA | 64 | 71 |  |  |  | typedef struct _ZipData { z_stream in; /* "Handle" for input stream */ z_stream out; /* "Handle" for output stream */ array rbuf; /* Read buffer (compressed) */ array wbuf; /* Write buffer (uncompressed) */ long bytes_in, bytes_out; /* Counter for statistics (uncompressed!) */ } ZIPDATA;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | in | _ZipData::in | 66 | 66 | _ZipData | z_stream | scalar_or_unknown | z_stream in;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | out | _ZipData::out | 67 | 67 | _ZipData | z_stream | scalar_or_unknown | z_stream out;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | rbuf | _ZipData::rbuf | 68 | 68 | _ZipData | array | array_or_collection | array rbuf;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | wbuf | _ZipData::wbuf | 69 | 69 | _ZipData | array | array_or_collection | array wbuf;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | bytes_in | _ZipData::bytes_in | 70 | 70 | _ZipData | long | scalar_or_unknown | long bytes_in, bytes_out;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | struct | _Connection | _Connection | 74 | 107 |  |  |  | struct _Connection { int sock; /* Socket handle */ ng_ipaddr_t addr; /* Client address */ PROC_STAT proc_stat; /* Status of resolver process */ char host[HOST_LEN]; /* Hostname */ char *pwd; /* password received of the client */ array rbuf; /* Read buffer */ array wbuf; /* Write buffer */ time_t sig
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | typedef | CONNECTION | CONNECTION | 74 | 107 |  |  |  | typedef struct _Connection { int sock; /* Socket handle */ ng_ipaddr_t addr; /* Client address */ PROC_STAT proc_stat; /* Status of resolver process */ char host[HOST_LEN]; /* Hostname */ char *pwd; /* password received of the client */ array rbuf; /* Read buffer */ array wbuf; /* Write buffer */ ti
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | sock | _Connection::sock | 76 | 76 | _Connection | int | scalar_or_unknown | int sock;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | addr | _Connection::addr | 77 | 77 | _Connection | ng_ipaddr_t | scalar_or_unknown | ng_ipaddr_t addr;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | proc_stat | _Connection::proc_stat | 78 | 78 | _Connection | PROC_STAT | scalar_or_unknown | PROC_STAT proc_stat;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | host | _Connection::host | 79 | 79 | _Connection | char | scalar_or_unknown | char host[HOST_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | pwd | _Connection::pwd | 80 | 80 | _Connection | char | scalar_or_unknown | char *pwd;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | rbuf | _Connection::rbuf | 81 | 81 | _Connection | array | array_or_collection | array rbuf;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | wbuf | _Connection::wbuf | 82 | 82 | _Connection | array | array_or_collection | array wbuf;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | signon | _Connection::signon | 83 | 83 | _Connection | time_t | scalar_or_unknown | time_t signon;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | lastdata | _Connection::lastdata | 84 | 84 | _Connection | time_t | scalar_or_unknown | time_t lastdata;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | lastping | _Connection::lastping | 85 | 85 | _Connection | time_t | scalar_or_unknown | time_t lastping;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | lastprivmsg | _Connection::lastprivmsg | 86 | 86 | _Connection | time_t | scalar_or_unknown | time_t lastprivmsg;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | delaytime | _Connection::delaytime | 87 | 87 | _Connection | time_t | scalar_or_unknown | time_t delaytime;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | bytes_in | _Connection::bytes_in | 88 | 88 | _Connection | long | scalar_or_unknown | long bytes_in, bytes_out;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | msg_in | _Connection::msg_in | 89 | 89 | _Connection | long | scalar_or_unknown | long msg_in, msg_out;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | flag | _Connection::flag | 90 | 90 | _Connection | int | scalar_or_unknown | int flag;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | options | _Connection::options | 91 | 91 | _Connection | UINT16 | scalar_or_unknown | UINT16 options;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | bps | _Connection::bps | 92 | 92 | _Connection | UINT16 | scalar_or_unknown | UINT16 bps;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | CLIENT | _Connection::CLIENT | 93 | 93 | _Connection | CLIENT | scalar_or_unknown | CLIENT *client;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | zip | _Connection::zip | 95 | 95 | _Connection | ZIPDATA | scalar_or_unknown | ZIPDATA zip;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | ssl_state | _Connection::ssl_state | 98 | 98 | _Connection | struct ConnSSL_State | structured_object | struct ConnSSL_State ssl_state;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | struct | ConnSSL_State | _Connection::ConnSSL_State | 98 | 98 | _Connection |  |  | struct ConnSSL_State
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | auth_ping | _Connection::auth_ping | 101 | 101 | _Connection | long | scalar_or_unknown | long auth_ping;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | iconv_from | _Connection::iconv_from | 104 | 104 | _Connection | iconv_t | scalar_or_unknown | iconv_t iconv_from;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.h | field | iconv_to | _Connection::iconv_to | 105 | 105 | _Connection | iconv_t | scalar_or_unknown | iconv_t iconv_to;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\hash.c | function | Hash | Hash | 35 | 43 |  |  |  | GLOBAL UINT32 Hash( const char *String )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\hash.c | function | jenkins_hash | jenkins_hash | 84 | 138 |  |  |  | static UINT32 jenkins_hash(UINT8 *k, UINT32 length, UINT32 initval)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | <anonymous> | <anonymous> | 34 | 41 |  |  |  | struct { #ifdef PROTOTYPES void (*callback)(int, short); #else void (*callback)(); #endif short what; }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | typedef | io_event | io_event | 34 | 41 |  |  |  | typedef struct { #ifdef PROTOTYPES void (*callback)(int, short); #else void (*callback)(); #endif short what; } io_event;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | field | callback | callback | 36 | 36 |  | void | scalar_or_unknown | void (*callback)(int, short);
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | field | callback | callback | 38 | 38 |  | void | scalar_or_unknown | void (*callback)();
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | field | what | what | 40 | 40 |  | short | scalar_or_unknown | short what;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 79 | 79 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 88 | 88 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 136 | 136 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_debug | io_debug | 148 | 152 |  |  |  | static void io_debug(const char *s, int fd, int what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_debug | io_debug | 154 | 156 |  |  |  | static inline void io_debug(const char UNUSED *s,int UNUSED a, int UNUSED b)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_get | io_event_get | 159 | 171 |  |  |  | static io_event * io_event_get(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_dispatch_devpoll | io_dispatch_devpoll | 175 | 208 |  |  |  | static int io_dispatch_devpoll(struct timeval *tv)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 176 | 176 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | dvpoll | dvpoll | 178 | 178 |  |  |  | struct dvpoll
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 182 | 182 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_change_devpoll | io_event_change_devpoll | 211 | 225 |  |  |  | static bool io_event_change_devpoll(int fd, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 214 | 214 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close_devpoll | io_close_devpoll | 227 | 234 |  |  |  | static void io_close_devpoll(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 230 | 230 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_devpoll | io_library_init_devpoll | 236 | 244 |  |  |  | static void io_library_init_devpoll(unsigned int eventsize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close_devpoll | io_close_devpoll | 246 | 248 |  |  |  | static inline void io_close_devpoll(int UNUSED x)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_devpoll | io_library_init_devpoll | 249 | 251 |  |  |  | static inline void io_library_init_devpoll(unsigned int UNUSED ev)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_dispatch_poll | io_dispatch_poll | 256 | 294 |  |  |  | static int io_dispatch_poll(struct timeval *tv)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 257 | 257 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 263 | 263 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_change_poll | io_event_change_poll | 296 | 315 |  |  |  | static bool io_event_change_poll(int fd, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 299 | 299 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close_poll | io_close_poll | 317 | 333 |  |  |  | static void io_close_poll(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 320 | 320 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_poll | io_library_init_poll | 335 | 352 |  |  |  | static void io_library_init_poll(unsigned int eventsize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 338 | 338 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | pollfd | pollfd | 343 | 343 |  |  |  | struct pollfd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close_poll | io_close_poll | 354 | 356 |  |  |  | static inline void io_close_poll(int UNUSED x)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_poll | io_library_init_poll | 357 | 359 |  |  |  | static inline void io_library_init_poll(unsigned int UNUSED ev)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_dispatch_select | io_dispatch_select | 364 | 400 |  |  |  | static int io_dispatch_select(struct timeval *tv)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 365 | 365 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_select | io_library_init_select | 402 | 424 |  |  |  | static void io_library_init_select(unsigned int eventsize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close_select | io_close_select | 426 | 447 |  |  |  | static void io_close_select(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_select | io_library_init_select | 449 | 451 |  |  |  | static inline void io_library_init_select(int UNUSED x)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close_select | io_close_select | 452 | 454 |  |  |  | static inline void io_close_select(int UNUSED x)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_change_epoll | io_event_change_epoll | 459 | 471 |  |  |  | static bool io_event_change_epoll(int fd, short what, const int action)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | epoll_event | epoll_event | 462 | 462 |  |  |  | struct epoll_event
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_dispatch_epoll | io_dispatch_epoll | 473 | 501 |  |  |  | static int io_dispatch_epoll(struct timeval *tv)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 474 | 474 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | epoll_event | epoll_event | 478 | 478 |  |  |  | struct epoll_event
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_epoll | io_library_init_epoll | 503 | 520 |  |  |  | static void io_library_init_epoll(unsigned int eventsize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_epoll | io_library_init_epoll | 522 | 524 |  |  |  | static inline void io_library_init_epoll(unsigned int UNUSED ev)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_kqueue_commit_cache | io_event_kqueue_commit_cache | 529 | 554 |  |  |  | static bool io_event_kqueue_commit_cache(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 532 | 532 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 534 | 534 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_change_kqueue | io_event_change_kqueue | 556 | 579 |  |  |  | static bool io_event_change_kqueue(int fd, short what, const int action)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 559 | 559 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_dispatch_kqueue | io_dispatch_kqueue | 581 | 628 |  |  |  | static int io_dispatch_kqueue(struct timeval *tv)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 582 | 582 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 585 | 585 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 586 | 586 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timespec | timespec | 587 | 587 |  |  |  | struct timespec
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 592 | 592 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_kqueue | io_library_init_kqueue | 630 | 640 |  |  |  | static void io_library_init_kqueue(unsigned int eventsize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init_kqueue | io_library_init_kqueue | 642 | 644 |  |  |  | static inline void io_library_init_kqueue(unsigned int UNUSED ev)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_init | io_library_init | 648 | 664 |  |  |  | bool io_library_init(unsigned int eventsize)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_library_shutdown | io_library_shutdown | 667 | 683 |  |  |  | void io_library_shutdown(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_setcb | io_event_setcb | 686 | 695 |  |  |  | bool io_event_setcb(int fd, void (*cbfunc) (int, short))
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | backend_create_ev | backend_create_ev | 698 | 719 |  |  |  | static bool backend_create_ev(int fd, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_create | io_event_create | 722 | 751 |  |  |  | bool io_event_create(int fd, short what, void (*cbfunc) (int, short))
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_add | io_event_add | 754 | 792 |  |  |  | bool io_event_add(int fd, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_setnonblock | io_setnonblock | 795 | 807 |  |  |  | bool io_setnonblock(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_setcloexec | io_setcloexec | 809 | 820 |  |  |  | bool io_setcloexec(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_close | io_close | 822 | 851 |  |  |  | bool io_close(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | kevent | kevent | 829 | 829 |  |  |  | struct kevent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_event_del | io_event_del | 854 | 888 |  |  |  | bool io_event_del(int fd, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_dispatch | io_dispatch | 891 | 911 |  |  |  | int io_dispatch(struct timeval *tv)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | struct | timeval | timeval | 892 | 892 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.c | function | io_docallback | io_docallback | 915 | 927 |  |  |  | static void io_docallback(int fd, short what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\io.h | struct | timeval | timeval | 53 | 53 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Set_CAP_Negotiation | Set_CAP_Negotiation | 41 | 49 |  |  |  | static void Set_CAP_Negotiation(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Parse_CAP | Parse_CAP | 57 | 87 |  |  |  | static int Parse_CAP(int Capabilities, char *Args)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Get_CAP_String | Get_CAP_String | 98 | 109 |  |  |  | static char * Get_CAP_String(int Capabilities)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Handle_CAP_LS | Handle_CAP_LS | 118 | 128 |  |  |  | static bool Handle_CAP_LS(CLIENT *Client, UNUSED char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Handle_CAP_LIST | Handle_CAP_LIST | 137 | 144 |  |  |  | static bool Handle_CAP_LIST(CLIENT *Client, UNUSED char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Handle_CAP_REQ | Handle_CAP_REQ | 153 | 172 |  |  |  | static bool Handle_CAP_REQ(CLIENT *Client, char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Handle_CAP_ACK | Handle_CAP_ACK | 181 | 188 |  |  |  | static bool Handle_CAP_ACK(UNUSED CLIENT *Client, UNUSED char *Arg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Handle_CAP_CLEAR | Handle_CAP_CLEAR | 196 | 209 |  |  |  | static bool Handle_CAP_CLEAR(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | Handle_CAP_END | Handle_CAP_END | 217 | 233 |  |  |  | static bool Handle_CAP_END(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-cap.c | function | IRC_CAP | IRC_CAP | 244 | 274 |  |  |  | GLOBAL bool IRC_CAP(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | part_from_all_channels | part_from_all_channels | 53 | 65 |  |  |  | static bool part_from_all_channels(CLIENT* client, CLIENT *target)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | join_allowed | join_allowed | 77 | 144 |  |  |  | static bool join_allowed(CLIENT *Client, CHANNEL *chan, const char *channame, const char *key)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | join_set_channelmodes | join_set_channelmodes | 153 | 168 |  |  |  | static void join_set_channelmodes(CHANNEL *chan, CLIENT *target, const char *flags)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | cb_join_forward | cb_join_forward | 183 | 204 |  |  |  | static void cb_join_forward(CLIENT *To, CLIENT *Prefix, void *Data)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | join_forward | join_forward | 217 | 248 |  |  |  | static void join_forward(CLIENT *Client, CLIENT *target, CHANNEL *chan, const char *channame)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | IRC_Send_Channel_Info | IRC_Send_Channel_Info | 256 | 282 |  |  |  | GLOBAL bool IRC_Send_Channel_Info(CLIENT *Client, CHANNEL *Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | IRC_JOIN | IRC_JOIN | 291 | 428 |  |  |  | GLOBAL bool IRC_JOIN( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | IRC_PART | IRC_PART | 437 | 467 |  |  |  | GLOBAL bool IRC_PART(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | IRC_TOPIC | IRC_TOPIC | 476 | 569 |  |  |  | GLOBAL bool IRC_TOPIC( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | IRC_LIST | IRC_LIST | 578 | 655 |  |  |  | GLOBAL bool IRC_LIST( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-channel.c | function | IRC_CHANINFO | IRC_CHANINFO | 664 | 763 |  |  |  | GLOBAL bool IRC_CHANINFO( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-encoding.c | function | IRC_CHARCONV | IRC_CHARCONV | 41 | 58 |  |  |  | GLOBAL bool IRC_CHARCONV(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | t_diff | t_diff | 46 | 56 |  |  |  | static unsigned int t_diff(time_t *t, const time_t d)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | uptime_days | uptime_days | 58 | 62 |  |  |  | static unsigned int uptime_days(time_t *now)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | uptime_hrs | uptime_hrs | 64 | 68 |  |  |  | static unsigned int uptime_hrs(time_t *now)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | uptime_mins | uptime_mins | 70 | 74 |  |  |  | static unsigned int uptime_mins(time_t *now)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | write_whoreply | write_whoreply | 76 | 84 |  |  |  | static bool write_whoreply(CLIENT *Client, CLIENT *c, const char *channelname, const char *flags)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | who_flags_qualifier | who_flags_qualifier | 95 | 128 |  |  |  | static char * who_flags_qualifier(CLIENT *Client, const char *chan_user_modes, char *str, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_WHO_Channel | IRC_WHO_Channel | 138 | 194 |  |  |  | static bool IRC_WHO_Channel(CLIENT *Client, CHANNEL *Chan, bool OnlyOps)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_WHO_Mask | IRC_WHO_Mask | 204 | 284 |  |  |  | static bool IRC_WHO_Mask(CLIENT *Client, char *Mask, bool OnlyOps)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_WHOIS_SendReply | IRC_WHOIS_SendReply | 294 | 438 |  |  |  | static bool IRC_WHOIS_SendReply(CLIENT *Client, CLIENT *from, CLIENT *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | WHOWAS_EntryWrite | WHOWAS_EntryWrite | 440 | 454 |  |  |  | static bool WHOWAS_EntryWrite(CLIENT *prefix, WHOWAS *entry)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | Show_MOTD_SSLInfo | Show_MOTD_SSLInfo | 457 | 480 |  |  |  | static bool Show_MOTD_SSLInfo(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | Show_MOTD_SSLInfo | Show_MOTD_SSLInfo | 482 | 486 |  |  |  | static bool Show_MOTD_SSLInfo(UNUSED CLIENT *c)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_ADMIN | IRC_ADMIN | 498 | 530 |  |  |  | GLOBAL bool IRC_ADMIN(CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_INFO | IRC_INFO | 539 | 585 |  |  |  | GLOBAL bool IRC_INFO(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_ISON | IRC_ISON | 594 | 623 |  |  |  | GLOBAL bool IRC_ISON( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_LINKS | IRC_LINKS | 632 | 676 |  |  |  | GLOBAL bool IRC_LINKS(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_LUSERS | IRC_LUSERS | 685 | 705 |  |  |  | GLOBAL bool IRC_LUSERS( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_SERVLIST | IRC_SERVLIST | 714 | 740 |  |  |  | GLOBAL bool IRC_SERVLIST(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_MOTD | IRC_MOTD | 749 | 768 |  |  |  | GLOBAL bool IRC_MOTD( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_NAMES | IRC_NAMES | 777 | 846 |  |  |  | GLOBAL bool IRC_NAMES( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_STATS | IRC_STATS | 855 | 976 |  |  |  | GLOBAL bool IRC_STATS( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | struct | list_head | list_head | 864 | 864 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | struct | list_elem | list_elem | 865 | 865 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_SUMMON | IRC_SUMMON | 985 | 992 |  |  |  | GLOBAL bool IRC_SUMMON(CLIENT * Client, UNUSED REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_TIME | IRC_TIME | 1001 | 1025 |  |  |  | GLOBAL bool IRC_TIME( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_USERHOST | IRC_USERHOST | 1034 | 1071 |  |  |  | GLOBAL bool IRC_USERHOST(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_USERS | IRC_USERS | 1080 | 1087 |  |  |  | GLOBAL bool IRC_USERS(CLIENT * Client, UNUSED REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_VERSION | IRC_VERSION | 1096 | 1128 |  |  |  | GLOBAL bool IRC_VERSION( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_WHO | IRC_WHO | 1137 | 1176 |  |  |  | GLOBAL bool IRC_WHO(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_WHOIS | IRC_WHOIS | 1185 | 1285 |  |  |  | GLOBAL bool IRC_WHOIS( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_WHOWAS | IRC_WHOWAS | 1294 | 1373 |  |  |  | GLOBAL bool IRC_WHOWAS( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_Send_LUSERS | IRC_Send_LUSERS | 1381 | 1445 |  |  |  | GLOBAL bool IRC_Send_LUSERS(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_Show_MOTD | IRC_Show_MOTD | 1447 | 1487 |  |  |  | GLOBAL bool IRC_Show_MOTD( CLIENT *Client )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_Send_NAMES | IRC_Send_NAMES | 1496 | 1561 |  |  |  | GLOBAL bool IRC_Send_NAMES(CLIENT * Client, CHANNEL * Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-info.c | function | IRC_Send_ISUPPORT | IRC_Send_ISUPPORT | 1568 | 1583 |  |  |  | GLOBAL bool IRC_Send_ISUPPORT(CLIENT * Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_PASS | IRC_PASS | 49 | 162 |  |  |  | GLOBAL bool IRC_PASS( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_NICK | IRC_NICK | 171 | 366 |  |  |  | GLOBAL bool IRC_NICK( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_SVSNICK | IRC_SVSNICK | 375 | 411 |  |  |  | GLOBAL bool IRC_SVSNICK(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_USER | IRC_USER | 420 | 518 |  |  |  | GLOBAL bool IRC_USER(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | if | if | 483 | 509 |  |  |  | else if (Client_Type(Client) == CLIENT_SERVER || Client_Type(Client) == CLIENT_SERVICE)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | if | if | 509 | 513 |  |  |  | else if (Client_Type(Client) == CLIENT_USER)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_SERVICE | IRC_SERVICE | 531 | 609 |  |  |  | GLOBAL bool IRC_SERVICE(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_WEBIRC | IRC_WEBIRC | 618 | 637 |  |  |  | GLOBAL bool IRC_WEBIRC(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_QUIT | IRC_QUIT | 646 | 693 |  |  |  | GLOBAL bool IRC_QUIT( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_QUIT_HTTP | IRC_QUIT_HTTP | 707 | 713 |  |  |  | GLOBAL bool IRC_QUIT_HTTP( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_PING | IRC_PING | 724 | 789 |  |  |  | GLOBAL bool IRC_PING(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | IRC_PONG | IRC_PONG | 798 | 892 |  |  |  | GLOBAL bool IRC_PONG(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-login.c | function | Change_Nick | Change_Nick | 901 | 931 |  |  |  | static void Change_Nick(CLIENT *Origin, CLIENT *Target, char *NewNick, bool InformClient)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-metadata.c | function | IRC_METADATA | IRC_METADATA | 42 | 110 |  |  |  | GLOBAL bool IRC_METADATA(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | IRC_MODE | IRC_MODE | 60 | 100 |  |  |  | GLOBAL bool IRC_MODE( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Mode_Limit_Reached | Mode_Limit_Reached | 111 | 120 |  |  |  | static bool Mode_Limit_Reached(CLIENT *Client, int Count)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Client_Mode | Client_Mode | 131 | 374 |  |  |  | static bool Client_Mode( CLIENT *Client, REQUEST *Req, CLIENT *Origin, CLIENT *Target )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Channel_Mode_Answer_Request | Channel_Mode_Answer_Request | 383 | 433 |  |  |  | static bool Channel_Mode_Answer_Request(CLIENT *Origin, CHANNEL *Channel)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Channel_Mode | Channel_Mode | 444 | 977 |  |  |  | static bool Channel_Mode(CLIENT *Client, REQUEST *Req, CLIENT *Origin, CHANNEL *Channel)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | IRC_AWAY | IRC_AWAY | 986 | 1006 |  |  |  | GLOBAL bool IRC_AWAY( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Add_To_List | Add_To_List | 1018 | 1072 |  |  |  | static bool Add_To_List(char what, CLIENT *Prefix, CLIENT *Client, CHANNEL *Channel, const char *Pattern)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | struct | list_head | list_head | 1023 | 1023 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Del_From_List | Del_From_List | 1084 | 1115 |  |  |  | static bool Del_From_List(char what, CLIENT *Prefix, CLIENT *Client, CHANNEL *Channel, const char *Pattern)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | struct | list_head | list_head | 1089 | 1089 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-mode.c | function | Send_ListChange | Send_ListChange | 1128 | 1152 |  |  |  | static bool Send_ListChange(const bool IsAdd, const char ModeChar, CLIENT *Prefix, CLIENT *Client, CHANNEL *Channel, const char *Mask)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-op.c | function | try_kick | try_kick | 35 | 47 |  |  |  | static bool try_kick(CLIENT *peer, CLIENT* from, const char *nick, const char *channel, const char *reason)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-op.c | function | IRC_KICK | IRC_KICK | 58 | 125 |  |  |  | GLOBAL bool IRC_KICK(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-op.c | function | IRC_INVITE | IRC_INVITE | 134 | 236 |  |  |  | GLOBAL bool IRC_INVITE(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | Bad_OperPass | Bad_OperPass | 47 | 56 |  |  |  | static bool Bad_OperPass(CLIENT *Client, char *errtoken, char *errmsg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_OPER | IRC_OPER | 65 | 101 |  |  |  | GLOBAL bool IRC_OPER( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | struct | Conf_Oper | Conf_Oper | 68 | 68 |  |  |  | struct Conf_Oper
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_DIE | IRC_DIE | 110 | 141 |  |  |  | GLOBAL bool IRC_DIE(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_REHASH | IRC_REHASH | 150 | 168 |  |  |  | GLOBAL bool IRC_REHASH( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_RESTART | IRC_RESTART | 177 | 193 |  |  |  | GLOBAL bool IRC_RESTART( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_CONNECT | IRC_CONNECT | 202 | 294 |  |  |  | GLOBAL bool IRC_CONNECT(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_DISCONNECT | IRC_DISCONNECT | 306 | 338 |  |  |  | GLOBAL bool IRC_DISCONNECT(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_WALLOPS | IRC_WALLOPS | 347 | 375 |  |  |  | GLOBAL bool IRC_WALLOPS( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | function | IRC_xLINE | IRC_xLINE | 384 | 480 |  |  |  | GLOBAL bool IRC_xLINE(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-oper.c | struct | list_head | list_head | 389 | 389 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-server.c | function | IRC_SERVER | IRC_SERVER | 49 | 255 |  |  |  | GLOBAL bool IRC_SERVER( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-server.c | function | IRC_NJOIN | IRC_NJOIN | 264 | 376 |  |  |  | GLOBAL bool IRC_NJOIN( CLIENT *Client, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-server.c | function | IRC_SQUIT | IRC_SQUIT | 385 | 475 |  |  |  | GLOBAL bool IRC_SQUIT(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c | function | IRC_WriteStrServersPrefixFlag_CB | IRC_WriteStrServersPrefixFlag_CB | 388 | 404 |  |  |  | GLOBAL void IRC_WriteStrServersPrefixFlag_CB(CLIENT *ExceptOf, CLIENT *Prefix, char Flag, void (*callback)(CLIENT *, CLIENT *, void *), void *cb_data)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c | function | IRC_SetPenalty | IRC_SetPenalty | 541 | 557 |  |  |  | GLOBAL void IRC_SetPenalty(CLIENT *Client, time_t Seconds)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c | function | Get_Prefix | Get_Prefix | 559 | 569 |  |  |  | static const char * Get_Prefix(CLIENT *Target, CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c | function | cb_writeStrServersPrefixFlag | cb_writeStrServersPrefixFlag | 571 | 575 |  |  |  | static void cb_writeStrServersPrefixFlag(CLIENT *Client, CLIENT *Prefix, void *Buffer)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc-write.c | function | Send_Marked_Connections | Send_Marked_Connections | 583 | 601 |  |  |  | static void Send_Marked_Connections(CLIENT *Prefix, const char *Buffer)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_CheckListTooBig | IRC_CheckListTooBig | 59 | 76 |  |  |  | GLOBAL bool IRC_CheckListTooBig(CLIENT *From, const int Count, const int Limit, const char *Name)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_ERROR | IRC_ERROR | 85 | 120 |  |  |  | GLOBAL bool IRC_ERROR(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_KILL | IRC_KILL | 138 | 179 |  |  |  | GLOBAL bool IRC_KILL(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_NOTICE | IRC_NOTICE | 188 | 192 |  |  |  | GLOBAL bool IRC_NOTICE(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_PRIVMSG | IRC_PRIVMSG | 201 | 205 |  |  |  | GLOBAL bool IRC_PRIVMSG(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_SQUERY | IRC_SQUERY | 214 | 218 |  |  |  | GLOBAL bool IRC_SQUERY(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_TRACE | IRC_TRACE | 227 | 295 |  |  |  | GLOBAL bool IRC_TRACE(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_HELP | IRC_HELP | 304 | 331 |  |  |  | GLOBAL bool IRC_HELP(CLIENT *Client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | IRC_KillClient | IRC_KillClient | 348 | 412 |  |  |  | GLOBAL bool IRC_KillClient(CLIENT *Client, CLIENT *From, const char *Nick, const char *Reason)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | Help | Help | 421 | 477 |  |  |  | static bool Help(CLIENT *Client, const char *Topic)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\irc.c | function | Send_Message_Mask | Send_Message_Mask | 791 | 847 |  |  |  | static bool Send_Message_Mask(CLIENT * from, char * command, char * targetMask, char * message, bool SendErrors)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 31 | 37 |  |  |  | struct list_elem { struct list_elem *next; /** pointer to next list element */ char mask[MASK_LEN]; /** IRC mask */ char *reason; /** Optional "reason" text */ time_t valid_until; /** 0: unlimited; t(>0): until t */ bool onlyonce; }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | field | list_elem | list_elem::list_elem | 32 | 32 | list_elem | struct list_elem | structured_object | struct list_elem *next;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem::list_elem | 32 | 32 | list_elem |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | field | mask | list_elem::mask | 33 | 33 | list_elem | char | scalar_or_unknown | char mask[MASK_LEN];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | field | reason | list_elem::reason | 34 | 34 | list_elem | char | scalar_or_unknown | char *reason;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | field | valid_until | list_elem::valid_until | 35 | 35 | list_elem | time_t | scalar_or_unknown | time_t valid_until;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | field | onlyonce | list_elem::onlyonce | 36 | 36 | list_elem | bool | scalar_or_unknown | bool onlyonce;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_GetMask | Lists_GetMask | 45 | 50 |  |  |  | GLOBAL const char * Lists_GetMask(const struct list_elem *e)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 46 | 46 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_GetReason | Lists_GetReason | 58 | 63 |  |  |  | GLOBAL const char * Lists_GetReason(const struct list_elem *e)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 59 | 59 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_GetValidity | Lists_GetValidity | 71 | 76 |  |  |  | GLOBAL time_t Lists_GetValidity(const struct list_elem *e)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 72 | 72 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_GetOnlyOnce | Lists_GetOnlyOnce | 84 | 89 |  |  |  | GLOBAL bool Lists_GetOnlyOnce(const struct list_elem *e)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 85 | 85 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_GetFirst | Lists_GetFirst | 97 | 102 |  |  |  | list_elem* Lists_GetFirst(const struct list_head *h)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 98 | 98 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_GetNext | Lists_GetNext | 110 | 115 |  |  |  | list_elem* Lists_GetNext(const struct list_elem *e)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 111 | 111 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Add | Lists_Add | 126 | 170 |  |  |  | bool Lists_Add(struct list_head *h, const char *Mask, time_t ValidUntil, const char *Reason, bool OnlyOnce)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 127 | 127 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 130 | 130 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 148 | 148 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Unlink | Lists_Unlink | 179 | 194 |  |  |  | static void Lists_Unlink(struct list_head *h, struct list_elem *p, struct list_elem *victim)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 180 | 180 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 180 | 180 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 180 | 180 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Del | Lists_Del | 202 | 223 |  |  |  | GLOBAL void Lists_Del(struct list_head *h, const char *Mask)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 203 | 203 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 205 | 205 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Free | Lists_Free | 230 | 247 |  |  |  | GLOBAL void Lists_Free(struct list_head *head)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 231 | 231 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 233 | 233 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_CheckDupeMask | Lists_CheckDupeMask | 256 | 267 |  |  |  | list_elem * Lists_CheckDupeMask(const struct list_head *h, const char *Mask )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 257 | 257 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 259 | 259 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_MakeMask | Lists_MakeMask | 276 | 308 |  |  |  | GLOBAL void Lists_MakeMask(const char *Pattern, char *mask, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Check | Lists_Check | 317 | 321 |  |  |  | bool Lists_Check(struct list_head *h, CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 318 | 318 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_CheckReason | Lists_CheckReason | 332 | 360 |  |  |  | bool Lists_CheckReason(struct list_head *h, CLIENT *Client, char *reason, size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 333 | 333 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 335 | 335 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Expire | Lists_Expire | 367 | 398 |  |  |  | GLOBAL void Lists_Expire(struct list_head *h, const char *ListName)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 368 | 368 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 370 | 370 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | function | Lists_Count | Lists_Count | 406 | 420 |  |  |  | GLOBAL unsigned long Lists_Count(struct list_head *h)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_head | list_head | 407 | 407 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.c | struct | list_elem | list_elem | 409 | 409 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_elem | 23 | 23 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 25 | 27 |  |  |  | struct list_head { struct list_elem *first; }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | field | list_elem | list_head::list_elem | 26 | 26 | list_head | struct list_elem | structured_object | struct list_elem *first;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_head::list_elem | 26 | 26 | list_head |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 29 | 29 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_elem | 30 | 30 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 32 | 32 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 33 | 33 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 35 | 35 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 38 | 38 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 41 | 41 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 42 | 42 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 44 | 44 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_elem | 47 | 47 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_elem | 48 | 48 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_elem | 49 | 49 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_elem | list_elem | 50 | 50 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\lists.h | struct | list_head | list_head | 52 | 52 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\log.c | function | Log_Message | Log_Message | 45 | 59 |  |  |  | static void Log_Message(int Level, const char *msg)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\log.c | function | Log_Init | Log_Init | 68 | 84 |  |  |  | GLOBAL void Log_Init(bool Syslog_Mode)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\log.c | function | Log_ReInit | Log_ReInit | 90 | 100 |  |  |  | GLOBAL void Log_ReInit(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\log.c | function | Log_Exit | Log_Exit | 103 | 112 |  |  |  | GLOBAL void Log_Exit( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\log.c | function | Log_Init_Subprocess | Log_Init_Subprocess | 206 | 214 |  |  |  | GLOBAL void Log_Init_Subprocess(char UNUSED *Name)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\log.c | function | Log_Exit_Subprocess | Log_Exit_Subprocess | 217 | 225 |  |  |  | GLOBAL void Log_Exit_Subprocess(char UNUSED *Name)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\login.c | function | Login_User | Login_User | 61 | 144 |  |  |  | GLOBAL bool Login_User(CLIENT * Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\login.c | function | Login_User_PostAuth | Login_User_PostAuth | 155 | 211 |  |  |  | GLOBAL bool Login_User_PostAuth(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\login.c | function | Login_Autojoin | Login_Autojoin | 219 | 240 |  |  |  | GLOBAL void Login_Autojoin(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\login.c | struct | Conf_Channel | Conf_Channel | 223 | 223 |  |  |  | struct Conf_Channel
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\login.c | function | cb_Read_Auth_Result | cb_Read_Auth_Result | 250 | 296 |  |  |  | static void cb_Read_Auth_Result(int r_fd, UNUSED short events)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\match.c | function | Match | Match | 50 | 57 |  |  |  | GLOBAL bool Match( const char *Pattern, const char *String )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\match.c | function | MatchCaseInsensitive | MatchCaseInsensitive | 66 | 75 |  |  |  | GLOBAL bool MatchCaseInsensitive(const char *Pattern, const char *String)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\match.c | function | MatchCaseInsensitiveList | MatchCaseInsensitiveList | 85 | 101 |  |  |  | GLOBAL bool MatchCaseInsensitiveList(const char *Pattern, const char *String, const char *Separator)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\match.c | function | Matche | Matche | 103 | 131 |  |  |  | static int Matche( const char *p, const char *t )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\match.c | function | Matche_After_Star | Matche_After_Star | 133 | 180 |  |  |  | static int Matche_After_Star( const char *p, const char *t )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | main | main | 73 | 333 |  |  |  | GLOBAL int main(int argc, const char *argv[])
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Fill_Version | Fill_Version | 344 | 448 |  |  |  | static void Fill_Version(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Show_Version | Show_Version | 454 | 462 |  |  |  | static void Show_Version( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Show_Help | Show_Help | 470 | 486 |  |  |  | static void Show_Help( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Pidfile_Delete | Pidfile_Delete | 492 | 502 |  |  |  | static void Pidfile_Delete( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Pidfile_Create | Pidfile_Create | 510 | 542 |  |  |  | static void Pidfile_Create(pid_t pid)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Setup_FDStreams | Setup_FDStreams | 550 | 561 |  |  |  | static void Setup_FDStreams(int fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | NGIRCd_getNobodyID | NGIRCd_getNobodyID | 573 | 603 |  |  |  | static bool NGIRCd_getNobodyID(uid_t *uid, gid_t *gid )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | struct | passwd | passwd | 576 | 576 |  |  |  | struct passwd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Random_Init | Random_Init | 609 | 613 |  |  |  | static void Random_Init(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Random_Init_Kern | Random_Init_Kern | 615 | 628 |  |  |  | static bool Random_Init_Kern(const char *file)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | Random_Init | Random_Init | 633 | 643 |  |  |  | static void Random_Init(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | function | NGIRCd_Init | NGIRCd_Init | 654 | 836 |  |  |  | static bool NGIRCd_Init(bool NGIRCd_NoDaemon)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | struct | passwd | passwd | 659 | 659 |  |  |  | struct passwd
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\ngircd.c | struct | group | group | 660 | 660 |  |  |  | struct group
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | Announce_Channel | Announce_Channel | 39 | 112 |  |  |  | static bool Announce_Channel(CLIENT *Client, CHANNEL *Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | Announce_Server | Announce_Server | 119 | 143 |  |  |  | static bool Announce_Server(CLIENT * Client, CLIENT * Server)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | Send_List | Send_List | 150 | 165 |  |  |  | static bool Send_List(CLIENT *Client, CHANNEL *Chan, struct list_head *Head, char Type)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | struct | list_head | list_head | 151 | 151 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | struct | list_elem | list_elem | 153 | 153 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | Synchronize_Lists | Synchronize_Lists | 173 | 207 |  |  |  | static bool Synchronize_Lists(CLIENT * Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | struct | list_head | list_head | 177 | 177 |  |  |  | struct list_head
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | struct | list_elem | list_elem | 178 | 178 |  |  |  | struct list_elem
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | Send_CHANINFO | Send_CHANINFO | 214 | 249 |  |  |  | static bool Send_CHANINFO(CLIENT * Client, CHANNEL * Chan)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | IRC_Num_ENDOFMOTD | IRC_Num_ENDOFMOTD | 258 | 344 |  |  |  | GLOBAL bool IRC_Num_ENDOFMOTD(CLIENT * Client, UNUSED REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\numeric.c | function | IRC_Num_ISUPPORT | IRC_Num_ISUPPORT | 349 | 379 |  |  |  | GLOBAL bool IRC_Num_ISUPPORT(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\op.c | function | Op_NoPrivileges | Op_NoPrivileges | 34 | 55 |  |  |  | GLOBAL bool Op_NoPrivileges(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\op.c | function | Op_Check | Op_Check | 66 | 92 |  |  |  | GLOBAL CLIENT * Op_Check(CLIENT * Client, REQUEST * Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\pam.c | function | password_conversation | password_conversation | 46 | 75 |  |  |  | static int password_conversation(int num_msg, const struct pam_message **msg, struct pam_response **resp, void *appdata_ptr)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\pam.c | struct | pam_message | pam_message | 47 | 47 |  |  |  | struct pam_message
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\pam.c | struct | pam_response | pam_response | 48 | 48 |  |  |  | struct pam_response
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\pam.c | struct | pam_response | pam_response | 65 | 65 |  |  |  | struct pam_response
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\pam.c | struct | pam_conv | pam_conv | 80 | 80 |  |  |  | struct pam_conv
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\pam.c | function | PAM_Authenticate | PAM_Authenticate | 90 | 134 |  |  |  | GLOBAL bool PAM_Authenticate(CLIENT *Client)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | struct | _NUMERIC | _NUMERIC | 49 | 52 |  |  |  | struct _NUMERIC { int numeric; bool (*function) PARAMS(( CLIENT *Client, REQUEST *Request )); }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | field | numeric | _NUMERIC::numeric | 50 | 50 | _NUMERIC | int | scalar_or_unknown | int numeric;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | field | function | _NUMERIC::function | 51 | 51 | _NUMERIC | bool | scalar_or_unknown | bool (*function)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | field | PARAMS | _NUMERIC::PARAMS | 51 | 51 | _NUMERIC | PARAMS | scalar_or_unknown | PARAMS(( CLIENT *Client, REQUEST *Request ));
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Parse_GetCommandStruct | Parse_GetCommandStruct | 150 | 154 |  |  |  | GLOBAL COMMAND * Parse_GetCommandStruct( void )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Parse_Request | Parse_Request | 175 | 268 |  |  |  | GLOBAL bool Parse_Request( CONN_ID Idx, char *Request )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Init_Request | Init_Request | 275 | 286 |  |  |  | static void Init_Request( REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Validate_Prefix | Validate_Prefix | 289 | 363 |  |  |  | static bool Validate_Prefix( CONN_ID Idx, REQUEST *Req, bool *Closed )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Validate_Command | Validate_Command | 366 | 374 |  |  |  | static bool Validate_Command( UNUSED CONN_ID Idx, UNUSED REQUEST *Req, bool *Closed )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Handle_Numeric | Handle_Numeric | 417 | 490 |  |  |  | static bool Handle_Numeric(CLIENT *client, REQUEST *Req)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | struct | _NUMERIC | _NUMERIC | 420 | 420 |  |  |  | struct _NUMERIC
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | Handle_Request | Handle_Request | 492 | 573 |  |  |  | static bool Handle_Request( CONN_ID Idx, REQUEST *Req )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.c | function | ScrubCTCP | ScrubCTCP | 582 | 609 |  |  |  | static bool ScrubCTCP(char *Request)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | struct | _REQUEST | _REQUEST | 23 | 29 |  |  |  | struct _REQUEST { char *prefix; /**< Prefix */ char *command; /**< IRC command */ char *argv[15]; /**< Parameters, at most 15 (0..14) */ int argc; /**< Number of given parameters */ }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | typedef | REQUEST | REQUEST | 23 | 29 |  |  |  | typedef struct _REQUEST { char *prefix; /**< Prefix */ char *command; /**< IRC command */ char *argv[15]; /**< Parameters, at most 15 (0..14) */ int argc; /**< Number of given parameters */ } REQUEST;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | prefix | _REQUEST::prefix | 25 | 25 | _REQUEST | char | scalar_or_unknown | char *prefix;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | command | _REQUEST::command | 26 | 26 | _REQUEST | char | scalar_or_unknown | char *command;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | argv | _REQUEST::argv | 27 | 27 | _REQUEST | char | scalar_or_unknown | char *argv[15];
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | argc | _REQUEST::argc | 28 | 28 | _REQUEST | int | scalar_or_unknown | int argc;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | struct | _COMMAND | _COMMAND | 32 | 43 |  |  |  | struct _COMMAND { const char *name; /**< Command name */ bool (*function) PARAMS(( CLIENT *Client, REQUEST *Request )); /**< Function to handle this command */ CLIENT_TYPE type; /**< Valid client types (bit mask) */ int min_argc; /**< Min parameters */ int max_argc; /**< Max parameters */ int penalt
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | typedef | COMMAND | COMMAND | 32 | 43 |  |  |  | typedef struct _COMMAND { const char *name; /**< Command name */ bool (*function) PARAMS(( CLIENT *Client, REQUEST *Request )); /**< Function to handle this command */ CLIENT_TYPE type; /**< Valid client types (bit mask) */ int min_argc; /**< Min parameters */ int max_argc; /**< Max parameters */ in
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | name | _COMMAND::name | 34 | 34 | _COMMAND | char | scalar_or_unknown | const char *name;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | function | _COMMAND::function | 35 | 35 | _COMMAND | bool | scalar_or_unknown | bool (*function)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | PARAMS | _COMMAND::PARAMS | 35 | 35 | _COMMAND | PARAMS | scalar_or_unknown | PARAMS(( CLIENT *Client, REQUEST *Request ));
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | type | _COMMAND::type | 37 | 37 | _COMMAND | CLIENT_TYPE | scalar_or_unknown | CLIENT_TYPE type;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | min_argc | _COMMAND::min_argc | 38 | 38 | _COMMAND | int | scalar_or_unknown | int min_argc;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | max_argc | _COMMAND::max_argc | 39 | 39 | _COMMAND | int | scalar_or_unknown | int max_argc;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | penalty | _COMMAND::penalty | 40 | 40 | _COMMAND | int | scalar_or_unknown | int penalty;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | lcount | _COMMAND::lcount | 41 | 41 | _COMMAND | long | scalar_or_unknown | long lcount, rcount;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\parse.h | field | bytes | _COMMAND::bytes | 42 | 42 | _COMMAND | long | scalar_or_unknown | long bytes;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.c | function | Proc_InitStruct | Proc_InitStruct | 37 | 43 |  |  |  | GLOBAL void Proc_InitStruct (PROC_STAT *proc)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.c | function | Proc_Fork | Proc_Fork | 48 | 107 |  |  |  | GLOBAL pid_t Proc_Fork(PROC_STAT *proc, int *pipefds, void (*cbfunc)(int, short), int timeout)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.c | function | Proc_GenericSignalHandler | Proc_GenericSignalHandler | 112 | 123 |  |  |  | GLOBAL void Proc_GenericSignalHandler(int Signal)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.c | function | Proc_Read | Proc_Read | 130 | 153 |  |  |  | GLOBAL size_t Proc_Read(PROC_STAT *proc, void *buffer, size_t buflen)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.c | function | Proc_Close | Proc_Close | 158 | 166 |  |  |  | GLOBAL void Proc_Close(PROC_STAT *proc)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.h | struct | _Proc_Stat | _Proc_Stat | 21 | 24 |  |  |  | struct _Proc_Stat { pid_t pid; /**< PID of the child process or 0 if none */ int pipe_fd; /**< Pipe file descriptor or -1 if none */ }
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.h | typedef | PROC_STAT | PROC_STAT | 21 | 24 |  |  |  | typedef struct _Proc_Stat { pid_t pid; /**< PID of the child process or 0 if none */ int pipe_fd; /**< Pipe file descriptor or -1 if none */ } PROC_STAT;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.h | field | pid | _Proc_Stat::pid | 22 | 22 | _Proc_Stat | pid_t | scalar_or_unknown | pid_t pid;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\proc.h | field | pipe_fd | _Proc_Stat::pipe_fd | 23 | 23 | _Proc_Stat | int | scalar_or_unknown | int pipe_fd;
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Resolve_Addr_Ident | Resolve_Addr_Ident | 57 | 79 |  |  |  | GLOBAL bool Resolve_Addr_Ident(PROC_STAT * s, const ng_ipaddr_t *Addr, int identsock, void (*cbfunc) (int, short))
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Resolve_Name | Resolve_Name | 85 | 107 |  |  |  | GLOBAL bool Resolve_Name( PROC_STAT *s, const char *Host, void (*cbfunc)(int, short))
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Get_Error | Get_Error | 111 | 126 |  |  |  | static char * Get_Error( int H_Error )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Do_IdentQuery | Do_IdentQuery | 132 | 158 |  |  |  | static void Do_IdentQuery(int identsock, array *resolved_addr)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | ReverseLookup | ReverseLookup | 170 | 217 |  |  |  | static bool ReverseLookup(const ng_ipaddr_t *IpAddr, char *resbuf, size_t reslen)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | sockaddr | sockaddr | 181 | 181 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | sockaddr_in | sockaddr_in | 191 | 191 |  |  |  | struct sockaddr_in
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | sockaddr_in | sockaddr_in | 191 | 191 |  |  |  | struct sockaddr_in
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | hostent | hostent | 192 | 192 |  |  |  | struct hostent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | addrinfo | addrinfo | 239 | 239 |  |  |  | struct addrinfo
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | addrinfo | addrinfo | 240 | 240 |  |  |  | struct addrinfo
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | hostent | hostent | 274 | 274 |  |  |  | struct hostent
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | struct | in_addr | in_addr | 288 | 288 |  |  |  | struct in_addr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Addr_in_list | Addr_in_list | 295 | 324 |  |  |  | static bool Addr_in_list(const array *resolved_addr, const ng_ipaddr_t *Addr)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Log_Forgery_NoIP | Log_Forgery_NoIP | 327 | 333 |  |  |  | static void Log_Forgery_NoIP(const char *ip, const char *host)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Log_Forgery_WrongIP | Log_Forgery_WrongIP | 335 | 341 |  |  |  | static void Log_Forgery_WrongIP(const char *ip, const char *host)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | ArrayWrite | ArrayWrite | 344 | 355 |  |  |  | static void ArrayWrite(int fd, const array *a)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Do_ResolveAddr_Ident | Do_ResolveAddr_Ident | 358 | 407 |  |  |  | static void Do_ResolveAddr_Ident(const ng_ipaddr_t *Addr, int identsock, int w_fd)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\resolve.c | function | Do_ResolveName | Do_ResolveName | 410 | 450 |  |  |  | static void Do_ResolveName( const char *Host, int w_fd )
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Dump_State | Dump_State | 50 | 64 |  |  |  | static void Dump_State(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signal_Block | Signal_Block | 67 | 80 |  |  |  | static void Signal_Block(int sig)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signal_Unblock | Signal_Unblock | 82 | 96 |  |  |  | static void Signal_Unblock(int sig)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Rehash | Rehash | 101 | 151 |  |  |  | static void Rehash(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signal_Handler | Signal_Handler | 161 | 215 |  |  |  | static void Signal_Handler(int Signal)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signal_Handler_BH | Signal_Handler_BH | 226 | 245 |  |  |  | static void Signal_Handler_BH(int Signal)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signal_Callback | Signal_Callback | 247 | 270 |  |  |  | static void Signal_Callback(int fd, short UNUSED what)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signals_Init | Signals_Init | 277 | 319 |  |  |  | bool Signals_Init(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | struct | sigaction | sigaction | 282 | 282 |  |  |  | struct sigaction
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signals_Exit | Signals_Exit | 328 | 349 |  |  |  | void Signals_Exit(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | struct | sigaction | sigaction | 333 | 333 |  |  |  | struct sigaction
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | function | Signal_NotifySvcMgr_Possible | Signal_NotifySvcMgr_Possible | 356 | 364 |  |  |  | GLOBAL bool Signal_NotifySvcMgr_Possible(void)
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | struct | sockaddr_un | sockaddr_un | 383 | 383 |  |  |  | struct sockaddr_un
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | struct | sockaddr_un | sockaddr_un | 414 | 414 |  |  |  | struct sockaddr_un
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | struct | sockaddr | sockaddr | 430 | 430 |  |  |  | struct sockaddr
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\sighandlers.c | struct | sockaddr_un | sockaddr_un | 431 | 431 |  |  |  | struct sockaddr_un
+C:\develop\SpecBuilder\ngircd-master\src\portab\ansi2knr.c | function | main | main | 228 | 372 |  |  |  | int main(argc, argv) int argc; char *argv[];
+C:\develop\SpecBuilder\ngircd-master\src\portab\ansi2knr.c | function | writeblanks | writeblanks | 448 | 457 |  |  |  | int writeblanks(start, end) char *start; char *end;
+C:\develop\SpecBuilder\ngircd-master\src\portab\ansi2knr.c | function | test1 | test1 | 472 | 551 |  |  |  | int test1(buf) char *buf;
+C:\develop\SpecBuilder\ngircd-master\src\portab\ansi2knr.c | function | convert1 | convert1 | 554 | 738 |  |  |  | int convert1(buf, out, header, convert_varargs) char *buf; FILE *out; int header; /* Boolean */ int convert_varargs; /* Boolean */
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | POINTER | POINTER | 70 | 70 |  |  |  | typedef void POINTER;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | UINT8 | UINT8 | 73 | 73 |  |  |  | typedef uint8_t UINT8;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | UINT16 | UINT16 | 74 | 74 |  |  |  | typedef uint16_t UINT16;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | UINT32 | UINT32 | 75 | 75 |  |  |  | typedef uint32_t UINT32;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | UINT8 | UINT8 | 77 | 77 |  |  |  | typedef unsigned char UINT8;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | UINT16 | UINT16 | 78 | 78 |  |  |  | typedef unsigned short UINT16;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | UINT32 | UINT32 | 79 | 79 |  |  |  | typedef unsigned int UINT32;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | <anonymous> | <anonymous> | 85 | 85 |  |  |  | typedef unsigned char bool;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portab.h | typedef | socklen_t | socklen_t | 134 | 134 |  |  |  | typedef int socklen_t;
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Panic | Panic | 26 | 32 |  |  |  | static void Panic(char *Reason)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_snprintf | Check_snprintf | 34 | 44 |  |  |  | static void Check_snprintf(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_strdup | Check_strdup | 46 | 59 |  |  |  | static void Check_strdup(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_strndup | Check_strndup | 61 | 74 |  |  |  | static void Check_strndup(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_strlcpy | Check_strlcpy | 76 | 87 |  |  |  | static void Check_strlcpy(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_strlcat | Check_strlcat | 89 | 102 |  |  |  | static void Check_strlcat(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_strtok_r | Check_strtok_r | 104 | 129 |  |  |  | static void Check_strtok_r(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | Check_vsnprintf | Check_vsnprintf | 135 | 177 |  |  |  | static void Check_vsnprintf(Len, Format, va_alist) const int Len; const char *Format; va_dcl #endif
+C:\develop\SpecBuilder\ngircd-master\src\portab\portabtest.c | function | main | main | 179 | 204 |  |  |  | GLOBAL int main(void)
+C:\develop\SpecBuilder\ngircd-master\src\portab\strdup.c | function | strdup | strdup | 18 | 32 |  |  |  | GLOBAL char * strdup(const char *s)
+C:\develop\SpecBuilder\ngircd-master\src\portab\strlcpy.c | function | strlcat | strlcat | 30 | 47 |  |  |  | GLOBAL size_t strlcat( char *dst, const char *src, size_t size )
+C:\develop\SpecBuilder\ngircd-master\src\portab\strlcpy.c | function | strlcpy | strlcpy | 53 | 68 |  |  |  | GLOBAL size_t strlcpy( char *dst, const char *src, size_t size )
+C:\develop\SpecBuilder\ngircd-master\src\portab\strndup.c | function | strndup | strndup | 18 | 32 |  |  |  | GLOBAL char * strndup(const char *s, size_t maxlen)
+C:\develop\SpecBuilder\ngircd-master\src\portab\strtok_r.c | function | strtok_r | strtok_r | 16 | 34 |  |  |  | char * strtok_r(char *str, const char *delim, char **saveptr)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | void | void | 95 | 95 |  |  |  | PARAMS(( void ))
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | dopr | dopr | 155 | 411 |  |  |  | static size_t dopr(char *buffer, size_t maxlen, const char *format, va_list args)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | fmtstr | fmtstr | 413 | 448 |  |  |  | static void fmtstr(char *buffer, size_t *currlen, size_t maxlen, char *value, int flags, int min, int max)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | fmtint | fmtint | 452 | 535 |  |  |  | static void fmtint(char *buffer, size_t *currlen, size_t maxlen, long value, int base, int min, int max, int flags)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | abs_val | abs_val | 537 | 546 |  |  |  | static LDOUBLE abs_val(LDOUBLE value)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | POW10 | POW10 | 548 | 559 |  |  |  | static LDOUBLE POW10(int exp)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | ROUND | ROUND | 561 | 571 |  |  |  | static LLONG ROUND(LDOUBLE value)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | my_modf | my_modf | 575 | 607 |  |  |  | static double my_modf(double x0, double *iptr)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | fmtfp | fmtfp | 610 | 755 |  |  |  | static void fmtfp (char *buffer, size_t *currlen, size_t maxlen, LDOUBLE fvalue, int min, int max, int flags)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | dopr_outch | dopr_outch | 757 | 764 |  |  |  | static void dopr_outch(char *buffer, size_t *currlen, size_t maxlen, char c)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | vsnprintf | vsnprintf | 767 | 771 |  |  |  | int vsnprintf (char *str, size_t count, const char *fmt, va_list args)
+C:\develop\SpecBuilder\ngircd-master\src\portab\vsnprintf.c | function | snprintf | snprintf | 779 | 794 |  |  |  | int snprintf(str, count, fmt, va_alist) char *str; size_t count; const char *fmt; va_dcl #endif
+C:\develop\SpecBuilder\ngircd-master\src\portab\waitpid.c | function | waitpid | waitpid | 19 | 28 |  |  |  | GLOBAL int waitpid(pid, stat_loc, options) int pid, *stat_loc, options;
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_TrimStr | ngt_TrimStr | 40 | 70 |  |  |  | GLOBAL void ngt_TrimStr(char *String)
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_UpperStr | ngt_UpperStr | 76 | 89 |  |  |  | GLOBAL char * ngt_UpperStr(char *String)
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_LowerStr | ngt_LowerStr | 95 | 108 |  |  |  | GLOBAL char * ngt_LowerStr(char *String)
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_TrimLastChr | ngt_TrimLastChr | 111 | 129 |  |  |  | GLOBAL void ngt_TrimLastChr( char *String, const char Chr)
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_RandomStr | ngt_RandomStr | 135 | 158 |  |  |  | GLOBAL char * ngt_RandomStr(char *String, const size_t len)
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | struct | timeval | timeval | 139 | 139 |  |  |  | struct timeval
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | struct | _code | _code | 167 | 170 |  |  |  | struct _code { char *c_name; int c_val; }
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | typedef | CODE | CODE | 167 | 170 |  |  |  | typedef struct _code { char *c_name; int c_val; } CODE;
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | field | c_name | _code::c_name | 168 | 168 | _code | char | scalar_or_unknown | char *c_name;
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | field | c_val | _code::c_val | 169 | 169 | _code | int | scalar_or_unknown | int c_val;
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_SyslogFacilityName | ngt_SyslogFacilityName | 220 | 230 |  |  |  | GLOBAL const char* ngt_SyslogFacilityName(int Facility)
+C:\develop\SpecBuilder\ngircd-master\src\tool\tool.c | function | ngt_SyslogFacilityID | ngt_SyslogFacilityID | 233 | 243 |  |  |  | GLOBAL int ngt_SyslogFacilityID(char *Name, int DefaultFacility)

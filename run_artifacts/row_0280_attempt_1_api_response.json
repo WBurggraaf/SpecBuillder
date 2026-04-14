@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:15:27.0217367Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and shape for the host field within the ngIRCd client."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1397683900,
+  "load_duration": 420876600,
+  "prompt_eval_count": 1297,
+  "prompt_eval_duration": 245668100,
+  "eval_count": 26,
+  "eval_duration": 688573000
+}

@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: A utility function for trimming string input, likely used for data cleaning or validation within the ngIRCd codebase.

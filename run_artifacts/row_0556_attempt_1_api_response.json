@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:16.5453036Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and type for the iconv_to field within the _Connection class."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1294491800,
+  "load_duration": 284404200,
+  "prompt_eval_count": 1307,
+  "prompt_eval_duration": 233968900,
+  "eval_count": 27,
+  "eval_duration": 728919300
+}

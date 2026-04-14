@@ -1,0 +1,6 @@
+Introduction
+ngIRCd is a free, portable and lightweight Internet Relay Chat (IRC) server for small or private networks, developed under the terms of the GNU General Public License (GPL); please see the file COPYING for licensing information.
+
+The server is quite easy to configure and runs as a single-node server or can be part of a network of ngIRCd servers in a LAN or across the internet. It optionally supports the IPv6 protocol, SSL/TLS-protected client-server and server-server links, the Pluggable Authentication Modules (PAM) system for user authentication, IDENT requests, and character set conversion for legacy clients.
+
+The name ngIRCd stands for next-generation IRC daemon, which is a little bit exaggerated: lightweight Internet Relay Chat server most probably would have been a better name :-)

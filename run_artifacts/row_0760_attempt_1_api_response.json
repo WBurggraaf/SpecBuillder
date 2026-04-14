@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:25:37.384681Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and validity rules for list elements within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1223099100,
+  "load_duration": 289215600,
+  "prompt_eval_count": 1290,
+  "prompt_eval_duration": 237241100,
+  "eval_count": 25,
+  "eval_duration": 666155700
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:23:31.246624Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure and behavior of the IRC WHO mask data type used for client identification."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1167675600,
+  "load_duration": 254740300,
+  "prompt_eval_count": 1318,
+  "prompt_eval_duration": 227078100,
+  "eval_count": 26,
+  "eval_duration": 648682800
+}

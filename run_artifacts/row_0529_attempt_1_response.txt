@@ -1,0 +1,2 @@
+COMPONENT: Serialization / Deserialization
+DESCRIPTION: Defines the storage structure and array layout for the ZipData buffer used in data serialization.

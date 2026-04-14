@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:16:30.3374961Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Defines the structure and fields for configuration operations within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1128495800,
+  "load_duration": 250142400,
+  "prompt_eval_count": 1280,
+  "prompt_eval_duration": 229336300,
+  "eval_count": 23,
+  "eval_duration": 613362000
+}

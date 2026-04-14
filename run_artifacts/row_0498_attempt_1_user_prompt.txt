@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | struct | sockaddr | sockaddr | 2065 | 2065 |  |  |  | struct sockaddr
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c
+- kind: struct
+- name: sockaddr
+- qualified_name: sockaddr
+- start_line: 2065
+- end_line: 2065
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: struct sockaddr
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

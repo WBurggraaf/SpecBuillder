@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: A helper function for outputting characters to a buffer, likely used for formatting or logging within the server.

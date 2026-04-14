@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the `away` field as a scalar property within the `_CLIENT` domain model structure.

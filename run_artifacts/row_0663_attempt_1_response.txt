@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the structure and behavior of the IRC WHO mask data type used for client identification.

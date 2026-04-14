@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the internal data structure for the 'what' field within the ngIRCd io.c file.

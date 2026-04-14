@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Defines the structure and type of configuration options, specifically the mask field used for permission operations.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:17:03.8153526Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Defines the port configuration for the _Conf_Server domain model."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1252731700,
+  "load_duration": 369867900,
+  "prompt_eval_count": 1295,
+  "prompt_eval_duration": 303950700,
+  "eval_count": 20,
+  "eval_duration": 546099100
+}

@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles the removal of a client from the channel list during server initialization or reconfiguration.

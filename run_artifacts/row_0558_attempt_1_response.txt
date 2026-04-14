@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Implements a Jenkins hash function for computing message digests.

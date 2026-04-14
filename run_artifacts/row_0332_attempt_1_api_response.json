@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:16:31.4951979Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Handles server configuration parameters and file-based settings for the ngIRCd daemon."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1148529900,
+  "load_duration": 261613900,
+  "prompt_eval_count": 1308,
+  "prompt_eval_duration": 237026800,
+  "eval_count": 23,
+  "eval_duration": 614592600
+}

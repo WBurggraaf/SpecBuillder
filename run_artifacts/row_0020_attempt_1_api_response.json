@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:09:56.4492753Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure for network address information, specifically a sockaddr_in variant used by the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1330768900,
+  "load_duration": 277916100,
+  "prompt_eval_count": 1295,
+  "prompt_eval_duration": 222343800,
+  "eval_count": 31,
+  "eval_duration": 793117700
+}

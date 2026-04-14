@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:15:58.1020254Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the `struct passwd` data structure used to store user authentication credentials."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1203097000,
+  "load_duration": 289588300,
+  "prompt_eval_count": 1264,
+  "prompt_eval_duration": 239917300,
+  "eval_count": 24,
+  "eval_duration": 643763000
+}

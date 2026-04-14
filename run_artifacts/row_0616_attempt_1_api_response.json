@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:22:33.2161187Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the kevent structure, a data structure used to manage event notifications within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1302097200,
+  "load_duration": 261855100,
+  "prompt_eval_count": 1270,
+  "prompt_eval_duration": 260132300,
+  "eval_count": 30,
+  "eval_duration": 749744000
+}

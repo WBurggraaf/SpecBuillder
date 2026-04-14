@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:12:34.3136149Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure for a client-to-channel mapping, representing the state of an IRC channel connection."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1297196400,
+  "load_duration": 262944300,
+  "prompt_eval_count": 1293,
+  "prompt_eval_duration": 235229400,
+  "eval_count": 29,
+  "eval_duration": 754713400
+}

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines a data structure for storing compressed data streams and associated buffer statistics.

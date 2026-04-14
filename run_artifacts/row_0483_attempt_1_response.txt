@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Retrieves IP address and port information for a connection identified by the given ID.

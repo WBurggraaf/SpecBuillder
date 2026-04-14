@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles incoming network connections and socket initialization for the IRC daemon.

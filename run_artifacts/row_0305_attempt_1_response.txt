@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the `struct passwd` data structure used to store user authentication credentials.

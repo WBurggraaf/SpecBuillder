@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:20:35.7614275Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Serialization / Deserialization\nDESCRIPTION: Handles the in-field data type, which is a z_stream, used for serializing network packet data."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1465530900,
+  "load_duration": 367795200,
+  "prompt_eval_count": 1290,
+  "prompt_eval_duration": 227507900,
+  "eval_count": 32,
+  "eval_duration": 828065200
+}

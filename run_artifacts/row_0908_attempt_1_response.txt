@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Implements reverse lookup logic for resolving IP addresses to hostnames or vice versa.

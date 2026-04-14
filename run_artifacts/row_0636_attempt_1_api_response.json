@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:22:56.8410383Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Utilities / Shared\nDESCRIPTION: Helper function for retrieving capability string values from the server configuration."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1182404600,
+  "load_duration": 358940000,
+  "prompt_eval_count": 1288,
+  "prompt_eval_duration": 241476500,
+  "eval_count": 22,
+  "eval_duration": 545847500
+}

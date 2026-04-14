@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Initializes the server's listener infrastructure for incoming connections.

@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Function responsible for setting the port number for the IP address binding in the IRC daemon.

@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c | field | dh_params | dh_params | 72 | 72 |  | gnutls_dh_params_t | scalar_or_unknown | gnutls_dh_params_t dh_params;
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn-ssl.c
+- kind: field
+- name: dh_params
+- qualified_name: dh_params
+- start_line: 72
+- end_line: 72
+- parent: 
+- data_type: gnutls_dh_params_t
+- data_shape: scalar_or_unknown
+- data_type: gnutls_dh_params_t
+- data_shape: scalar_or_unknown
+- signature: gnutls_dh_params_t dh_params;
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

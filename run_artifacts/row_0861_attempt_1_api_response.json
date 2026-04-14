@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:27:46.2444575Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Security / Authentication / Authorization\nDESCRIPTION: Defines the data structure used to store authentication response information for the PAM module."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1220796900,
+  "load_duration": 256471400,
+  "prompt_eval_count": 1268,
+  "prompt_eval_duration": 224679700,
+  "eval_count": 28,
+  "eval_duration": 701807800
+}

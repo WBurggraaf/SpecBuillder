@@ -1,0 +1,2 @@
+COMPONENT: Serialization / Deserialization
+DESCRIPTION: Defines the data structure and type for serializing connection state into a ZIP archive format.

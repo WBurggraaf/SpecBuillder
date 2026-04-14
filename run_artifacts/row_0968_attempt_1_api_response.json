@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:30:00.0821707Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Utilities / Shared\nDESCRIPTION: Helper function for formatting string arguments using the standard C library's snprintf implementation."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1209462200,
+  "load_duration": 290153200,
+  "prompt_eval_count": 1326,
+  "prompt_eval_duration": 268454300,
+  "eval_count": 25,
+  "eval_duration": 610008900
+}

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:55.923009Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Represents the structure of the pollfd data type, defining its fields and layout."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1236093200,
+  "load_duration": 292036900,
+  "prompt_eval_count": 1270,
+  "prompt_eval_duration": 252792300,
+  "eval_count": 25,
+  "eval_duration": 645444200
+}

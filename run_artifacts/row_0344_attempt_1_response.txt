@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Handles error reporting for configuration parameters and file paths.

@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Function that determines whether a nickname is treated as a service identifier within the configuration context.

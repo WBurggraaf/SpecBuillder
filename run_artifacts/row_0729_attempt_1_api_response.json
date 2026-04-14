@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:24:57.6994404Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Represents a data structure or object definition used to model the internal state of the IRC server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1402959200,
+  "load_duration": 408558600,
+  "prompt_eval_count": 1272,
+  "prompt_eval_duration": 235319200,
+  "eval_count": 27,
+  "eval_duration": 725392300
+}

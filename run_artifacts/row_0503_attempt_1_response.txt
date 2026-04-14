@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles low-level socket communication and message parsing for IRC protocol data.

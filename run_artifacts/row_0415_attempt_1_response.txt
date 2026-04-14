@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Defines the structure for SSL/TLS connection options used to secure the server's network communication.

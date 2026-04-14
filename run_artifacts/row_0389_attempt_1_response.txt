@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Converts message data using the iconv library to handle character set translation for legacy clients.

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the `lastping` field as a `time_t` scalar within the `_Connection` data structure.

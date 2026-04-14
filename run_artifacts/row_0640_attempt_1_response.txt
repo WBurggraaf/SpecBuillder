@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles the ACK response for client capability requests within the IRC protocol stack.

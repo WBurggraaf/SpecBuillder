@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:01.6382423Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and fields for the _Connection object used to track network connection metrics."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1399327100,
+  "load_duration": 394983800,
+  "prompt_eval_count": 1293,
+  "prompt_eval_duration": 274220200,
+  "eval_count": 27,
+  "eval_duration": 688066300
+}

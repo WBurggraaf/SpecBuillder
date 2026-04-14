@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Handles negotiation of client capabilities and authentication parameters.

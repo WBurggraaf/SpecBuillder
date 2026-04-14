@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A static inline helper function used to close a device poll descriptor, likely managing low-level I/O or socket resource cleanup.

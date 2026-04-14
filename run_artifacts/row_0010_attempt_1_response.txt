@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for network address information, including socket address and IPv4/IPv6 address components.

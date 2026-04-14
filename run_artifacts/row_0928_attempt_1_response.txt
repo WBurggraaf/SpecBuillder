@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Handles signal reception and processing for the server's initialization or runtime events.

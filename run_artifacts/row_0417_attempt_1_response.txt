@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines a data structure for storing X.509 certificate credentials and associated DH parameters.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:20:47.1790689Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Declares the data structure for the connection address within the IRC daemon's internal model."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1248573800,
+  "load_duration": 316155100,
+  "prompt_eval_count": 1296,
+  "prompt_eval_duration": 237389600,
+  "eval_count": 26,
+  "eval_duration": 664976900
+}

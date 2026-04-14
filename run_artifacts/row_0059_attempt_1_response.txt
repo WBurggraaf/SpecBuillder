@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A core server function responsible for cleaning up and exiting the channel state when a connection is closed.

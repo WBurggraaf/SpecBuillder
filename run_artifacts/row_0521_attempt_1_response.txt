@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Function responsible for setting the client's certificate fingerprint for SSL/TLS connection verification.

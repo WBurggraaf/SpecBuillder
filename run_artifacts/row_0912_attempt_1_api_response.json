@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:28:50.1730271Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the structure of the hostent data type used for resolving hostnames."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1087830400,
+  "load_duration": 248324700,
+  "prompt_eval_count": 1270,
+  "prompt_eval_duration": 216482500,
+  "eval_count": 24,
+  "eval_duration": 592962100
+}

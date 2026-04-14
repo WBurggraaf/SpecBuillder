@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h | typedef | WHOWAS | WHOWAS | 75 | 83 |  |  |  | typedef struct _WHOWAS { time_t time; /* time stamp of entry or 0 if unused */ char id[CLIENT_NICK_LEN]; /* client nickname */ char host[CLIENT_HOST_LEN]; /* hostname of the client */ char user[CLIENT_USER_LEN]; /* user name ("login") */ char info[CLIENT_INFO_LEN]; /* long user name */ char server[C
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\client.h
+- kind: typedef
+- name: WHOWAS
+- qualified_name: WHOWAS
+- start_line: 75
+- end_line: 83
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: typedef struct _WHOWAS { time_t time; /* time stamp of entry or 0 if unused */ char id[CLIENT_NICK_LEN]; /* client nickname */ char host[CLIENT_HOST_LEN]; /* hostname of the client */ char user[CLIENT_USER_LEN]; /* user name ("login") */ char info[CLIENT_INFO_LEN]; /* long user name */ char server[C
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

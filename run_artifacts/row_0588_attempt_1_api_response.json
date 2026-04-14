@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:57.435194Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Infrastructure / Platform\nDESCRIPTION: Initializes the polling event loop for the IO library, a core runtime component for handling I/O operations."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1484445500,
+  "load_duration": 401352000,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 244168000,
+  "eval_count": 30,
+  "eval_duration": 796884200
+}

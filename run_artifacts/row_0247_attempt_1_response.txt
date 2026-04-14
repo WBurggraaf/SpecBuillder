@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: A function responsible for cleaning up resources and terminating a client connection or service.

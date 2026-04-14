@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:21:10.3630986Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and state representation for the SSL connection within the server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1150486300,
+  "load_duration": 262810900,
+  "prompt_eval_count": 1299,
+  "prompt_eval_duration": 232483100,
+  "eval_count": 24,
+  "eval_duration": 620907200
+}

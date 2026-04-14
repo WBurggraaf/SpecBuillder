@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Entry point function that initializes the ngIRCd server process and sets up the command-line interface.

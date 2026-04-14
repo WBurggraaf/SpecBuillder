@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:17:42.9060082Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Converts message data using the iconv library to handle character set translation for legacy clients."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1326514700,
+  "load_duration": 275758400,
+  "prompt_eval_count": 1294,
+  "prompt_eval_duration": 246042000,
+  "eval_count": 29,
+  "eval_duration": 761007400
+}

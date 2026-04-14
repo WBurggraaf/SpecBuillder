@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares a data structure for Diffie-Hellman parameters used in SSL/TLS authentication.

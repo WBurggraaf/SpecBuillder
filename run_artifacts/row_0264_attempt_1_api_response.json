@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:15:05.2718813Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Declares a scalar field representing a client's cloaked status within the ngIRCd client structure."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1450214800,
+  "load_duration": 363509200,
+  "prompt_eval_count": 1289,
+  "prompt_eval_duration": 253787900,
+  "eval_count": 29,
+  "eval_duration": 794090300
+}

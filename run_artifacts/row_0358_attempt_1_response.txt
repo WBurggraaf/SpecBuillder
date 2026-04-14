@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Defines the port configuration for the _Conf_Server domain model.

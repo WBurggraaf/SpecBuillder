@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c | function | Conn_GetCertFp | Conn_GetCertFp | 2736 | 2740 |  |  |  | GLOBAL char * Conn_GetCertFp(UNUSED CONN_ID Idx)
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\conn.c
+- kind: function
+- name: Conn_GetCertFp
+- qualified_name: Conn_GetCertFp
+- start_line: 2736
+- end_line: 2740
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: GLOBAL char * Conn_GetCertFp(UNUSED CONN_ID Idx)
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

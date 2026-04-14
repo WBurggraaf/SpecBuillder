@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Implements a helper function for formatting floating-point values using the standard C library's `vsnprintf` function.

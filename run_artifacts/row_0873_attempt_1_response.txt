@@ -1,0 +1,2 @@
+COMPONENT: Controller / API / Interface
+DESCRIPTION: Validates incoming command requests and manages connection state for the command handler.

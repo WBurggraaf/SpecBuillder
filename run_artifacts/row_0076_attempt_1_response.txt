@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for channel membership and the conversion logic between channel and channel list representations.

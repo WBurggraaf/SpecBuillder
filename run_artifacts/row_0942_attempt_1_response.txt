@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: Helper function for converting ANSI escape sequences to KNR format, likely used for protocol translation or data formatting.

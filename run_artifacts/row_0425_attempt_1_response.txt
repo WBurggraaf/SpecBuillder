@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Implements the PEM password callback function for SSL/TLS certificate and key authentication.

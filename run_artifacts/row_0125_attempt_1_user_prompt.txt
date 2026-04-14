@@ -1,0 +1,28 @@
+Classify this one symbol row.
+
+Symbol row:
+C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h | typedef | CHANNEL | CHANNEL | 26 | 44 |  |  |  | typedef struct _CHANNEL { struct _CHANNEL *next; char name[CHANNEL_NAME_LEN]; /* Name of the channel */ UINT32 hash; /* Hash of the (lowecase!) name */ char modes[CHANNEL_MODE_LEN]; /* Channel modes */ array topic; /* Topic of the channel */ #ifndef STRICT_RFC time_t creation_time; /* Channel creati
+
+Parsed fields:
+- file: C:\develop\SpecBuilder\ngircd-master\src\ngircd\channel.h
+- kind: typedef
+- name: CHANNEL
+- qualified_name: CHANNEL
+- start_line: 26
+- end_line: 44
+- parent: 
+- data_type: 
+- data_shape: 
+- data_type: 
+- data_shape: 
+- signature: typedef struct _CHANNEL { struct _CHANNEL *next; char name[CHANNEL_NAME_LEN]; /* Name of the channel */ UINT32 hash; /* Hash of the (lowecase!) name */ char modes[CHANNEL_MODE_LEN]; /* Channel modes */ array topic; /* Topic of the channel */ #ifndef STRICT_RFC time_t creation_time; /* Channel creati
+
+Interpretation hints for richer symbol rows:
+- Fields, properties, and enum values often describe data structures, storage shape, and object boundaries.
+- data_type captures the declared type when available.
+- data_shape captures structural hints like array_or_collection, map_or_dictionary, tuple_or_pair, pointer_or_reference, structured_object, or scalar_or_unknown.
+- Use these richer fields when deciding between Domain Models, Data Access / Database, Mapping / Translation, Serialization / Deserialization, Transformation / Processing, Utilities / Shared, and similar technical buckets.
+
+Return exactly:
+COMPONENT: <one allowed component name>
+DESCRIPTION: <short description>

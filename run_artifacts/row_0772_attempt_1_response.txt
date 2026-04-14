@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structures and pointers used to manage the linked list of IRC channel members.

@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:24:25.2505665Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structure and state for the IRC mode configuration and client request handling."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1247439300,
+  "load_duration": 272769800,
+  "prompt_eval_count": 1290,
+  "prompt_eval_duration": 288242800,
+  "eval_count": 25,
+  "eval_duration": 649431300
+}

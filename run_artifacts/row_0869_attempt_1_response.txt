@@ -1,0 +1,2 @@
+COMPONENT: Infrastructure / Platform
+DESCRIPTION: Provides the function declaration for parsing global command structures, which is a core runtime operation for the server.

@@ -1,0 +1,2 @@
+COMPONENT: Security / Authentication / Authorization
+DESCRIPTION: Implements the PAM (Pluggable Authentication Modules) authentication mechanism for user login and identity verification.

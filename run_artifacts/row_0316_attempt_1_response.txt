@@ -1,0 +1,2 @@
+COMPONENT: Configuration
+DESCRIPTION: Function that checks if a user nickname is blocked based on configuration settings.

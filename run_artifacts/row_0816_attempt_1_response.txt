@@ -1,0 +1,2 @@
+COMPONENT: Logging / Monitoring
+DESCRIPTION: Initializes the logging system for the ngIRCd server, handling configuration for syslog mode.

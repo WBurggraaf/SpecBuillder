@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:16:04.0295388Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Configuration\nDESCRIPTION: Retrieves the server configuration value associated with the provided connection ID."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1113546200,
+  "load_duration": 297218700,
+  "prompt_eval_count": 1292,
+  "prompt_eval_duration": 254733700,
+  "eval_count": 20,
+  "eval_duration": 524692800
+}

@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Defines the data structure for a channel entity, including its name, hash, modes, topic, and creation time.

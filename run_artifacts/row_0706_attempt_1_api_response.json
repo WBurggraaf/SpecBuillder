@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:24:26.8862005Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the internal state and limits for an IRC client session, including the maximum number of clients allowed before a limit is reached."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1625652600,
+  "load_duration": 427366100,
+  "prompt_eval_count": 1308,
+  "prompt_eval_duration": 278071100,
+  "eval_count": 34,
+  "eval_duration": 874582200
+}

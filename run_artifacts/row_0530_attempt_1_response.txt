@@ -1,0 +1,2 @@
+COMPONENT: Serialization / Deserialization
+DESCRIPTION: Defines the data structure and field layout for serializing binary data into a Zip archive format.

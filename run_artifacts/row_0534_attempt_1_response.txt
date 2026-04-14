@@ -1,0 +1,2 @@
+COMPONENT: Domain Models
+DESCRIPTION: Declares the data structure for the connection address within the IRC daemon's internal model.

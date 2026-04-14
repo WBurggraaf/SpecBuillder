@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:20:12.0469905Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Network / Communication / Protocol\nDESCRIPTION: Implements connection throttling logic to manage client connection rates and prevent abuse."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1191696200,
+  "load_duration": 282276300,
+  "prompt_eval_count": 1320,
+  "prompt_eval_duration": 232814100,
+  "eval_count": 26,
+  "eval_duration": 649570600
+}

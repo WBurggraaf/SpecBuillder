@@ -1,0 +1,2 @@
+COMPONENT: Utilities / Shared
+DESCRIPTION: A static helper function for the portability test suite, likely used for testing or validating string formatting behavior.

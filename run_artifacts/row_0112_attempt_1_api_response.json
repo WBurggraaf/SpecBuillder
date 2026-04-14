@@ -1,0 +1,16 @@
+{
+  "model": "qwen3.5:2b",
+  "created_at": "2026-04-13T13:11:50.458253Z",
+  "message": {
+    "role": "assistant",
+    "content": "COMPONENT: Domain Models\nDESCRIPTION: Defines the data structures and types for channel ban information within the ngIRCd server."
+  },
+  "done": true,
+  "done_reason": "stop",
+  "total_duration": 1199647800,
+  "load_duration": 274841600,
+  "prompt_eval_count": 1306,
+  "prompt_eval_duration": 242981900,
+  "eval_count": 26,
+  "eval_duration": 648217800
+}

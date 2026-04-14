@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles SSL/TLS socket write operations for secure client-server communication.

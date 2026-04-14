@@ -1,0 +1,2 @@
+COMPONENT: Network / Communication / Protocol
+DESCRIPTION: Handles the resolution of client identifiers and associated address information for IRC connection establishment.

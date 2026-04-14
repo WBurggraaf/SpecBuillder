@@ -33,12 +33,15 @@ var workspace = new WorkspaceDefinition(
     WorkspaceId: "default-workspace",
     SourceRoot: Path.Combine(workspaceRoot, "ngircd-master"),
     IntroductionFile: Path.Combine(workspaceRoot, "introduction.txt"),
-    OllamaModel: "emma4:e2b",
+    OllamaModel: "gemma4:e2b",
     PromptVersion: "v1");
 
 var engine = app.Services.GetRequiredService<IPipelineEngine>();
 var reporter = app.Services.GetRequiredService<ConsolePipelineReporter>();
 Directory.CreateDirectory(Path.Combine(workspaceRoot, ".specbuilder", "runs"));
+
+var effectiveModel = workspace.OllamaModel ?? "gemma4:e2b";
+ConsoleUi.CheckOllamaModelAvailable(effectiveModel);
 
 if (args.Contains("--run-full", StringComparer.OrdinalIgnoreCase))
 {

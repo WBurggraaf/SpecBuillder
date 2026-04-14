@@ -1,5 +1,6 @@
 using SpecBuilder.Domain;
 using System.Text.Json;
+using System.Diagnostics;
 
 namespace SpecBuilder.App;
 
@@ -17,7 +18,7 @@ public static class ConsoleUi
 
     public static IReadOnlyList<string> GetPipelineSteps() => PipelineSteps;
 
-    public static void ShowBanner(WorkspaceDefinition workspace, string defaultModel = "emma4:e2b")
+    public static void ShowBanner(WorkspaceDefinition workspace, string defaultModel = "gemma4:e2b")
     {
         if (!Console.IsOutputRedirected)
         {
@@ -95,7 +96,7 @@ public static class ConsoleUi
         }
     }
 
-    public static void ShowModelStatus(WorkspaceDefinition workspace, string defaultModel = "emma4:e2b")
+    public static void ShowModelStatus(WorkspaceDefinition workspace, string defaultModel = "gemma4:e2b")
     {
         WriteHeader("Model");
         var effective = workspace.OllamaModel ?? defaultModel;
@@ -104,6 +105,55 @@ public static class ConsoleUi
             ? $"Source: default ({defaultModel})"
             : "Source: workspace override");
         Console.WriteLine();
+    }
+
+    public static bool CheckOllamaModelAvailable(string model)
+    {
+        try
+        {
+            var startInfo = new ProcessStartInfo
+            {
+                FileName = "ollama",
+                Arguments = "list",
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            using var process = Process.Start(startInfo);
+            if (process is null)
+            {
+                WriteWarning("Could not start 'ollama list'.");
+                return false;
+            }
+
+            var output = process.StandardOutput.ReadToEnd();
+            var error = process.StandardError.ReadToEnd();
+            process.WaitForExit();
+
+            if (process.ExitCode != 0)
+            {
+                WriteWarning($"'ollama list' failed: {error.Trim()}");
+                return false;
+            }
+
+            var found = output.Split('\n', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries)
+                .Any(line => line.StartsWith(model + " ", StringComparison.OrdinalIgnoreCase) || line.StartsWith(model + "\t", StringComparison.OrdinalIgnoreCase));
+
+            if (!found)
+            {
+                WriteWarning($"Model '{model}' is not listed by Ollama.");
+                return false;
+            }
+
+            return true;
+        }
+        catch (Exception ex)
+        {
+            WriteWarning($"Unable to validate Ollama model '{model}': {ex.Message}");
+            return false;
+        }
     }
 
     public static void ShowAnalysisSummary(string workspaceRoot, string runId)

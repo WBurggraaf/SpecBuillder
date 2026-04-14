@@ -134,7 +134,7 @@ public sealed class ClassificationStep(IComponentClassifier classifier, IArtifac
         reporter?.OnStepStarted(StepId, DisplayName, "Classifying symbols into architecture components.");
         var analysis = context.Analysis ?? await AnalysisDocumentIO.LoadAnalysisAsync(store, context, cancellationToken).ConfigureAwait(false);
         var intro = await store.ReadTextAsync(context.Workspace.IntroductionFile, cancellationToken).ConfigureAwait(false) ?? string.Empty;
-        var classified = await classifier.ClassifyAsync(analysis.Symbols.Items, intro, context.Workspace.OllamaModel ?? "emma4:e2b", context, cancellationToken).ConfigureAwait(false);
+        var classified = await classifier.ClassifyAsync(analysis.Symbols.Items, intro, context.Workspace.OllamaModel ?? "gemma4:e2b", context, cancellationToken).ConfigureAwait(false);
         var now = DateTimeOffset.UtcNow;
 
         analysis = analysis with
@@ -171,7 +171,7 @@ public sealed class HierarchyStep(IComponentHierarchyBuilder builder, IArtifactS
         reporter?.OnStepStarted(StepId, DisplayName, "Grouping classified symbols into component subtrees.");
         var analysis = context.Analysis ?? await AnalysisDocumentIO.LoadAnalysisAsync(store, context, cancellationToken).ConfigureAwait(false);
         var intro = await store.ReadTextAsync(context.Workspace.IntroductionFile, cancellationToken).ConfigureAwait(false) ?? string.Empty;
-        var hierarchy = await builder.BuildAsync(analysis.Classification.Items, intro, context.Workspace.OllamaModel ?? "emma4:e2b", cancellationToken).ConfigureAwait(false);
+        var hierarchy = await builder.BuildAsync(analysis.Classification.Items, intro, context.Workspace.OllamaModel ?? "gemma4:e2b", cancellationToken).ConfigureAwait(false);
         var now = DateTimeOffset.UtcNow;
 
         analysis = analysis with
@@ -223,7 +223,7 @@ public sealed class CallerEnrichmentStep(ICallerEnricher enricher, IArtifactStor
     {
         reporter?.OnStepStarted(StepId, DisplayName, "Scanning callable symbols and resolving callers.");
         var analysis = context.Analysis ?? await AnalysisDocumentIO.LoadAnalysisAsync(store, context, cancellationToken).ConfigureAwait(false);
-        var output = await enricher.EnrichAsync(analysis.Hierarchy.Components, context.Workspace.SourceRoot, context.Workspace.OllamaModel ?? "emma4:e2b", cancellationToken).ConfigureAwait(false);
+        var output = await enricher.EnrichAsync(analysis.Hierarchy.Components, context.Workspace.SourceRoot, context.Workspace.OllamaModel ?? "gemma4:e2b", cancellationToken).ConfigureAwait(false);
         var now = DateTimeOffset.UtcNow;
 
         analysis = analysis with

@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="SpecBuilder.App/SpecBuilder.App.csproj" />
+  <Project Path="SpecBuilder.Application/SpecBuilder.Application.csproj" />
+  <Project Path="SpecBuilder.Contracts/SpecBuilder.Contracts.csproj" />
+  <Project Path="SpecBuilder.Domain/SpecBuilder.Domain.csproj" />
+  <Project Path="SpecBuilder.Infrastructure/SpecBuilder.Infrastructure.csproj" />
+  <Project Path="SpecBuilder.Tests/SpecBuilder.Tests.csproj" />
+</Solution>

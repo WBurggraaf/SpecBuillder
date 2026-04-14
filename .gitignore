@@ -1,0 +1,74 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+artifacts/
+
+# Visual Studio / Rider / VS Code
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.vcxproj.user
+*.csproj.user
+
+# .NET
+*.deps.json
+*.runtimeconfig.json
+*.pdb
+*.mdb
+*.svclog
+TestResults/
+CoverageReport/
+coverage.cobertura.xml
+coverage.net
+
+# Generated application state
+.specbuilder/
+.specbuilder-cache/
+run_artifacts/
+component_assignments.json
+component_hierarchy.json
+component_hierarchy_with_callers.json
+component_list.md
+symbols.json
+symbols.txt
+summary.txt
+
+# Logs and temp files
+*.log
+*.tmp
+*.temp
+*.cache
+*.pid
+*.pidb
+*.seed
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Node / frontend if added later
+node_modules/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# Local machine configs
+appsettings.Development.json
+appsettings.Local.json
